@@ -168,7 +168,7 @@ Boundary est pour du Human 2 Machine. Si besoin de faire du Machine 2 Machine, i
 * Zero trust framework basé sur device, identité, automation pour protéger les data, et bien sur le reseau
 * Des solutions existent déjà (boundary, beyondcorp)
 
-=== 17h00 - 17h30 : Pourquoi vous n'attirerez et ne retiendrez pas les femmes dans vos équipes tech !
+=== Pourquoi vous n'attirerez et ne retiendrez pas les femmes dans vos équipes tech !
 
 ==== Abstract
 
@@ -184,8 +184,26 @@ Alors, si vous voulez favoriser la mixité et que vous avez saisi que la cause d
 --
 
 ==== Notes
+Groupe majoritaire - Biais de confirmation - biais de sympathie
+--> ceci induit un statu quo
 
-TO BE COMPLETED
+Avec une logique du groupe majoritaire, il y a 2 dynamique possible: le groupe inclu, ou exclu
+Attitude face au changement:
+* 15% de refractaire
+* 70% de neutre
+* 15% de partants
+
+https://www.ipsos.com/sites/default/files/ct/publication/documents/2022-02/women-in-tech-survey-2021-infographic-ipsos.pdf[What is holding back women in tech ?] by Ipsos
+https://www.ipsos.com/sites/default/files/ct/publication/documents/2022-02/women-in-tech-survey-2021-ipsos.pdf[version longue]
+
+90% des compétences pour postuler alors que les hommes estiment que 60% est suffisant
+Attention au titre de postes (dévelopeuse)
+Transparence salariale
+Moments conviavilatés inclusif, pas s'arrêter à la "bro culture"
+
+Encouragez à prendre la parole, à être des roles modèles.
+La diversité et inclusion est un élément indispensable, augmente la productivité et la satisfaction globale
+
 
 === 17h45 - 18h15 : Bien maîtriser les Dev Tools de vos navigateurs
 
