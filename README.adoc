@@ -44,7 +44,7 @@ toc::[]
 * Template inspiré par https://twitter.com/thomasschwender[@thomasschwender], merci à lui!
 * Doc AsiiDoctor: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
 
-=== 09h30 - 12h30 : Comprendre GraphQL
+=== Comprendre GraphQL
 
 ==== Abstract
 
@@ -86,7 +86,7 @@ En GraphQL tout est en POST, et les réponses sont en 200 ou 500. 500 quand la q
 
 https://www.apollographql.com[Apollo] propose différents outils pour explorer, stitcher des graphs: Rover, Studio, explorer
 
-=== 13h30 - 16h30 Zero Trust : the new normal !
+=== Zero Trust : the new normal !
 
 ==== Abstract
 
@@ -143,7 +143,30 @@ Défense périmétrique ne suffit clairement plus. https://www.clever-cloud.com/
 ===== Modèle aéroport
 Modèle de sécurité avec des zones public, privée, duty free, tarmac... qui est bien plus clair que le modèle chateau fort.
 
+==== Principes de Zero Trust
+1. All data sources and compute services are considered resources
+2. Toutes les communications sont sécurisées, quelques soient l'endroit sur le réseau
+3. Les accès individuels sont granted par une session (avec un TTL)
+4. L'accès aux ressources est déterminé par des politiques dynamiques
+5. Monitore et mesure l'intégrité et la sécurité de tous les assets
+6. authent et authorization doivent être validée avant de donner accès à une donnée
+7. Collecte d'un maximum d'info sur le réseau, les assets, pour détecter des failles
 
+==== Demo Harshicorp
+https://www.boundaryproject.io[Boundary]
+Semble fonctionner comme un bastion, mais qui gère authentification + autorisation, et de plus boundary génère à la volée des clés pour accéder au VM du subnet private, fonctionne aussi pour un accès BDD PostgreSQL. Les crédentials temporaires sont stockés dans un Vault.
+Comme les users sont créés à la volée, il faut faire de la corrélation entre la trace dans la BDD et les logs d'accès Boundary.
+
+Boundary est pour du Human 2 Machine. Si besoin de faire du Machine 2 Machine, il faut plutôt faire un Consul avec un Vault.
+
+==== https://www.beyondcorp.com[BeyondCorp Enterprise]
+* N'importe quel googlers peut se connecter depuis n'importe quel réseaux *sans passer par un VPN*
+
+
+==== Takeaways
+* Sécu périmétrique n'est plus une option
+* Zero trust framework basé sur device, identité, automation pour protéger les data, et bien sur le reseau
+* Des solutions existent déjà (boundary, beyondcorp)
 
 === 17h00 - 17h30 : Pourquoi vous n'attirerez et ne retiendrez pas les femmes dans vos équipes tech !
 
@@ -436,37 +459,29 @@ TO BE COMPLETED
 
 == VENDREDI
 
-=== 09h00 - 09h20 (AB) : Futurospective digitale : le futur est-il encore ce qu'il était ?
+=== 09h00 - 09h20 : Futurospective digitale : le futur est-il encore ce qu'il était ?
 
 ==== Abstract
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/ludovic_cinquin[Ludovic Cinquin]
 --
-Ludovic Cinquin dirige le cabinet OCTO, filiale d'Accenture, spécialiste de l'agile et des new techs, qu'il a cofondé en 1998. Il est également le CTO d'Accenture France. En parallèle de ses activités de dirigeant, il accompagne les grands comptes dans le cadre de missions de conseil stratégique sur la transition digitale. En tant que conférencier et auteur, Ludovic décrypte les enjeux méthodologiques et culturels liés à l'adoption des technologies digitales dans les entreprises. Son dernier ouvrage "Devenir une entreprise Agile", partage les recettes qu'OCTO à appliquer pour devenir un des précurseurs de l'agilité sur le marche français.
---
-
-----
 Les technologies digitales ont été un puissant moteur de transformation de notre civilisation, à tel point qu'elles se sont immiscées dans tous les recoins de nos vies et de notre planète.
 
 Les 10 dernières années ont été ébouriffantes. Qu'en sera-t-il des 10 prochaines ?
 
 Même si la prévision est un art difficile - surtout en ce qui concerne l'avenir -, nous pouvons identifier quelques macro-tendances qui structureront le futur de notre industrie. Le reste sera à écrire. Avec des lignes de code ?
-----
+--
 
 ==== Notes
 
 TO BE COMPLETED
 
-=== 09h50 - 10h10 (AB) : La quête d'une gouvernance collaborative du web
+=== 09h50 - 10h10 : La quête d'une gouvernance collaborative du web
 
 ==== Abstract
 
 .Speakers : https://cfp.devoxx.fr/2022/speaker/le_nguyen_hoang[Lê Nguyên Hoang]
 --
-Diplômé de l'École Polytechnique de Paris, Lê Nguyên Hoang a obtenu une thèse de doctorat à Polytechnique Montréal, puis a été post-doctorant au Massachusetts Institute of Technology (MIT). Il est désormais chercheur en sécurité des algorithmes d'intelligence artificielle et communicateur des sciences du numériques à l'École polytechnique fédérale de Lausanne (EPFL). Lê est aussi YouTubeur sur sa chaîne Science4All, qui possède 200k+ abonnés. Il a aussi publié les livres "La formule du savoir" et "Le fabuleux chantier" (avec El Mahdi El Mhamdi) chez EDP Sciences et "Turing à la plage" (avec Rachid Guerraoui) chez Dunod. Plus récemment, il a co-fondé Tournesol.app, une plateforme pour de la recommandation collaborative de contenus.
---
-
-----
 Le web est de plus en plus attaqué par des campagnes de désinformation, qui emploient des usines de trolls pour manipuler l'opinion publique, noyer les informations compromettantes et amplifier la haine. Cette guerre de l'information est devenue un enjeu de sécurité nationale.
 
 En réaction à cela, les géants du web ont pris des décisions radicales et unilatérales, comme le bannissement de Donald Trump ou l'autorisation des appels au meurtre de Poutine et des soldats russes.
@@ -474,96 +489,107 @@ En réaction à cela, les géants du web ont pris des décisions radicales et un
 Dans cette présentation, après avoir insisté sur l'ampleur du problème, je présenterai la plateforme Tournesol, qui propose une gouvernance collaborative et sécurisée de la recommandation de l'information.
 
 J'essaierai de convaincre le public que la recherche et le développement de telles solutions sont critiques pour le futur de l'humanité.
-----
+--
 
 ==== Notes
 
 TO BE COMPLETED
 
-=== 10h45 - 11h30 (242AB) : Microservices, DDD et bootstrapping pour faire un départ lancé.
+=== 10h45 - 11h30 : Développ(eur|euse) Senior avec 6 ans d’expérience, et après ?
 
 ==== Abstract
 
-.Speakers : https://cfp.devoxx.fr/2022/speaker/laurent_guerin[Laurent Guérin], https://cfp.devoxx.fr/2022/speaker/aurelien_brisard[Aurélien Brisard]
+.Speakers : Hugo Lassiege et Dimitri BAELI
 --
-*Laurent* : Senior Architect/Consultant at Capgemini, Open Source & Agile supporter, Telosys project leader, Part time professor (Univ. Nantes), Lecturer
-
-*Aurélien* : Architecte avec une expertise particulière du DevOps et une maitrise des technologies JEE. J'aime apporter mon regard sur les pratiques de développement et concevoir l'architecture applicative de mes projets.
+Le sujet récurrent dans l’IT : si on est senior avec 6 ans d’expérience, quelle est l’étape d’après ? Faut-il devenir manager pour progresser ? Dans cette session nous vous proposons de découvrir les rôles de Staff Engineer, Principal Engineer, Fellow, Distinguished et la notion d’impact qui accompagne ces rôles. Nous espérons vous faire réfléchir également à la notion de leadership dans vos métiers, vos équipes, vos produits et l’entreprise.
 --
-
-----
-Associer microservices et conception DDD (Domain-Driven Design) semble une évidence. Le découpage en contextes et les différentes couches d'architecture constituent un cadre séduisant pour bâtir des microservices avec une structure stéréotypée. Mais si on souhaite respecter les fondamentaux du DDD et garantir l'isolation des différentes couches on arrive rapidement à une structure de projet basée sur plusieurs modules qui peuvent devenir complexes à gérer et qui risquent de ralentir le cycle de développement, en particulier lors de la phase de démarrage.
-
-Cette présentation est un retour d'expérience d'un grand projet dans lequel le générateur de code Telosys a été utilisé pour automatiser la phase d'amorçage de chaque microservice.
-
-Des démonstrations illustreront le principe de bootstrapping des microservices.
-
-Environnement technique : Java, SpringBoot, Telosys
-----
-
-=== 11h45 - 12h30 (242AB) : La scale-up, l'autonomie et le sous-marin nucléaire
-
-==== Abstract
-
-.Speakers : https://cfp.devoxx.fr/2022/speaker/thomas_pierrain[Thomas PIERRAIN], https://cfp.devoxx.fr/2022/speaker/pauline_jamin[Pauline Jamin]
---
-*Thomas* : VP of Engineering dans une scale-up Européenne en plein essor (Agicap), ancien consultant, architecte et eXtreme Programmer obsédé par les usages (par opposition à l'approche orientée solution qu'on a un peu trop tendance à choisir dans notre métier). Également co-organisateur des meetups DDD Paris et BDD Paris, Thomas aime utiliser le DDD et le TDD pour booster son efficacité et celle des autres au travail.
-
-*Pauline* : Software craftwoman. Senior full stack developer at Agicap. I love Python, C# and Java. Will grudgingly write Javascript upon request.
---
-
-----
-La plupart des organisations efficaces ont en commun d'avoir des équipes autonomes. L'autonomie est aussi un moteur individuel puissant : qui n'aime pas se sentir libre de définir sa vie, ses horaires, sa façon de travailler ?
-
-_Lorsqu'on travaille dans une scale-up en plein essor et qui grossit de manière exponentielle, l'autonomie n'est plus une option, c'est un carburant indispensable. _ Mais est-ce pour autant facile à mettre en oeuvre ?
-
-C'est de cette quête d'autonomie dont nous aimerions vous parler à travers nos histoires, nos réussites et nos erreurs. Nous parlerons de full-remote, de release management, de démarche SRE, de conflits d'équipes et de Domain Driven Design.
-
-On parlera aussi d'auto-organisation, d'APIs de split de monolithe, mais également de sous-marins nucléaires et de contract tests.
-
-Au final, pleins de trucs et astuces pour arriver à mettre en place une Culture de l'autonomie qui tienne la route sur le long terme.
-----
 
 ==== Notes
 
 TO BE COMPLETED
 
-=== -------------------- REPAS --------------------
-
-=== -------------------- RESEAUTAGE --------------------
-
-=== 14h30 - 15h15 (AB) : Comment permettre 100 millions de logins sans interruption de service ? Betclic raconte son Euro 2020 de football
+=== 11h45 - 12h30 : À la découverte des Docker Dev Environments
 
 ==== Abstract
 
-.Speakers : https://cfp.devoxx.fr/2022/speaker/thomas_pierrain[Nicolas JOZWIAK], https://cfp.devoxx.fr/2022/speaker/pauline_jamin[Etienne Puissant]
+.Speakers : Guillaume Lours et Djordje Lukic
+--
+Imaginez-vous en plein travail sur une nouvelle fonctionnalité et vous devez absolument faire une revue de code d'un de vos collègues. Vous allez encore une fois mettre de côté votre code en cours, récupérer celui de votre collègue et qui sait peut-être modifier votre environnement local pour tester ses changements ?
+Et si nous vous proposions une nouvelle expérience de développement ? Comment ? Et pourquoi pas par un simple Copier/Coller de l'url de votre repository GIT dans Docker Desktop ?
 
-----
-Le pari sportif connaît depuis quelques années une forte croissance en France et en Europe (+30% en France en 2021, source ANJ). Tous les acteurs du secteur sont confrontés à ce problème : comment permettre une continuité de service sans faille alors même que le nombre de sollicitations des systèmes augmente de manière exponentielle ? Paroxysme de ce phénomène, l'Euro 2020 de football a mis le secteur dans une effervescence inégalée.
-
-Chez Betclic nous avons fait évolué nos plateformes et pris les bonnes décisions en amont : nous avons mis en place des techniques d'observabilité, de monitoring et de tests de charge. Tout ceci nous a permis de supporter plus de 100 millions de logins en un mois sans aucune interruption de service.
-
-Venez découvrir les outils qui nous ont permis d'absorber cette forte croissance de façon optimale, et de vivre nos événements sportifs de manière sereine.
-----
+Les Dev Environments sont une manière d'isoler votre code, vos dépendances et processus en cours, vous permettant ainsi d'avoir plusieurs versions d'un même projet en test sur votre machine. Et bien plus encore, partagez simplement votre code avec les autres membres de votre équipe, interagissez via Docker Compose avec une stack applicative complexe ...
+--
 
 ==== Notes
 
 TO BE COMPLETED
 
-=== -------------------- RESEAUTAGE --------------------
-
-=== 16h45 - 17h30 (AB) : La fin des architectures en couches avec l'approche hexagonale
+=== 13h30 - 14h15 : Réception d'image satellite 🛰️ avec un Raspberry
 
 ==== Abstract
 
-.Speaker : https://cfp.devoxx.fr/2022/speaker/benjamin_legros[Benjamin LEGROS]
+.Speakers : Guillaume Membré
 --
-Benjamin pensait faire carrière dans le front et le mobile… Quelques lignes de code plus loin, l'expérience terrain a bien bouleversé son plan, et tant mieux pour lui ! Il fait désormais partie de ces irréductibles passionnés de back et d'architectures Cloud. Sa nouvelle proie ? Le Devops ! Ses nuits passées à dévorer des livres sur Kubernetes ou Prometheus lui auraient-elles montré la voie..?
+Vous avez tous déjà vu les images météo satellites diffusées pendant la météo, mais est-ce que vous saviez que vous pouvez les capter directement du satellite ? Et en plus avec du matériel que vous avez peut être déjà ! Dans cette présentation, nous verrons comment réaliser une station de capture de flux radio émis par les satellites 🛰️ NOAA, en utilisant du matériel grand public comme un Raspberry, un tuner USB et pas mal de DIY 🛠️. Ce type de projet complétera sans problème une station météo à base de sondes de températures et d'Arduino.
 --
 
-----
-Attention, cette conférence peut donner des envies de refactoring ! As-tu plein d'annotations sur tes modèles ? Connais-tu un peu MVC, et les suffixes classiques Controller, Service, Repository ? Clean code, les samples de code de Spring Boot et Stack Overflow sont à peu près tes seules références d'architecture ? Dans cette conférence, on parlera des limites de ces modèles, et des différentes contraintes que cela pose sur le code. Vous découvrirez les principes de l'architecture hexagonale et de son mindset. Vous repartirez avec des exemples concrets et des différents scopes dans lesquels vous pourrez l'appliquer efficacement.
-----
+==== Notes
+
+TO BE COMPLETED
+
+=== 14h30 - 15h15 : Mob programming, la véritable approche du développement en équipe
+
+==== Abstract
+
+.Speakers : Maxime Odye et Mathieu Pousse
+--
+Shérif, le manager, est en colère. Il vient de surprendre toute l’équipe de développement autour d’une même machine. Rendez-vous compte ! Après des comparaisons douteuses avec la DDE, il les a bien sermonnés et leur a ordonné de retourner à leur poste de travail immédiatement, un peu de sérieux ! Avec Shérif, la bamboche, c’est terminé !
+Malheureusement, des Shérif, il en existe encore beaucoup dans les open-spaces de nos DSI. Partager un ordinateur entre plusieurs développeurs, mais pourquoi donc ?
+
+Le MOB programming est une pratique s’appuyant sur le Lean et sur Extreme Programming qui consiste à réaliser une tâche, qu’elle soit technique ou non, à plusieurs. Les groomings, planifications et autres réunions de conception, ne serait-ce pas déjà des MOBs ?
+De mythe à réalité, nous vous proposons de faire un retour d’expérience du MOB programming dans une équipe produit chez Ouest-France. Nous vous offrirons deux points de vue, celui du lead, présent depuis le début du projet (5 ans) et celui d’un développeur qui a rejoint l’équipe début 2021.
+--
+
+==== Notes
+
+TO BE COMPLETED
+
+=== 15h30 - 16h15 : CI/CD, le divorce serait-il prononcé ?
+
+==== Abstract
+
+.Speakers : Nicolas GIRAUD et Yann Schepens
+--
+A l'heure des digital factories, des transformations numériques, et autres mutations DevOps de nos organisations, les concepts du CI/CD sont poussés toujours plus loin...
+
+A un moment où tout devient pipeline, où chaque action est automatisée, enchaînée et intégrée dans des scénarios, ne faisons-nous pas exploser la complexité de nos déploiements ? 
+Comment faire pour maintenir cet écosystème qui doit nous aider à rester concentrés sur la valeur de nos produits ?
+
+Et si, alors que nous tendons vers les "Everything As Code", des solutions se trouvaient déjà au cour de nos applications ? 
+Et si nous, développeuses et développeurs logiciel, avions une partie de la réponse entre nos mains ?
+
+A la lumière de leurs expériences et surtout enrichi par de nombreux échanges, Nicolas et Yann se proposent de démontrer en quoi certaines pratiques du développement moderne peuvent nous aider à limiter les risques.
+Pour que maintenir vos pipelines reste un jeu d'enfant...
+--
+
+==== Notes
+
+TO BE COMPLETED
+
+=== 16h45 - 17h30 : Pourquoi DevOps ne tient pas ses promesses ?
+
+==== Abstract
+
+.Speaker : Gérôme Egron et Guillaume Mathieu
+--
+La plupart des clients que nous accompagnons disent faire du DevOps. Pourtant la réalité est loin de nous apporter satisfaction et les bénéfices attendus d'un point de vue théorique ne sont pas au rendez-vous.
+
+Quelles sont les promesses de DevOps et pourquoi ne sont-elles pas tenues ? Est-ce que le monde des Devs est incompatible avec le monde des Ops ou est-ce que le problème est ailleurs ?
+
+Nous allons partir des bases pour comprendre ce qu’il y a derrière le mot DevOps et partager nos expériences afin d'explorer les pratiques, bonnes ou mauvaises, rencontrées sur le terrain.
+
+Après notre slot, vous aurez une compréhension claire du DevOps ainsi que des trucs et astuces pour amorcer cette transformation culturelle en évitant les pièges les plus communs.
+--
 
 ==== Notes
 
@@ -575,25 +601,10 @@ TO BE COMPLETED
 
 .Speakers : https://cfp.devoxx.fr/2022/speaker/emmanuel_bernard[Emmanuel Bernard], https://cfp.devoxx.fr/2022/speaker/guillaume_laforge[Guillaume Laforge], https://cfp.devoxx.fr/2022/speaker/antonio_goncalves[Antonio Goncalves], https://cfp.devoxx.fr/2022/speaker/arnaud_heritier[Arnaud Héritier], https://cfp.devoxx.fr/2022/speaker/audrey_neveu[Audrey Neveu],
 --
-*Emmanuel* : Emmanuel est Java Champion, Distinguished Engineer et Chief Architect services cloud applicatifs chez Red Hat. Son travail est Open Source. Il est connu pour ses contributions et sa direction des projets Quarkus, Hibernate ainsi qu'à ses contributions aux standards Java. +
-Son aventure la plus récente est la construction d'un Kafka as a service managé par les équipes Red Hat +
-Il parle régulièrement dans des conférences et JUGs notamment JavaOne, Red Hat Summit et Devoxx. Il est l'hôte de plusieurs podcasts et notamment Les Cast Codeurs.
-
-*Guillaume* : Guillaume Laforge est Developer Advocate chez Google et se focalise en particulier sur l'offre Google Cloud Platform. Et la nuit, il enfile sa casquette Apache Groovy !
-
-*Antonio* : Antonio Goncalves est un développeur senior qui vit à paris. Ancien de chez BEA il est aujourd'hui consultant Java EE indépendant avec une bonne expertise des serveurs d'application comme JBoss, Weblogic ou GlassFish. Il est l'un des fondateurs du Paris Java User Group et plus récemment de Devoxx France. Antonio est aussi l'une des voix des CastCodeurs, auteur de livres sur Java EE.... et Java Champion.
-
-*Arnaud* : Spécialisé dans le développement logiciels et l'automatisation des processus, il participe depuis de nombreuses années à divers projets opensource comme Jenkins ou Apache Maven. Il contribue autant que possible à différentes communautés autour de Java et DevOps. Il co-anime le podcast Les CastCodeurs et participe à l'organisation de la conférence Devoxx France. +
-En 2015, il rejoint en tant que responsable de l'équipe support CloudBees, Inc., éditeur de logiciels spécialisé dans la livraison en continu et contributeur majeur à Jenkins.
-
-*Audrey* : Audrey est développeur full-stack. Passionnée par son métier, Audrey a toujours été fortement engagée dans la communauté Java au travers de plusieurs JUGs et conférences (Duchess France, Paris JUG, Devoxx France, Devoxx UK) mais aussi au sein d'initiatives visant à faire découvrir la programmation aux plus jeunes (Programatoo, Devoxx4Kids). Plus récemment elle a également rejoint l'équipe des Cast Codeurs.
---
-
-----
 👻 Guillaume sort de ce titre ! 🤡
 
 Les Cast Codeurs, le papy des podcasts de développement francophones revient cette année à Devoxx pour clôturer cette belle conférence dans la relaxation, la joie et peut être la blague carambar. Venez partager avec le public vos impressions de cette cuvée Devoxx, des choses qui vous on surpris, des tendances qui se dessinent.
-----
+--
 
 ==== Notes
 
