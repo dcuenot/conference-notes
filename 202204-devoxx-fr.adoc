@@ -69,7 +69,7 @@ schema {
 }
 ```
 
-Dans une query, on ajoute un ! pour signaler qu'un champ est obligatoire, et ne peut pas être null.
+Dans une query, on ajoute un ! pour signaler qu'un champ est obligatoire, et ne doit pas être null, permet de gérer des modes dégradés.
 
 La https://spec.graphql.org/June2018/[spécification GraphQL] est la bible
 Github utilise GraphQL, voici https://docs.github.com/en/graphql/overview/explorer[la doc]
@@ -83,7 +83,9 @@ En GraphQL, il y a 3 types de requêtes différents:
 - `Mutation`: Requête de mise à jour. Si plusieurs mutations sont demandées dans la même query, elles sont exécutées séquentiellement
 - `Subscription`: Streaming
 
+En GraphQL tout est en POST, et les réponses sont en 200 ou 500. 500 quand la query n'est pas valable, et si c'est une error métier, on reçoit un 200 et dans le body de réponse le bloc `error` est non vide.
 
+https://www.apollographql.com[Apollo] propose différents outils pour explorer, stitcher des graphs: Rover, Studio, explorer
 
 === 13h30 - 16h30 Zero Trust : the new normal !
 
