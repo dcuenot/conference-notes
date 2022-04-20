@@ -49,8 +49,7 @@ toc::[]
 ==== Abstract
 
 .Speakers : https://cfp.devoxx.fr/2022/speaker/geoffroy_couprie[Geoffroy Couprie] et https://cfp.devoxx.fr/2022/speaker/guillaume_scheibel[Guillaume Scheibel]
-
-----
+--
 GraphQL est une spécification décrivant un language de requêtes pour API sur une base d'un contrat fortement typé. En plus du contrat, GraphQL se base sur une sélection explicite des champs permettant un requêtage riche évitant soit "l'overfetching" (recevoir des données inutiles) ou la multiplications des requêtes.
 
 GraphQL est aussi connu pour son écosystème clients (web et mobiles) ou serveur avec la possibilité d'écrire des services dans une multitude de langages. Durant cette session, nous verrons comment développer un schéma GraphQL avec différents languages (tel que typescript, kotlin voir rust). Nous aborderons entre autres:
@@ -58,7 +57,7 @@ GraphQL est aussi connu pour son écosystème clients (web et mobiles) ou serveu
 - La gestion des erreurs
 - Strategies de résolutions des requêtes (avec par exemples les coroutines)
 - Technique plus avancées (context de requêtes, chaines d'interceptions etc).
-----
+--
 
 ==== Notes
 
@@ -92,22 +91,21 @@ https://www.apollographql.com[Apollo] propose différents outils pour explorer, 
 ==== Abstract
 
 .Speakers : https://cfp.devoxx.fr/2022/speaker/laurent_grangeau[Laurent Grangeau] et https://cfp.devoxx.fr/2022/speaker/tony_jarriault[Tony Jarriault]
-
-----
-Avec l’arrivée du COVID, les entreprises ont dû accélérer l’adoption du télétravail et ont vu l’augmentation du nombre de partenaires externes avec l’ouverture de son SI, ce qui nécessite de revoir la sécurité périmétrique des infrastructures. La démarche Zero Trust consiste à réduire la « confiance implicite » accordée aux utilisateurs et aux activités menées par le biais des équipements du SI. Pour garantir cette confiance, les entreprises ont pris le parti de se baser sur l’identité des utilisateurs pour vérifier et les authentifier sur l’ensemble des ressources accessibles. Dans cette session, nous ferons un bref rappel de ce qu’est la sécurité périmétrique (VPN, firewall, zoning réseau, …). Nous présenterons ensuite les grands principes du Zero Trust tel que le least privilege access, la microsegmentation réseau, l’authentification multi-facteur, etc. Nous comparerons aussi la sécurité périmétrique (modèle du château fort) avec celle de l’approche Zero Trust (modèle de l'aéroport) ; et nous reviendrons sur les différents modèles d'autorisation (MAC, RBAC, ABAC). Enfin, nous montrerons des exemples d’implémentation Zero Trust à travers des produits comme Boundary d’Hashicorp.
-----
+--
+Avec l'arrivée du COVID, les entreprises ont dû accélérer l'adoption du télétravail et ont vu l'augmentation du nombre de partenaires externes avec l'ouverture de son SI, ce qui nécessite de revoir la sécurité périmétrique des infrastructures. La démarche Zero Trust consiste à réduire la « confiance implicite » accordée aux utilisateurs et aux activités menées par le biais des équipements du SI. Pour garantir cette confiance, les entreprises ont pris le parti de se baser sur l'identité des utilisateurs pour vérifier et les authentifier sur l'ensemble des ressources accessibles. Dans cette session, nous ferons un bref rappel de ce qu'est la sécurité périmétrique (VPN, firewall, zoning réseau, …). Nous présenterons ensuite les grands principes du Zero Trust tel que le least privilege access, la microsegmentation réseau, l'authentification multi-facteur, etc. Nous comparerons aussi la sécurité périmétrique (modèle du château fort) avec celle de l'approche Zero Trust (modèle de l'aéroport) ; et nous reviendrons sur les différents modèles d'autorisation (MAC, RBAC, ABAC). Enfin, nous montrerons des exemples d'implémentation Zero Trust à travers des produits comme Boundary d'Hashicorp.
+--
 
 ==== Notes
 
-Why
+===== Why?
+Télétravail, cloud.
 
 === 17h00 - 17h30 : Pourquoi vous n'attirerez et ne retiendrez pas les femmes dans vos équipes tech !
 
 ==== Abstract
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/marcy_ericka_charollois[Marcy Ericka Charollois]
-
-----
+--
 Les femmes sont sous-représentées dans le domaine du numérique. Elles représentent à ce jour uniquement 30% des salariés, tous métiers confondus.
 
 Que s´est-il passé dans ce secteur professionnel pourtant dominé par la gente feminine lors de sa génèse ? Les femmes ne se sentiraient-elles plus ou pas à leurs places ?
@@ -115,7 +113,7 @@ Que s´est-il passé dans ce secteur professionnel pourtant dominé par la gente
 Pourtant, les femmes communiquent. Hélas, bien souvent, on ne les écoute pas. Résultat ? Migration vers des métiers corollaires, brown-out, désincarnation dans l'équipe, démission, création de la FemTech et de safe places comme lieux d'expression communautaire.
 
 Alors, si vous voulez favoriser la mixité et que vous avez saisi que la cause des femmes dans la tech est une brèche pour résoudre, en plus, la problématique de la diversité et de l'inclusion, venez découvrir comment améliorer vos pratiques !
-----
+--
 
 ==== Notes
 
@@ -146,9 +144,9 @@ TO BE COMPLETED
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/johan_jublanc[Johan Jublanc] et https://cfp.devoxx.fr/2022/speaker/simon_provost[Simon Provost]
 ----
-Au cours de cette conversation, nous partagerons notre retour d'expérience sur l'utilisation d’un outil de pair programming intelligent (AI pair programmer) : GitHub Copilot. Nous examinerons comment l'utiliser, les avantages qu'il procure et les limites que nous avons identifiées. Nous tenterons ainsi de donner des éléments pour déterminer si ce plugin tient bien la promesse d’aider les développeurs à écrire du code plus rapidement et avec moins de travail.
+Au cours de cette conversation, nous partagerons notre retour d'expérience sur l'utilisation d'un outil de pair programming intelligent (AI pair programmer) : GitHub Copilot. Nous examinerons comment l'utiliser, les avantages qu'il procure et les limites que nous avons identifiées. Nous tenterons ainsi de donner des éléments pour déterminer si ce plugin tient bien la promesse d'aider les développeurs à écrire du code plus rapidement et avec moins de travail.
 
-Nous commencerons par une micro-session de "live-coding" en direct pour suivre les suggestions en temps réel et comparer ce qui est proposé d'un utilisateur à l’autre. Nous verrons ensuite les points forts et les questions qui se posent lors de l’utilisation de l’outil. Enfin, nous terminerons par une courte discussion sur comment GitHub Copilot fait évoluer la manière dont les développeurs documentent leur code.
+Nous commencerons par une micro-session de "live-coding" en direct pour suivre les suggestions en temps réel et comparer ce qui est proposé d'un utilisateur à l'autre. Nous verrons ensuite les points forts et les questions qui se posent lors de l'utilisation de l'outil. Enfin, nous terminerons par une courte discussion sur comment GitHub Copilot fait évoluer la manière dont les développeurs documentent leur code.
 ----
 
 ==== Notes
@@ -206,20 +204,20 @@ TO BE COMPLETED
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/frederic_bordage[Frédéric Bordage]
 --
-Ancien développeur et architecte logiciel, Frédéric Bordage conseille des organisations publiques et privées et des Etats pour les aider à réduire leur empreinte numérique. Auteur de nombreux livres, études et chiffres clés originaux, Frédéric anime depuis 2004 GreenIT.fr le collectif d’experts à l’origine des démarches de sobriété numérique, numérique responsable, et slow-tech. Il intervient aussi régulièrement auprès des pouvoirs publics pour faire évoluer la loi et au sein d’ONG et d’associations telles que Attention Hyperconnexion. Le collectif conception numérique responsable qu’il anime au sein de GreenIT.fr est à l’origine des principaux référentiels et outils d’écoconception dédiés aux développeurs.
+Ancien développeur et architecte logiciel, Frédéric Bordage conseille des organisations publiques et privées et des Etats pour les aider à réduire leur empreinte numérique. Auteur de nombreux livres, études et chiffres clés originaux, Frédéric anime depuis 2004 GreenIT.fr le collectif d'experts à l'origine des démarches de sobriété numérique, numérique responsable, et slow-tech. Il intervient aussi régulièrement auprès des pouvoirs publics pour faire évoluer la loi et au sein d'ONG et d'associations telles que Attention Hyperconnexion. Le collectif conception numérique responsable qu'il anime au sein de GreenIT.fr est à l'origine des principaux référentiels et outils d'écoconception dédiés aux développeurs.
 --
 
 ----
-Selon le GIEC, il nous reste 3 ans pour léguer un monde « vivable » à nos enfants. Sacré challenge ! Alors comment agir vite et fort dans notre univers numérique ? Une seule solution : sortir du cadre et hacker le système. C’est que propose la démarche slow.tech. En associant low et high tech, elle permet de diviser par un facteur 4 à 10 nos impacts numériques. De l’usage ingénieux d’un smartphone pour remplacer un cabinet d’ophtalmologie en passant par l’association d’un chien et d’une IA pour détecter un cancer, les écoconcepteurs de la slow.tech détournent les codes et les patterns habituels pour faire mieux avec moins. Prêt.e à emprunter cette « voie du milieu » ? Le hacker qui est en toi doit se réveiller !
+Selon le GIEC, il nous reste 3 ans pour léguer un monde « vivable » à nos enfants. Sacré challenge ! Alors comment agir vite et fort dans notre univers numérique ? Une seule solution : sortir du cadre et hacker le système. C'est que propose la démarche slow.tech. En associant low et high tech, elle permet de diviser par un facteur 4 à 10 nos impacts numériques. De l'usage ingénieux d'un smartphone pour remplacer un cabinet d'ophtalmologie en passant par l'association d'un chien et d'une IA pour détecter un cancer, les écoconcepteurs de la slow.tech détournent les codes et les patterns habituels pour faire mieux avec moins. Prêt.e à emprunter cette « voie du milieu » ? Le hacker qui est en toi doit se réveiller !
 ----
 
-=== 10h45 - 11h30 (252AB) : Comprendre les enjeux de consommation de ressource et d’énergie dans le secteur numérique
+=== 10h45 - 11h30 (252AB) : Comprendre les enjeux de consommation de ressource et d'énergie dans le secteur numérique
 
 ==== Abstract
 
 .Speakers : https://cfp.devoxx.fr/2022/speaker/quentin_adam[Quentin Adam], https://cfp.devoxx.fr/2022/speaker/pierre_beyssac[Pierre Beyssac]
 --
-*Quentin* : Quentin ADAM is the CEO of Clever Cloud : a Platform as a Service company allowing you to run java, scala, ruby, node.js, php, python or go applications, with auto scaling and auto healing features. This position allow him to study lots of applications, code, practice, and extract some talks and advises. Regular speaker at various tech conference, he’s focused to help developers to deliver quickly and happily good applications.
+*Quentin* : Quentin ADAM is the CEO of Clever Cloud : a Platform as a Service company allowing you to run java, scala, ruby, node.js, php, python or go applications, with auto scaling and auto healing features. This position allow him to study lots of applications, code, practice, and extract some talks and advises. Regular speaker at various tech conference, he's focused to help developers to deliver quickly and happily good applications.
 
 *Pierre* : J'ai usé mes fonds de culotte dès le collège sur le tout début des micros 8 bits, je me suis brûlé les doigts en bricolant des montages électroniques, et je suis aussi tombé dans l'Internet dès que j'ai pu (~1991-93). +
 J'ai développé avec du Basic Applesoft au Go en passant par le C et Python, pour rester dans l'ordre de l'avouable, sur du 8 bits, de l'embarqué, ou différentes variétés d'Unix, de l'userland au noyau. +
@@ -229,11 +227,11 @@ Je suis aussi un des portes parole du Parti Pirate depuis 2019.
 --
 
 ----
-L’enjeu de la transition écologique de toutes les activités humaine est également appelé à se généraliser au numérique, et comme les outils informatiques sont symbole de la modernité, une exigence d’exemplarité leur sont souvent demandée, voire même imposée par le biais de rapports “RSE” (obligatoire dans certaines conditions) par exemple. Il appartient donc aujourd’hui de se doter d’outils de réflexion et de compréhension des impacts de nos activités, et une rapide présentation des forces en présence et mécanismes menant à la législation environnementale.
+L'enjeu de la transition écologique de toutes les activités humaine est également appelé à se généraliser au numérique, et comme les outils informatiques sont symbole de la modernité, une exigence d'exemplarité leur sont souvent demandée, voire même imposée par le biais de rapports “RSE” (obligatoire dans certaines conditions) par exemple. Il appartient donc aujourd'hui de se doter d'outils de réflexion et de compréhension des impacts de nos activités, et une rapide présentation des forces en présence et mécanismes menant à la législation environnementale.
 
-Dans cet exposé, les orateurs vont d’abord présenter le cadre général de consommation de ressources, définir quelles ressources et à quel moment du cycle de vie. Ensuite seront étudiées les différentes phases de consommations, l’importance des variations de mesure, de pilotage des consommation, les différentes conceptions, et les impacts provoqués par le code ou la consommation réseau.
+Dans cet exposé, les orateurs vont d'abord présenter le cadre général de consommation de ressources, définir quelles ressources et à quel moment du cycle de vie. Ensuite seront étudiées les différentes phases de consommations, l'importance des variations de mesure, de pilotage des consommation, les différentes conceptions, et les impacts provoqués par le code ou la consommation réseau.
 
-L’objectif de la présentation est de ressortir avec un panorama clair des enjeux et impacts de la chaîne de production IT, les différents niveaux d’actions possibles en fonction de son poste, les bonnes pratiques possibles à étudier pour son or
+L'objectif de la présentation est de ressortir avec un panorama clair des enjeux et impacts de la chaîne de production IT, les différents niveaux d'actions possibles en fonction de son poste, les bonnes pratiques possibles à étudier pour son or
 ----
 
 ==== Notes
@@ -246,11 +244,11 @@ TO BE COMPLETED
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/bruno_boucard[Bruno Boucard]
 --
-Avec plus de 30 ans d’expérience, Bruno Boucard est développeur, formateur, coach agile et conférencier. Il adore expliquer son propos avec des exemples concrets. Il est organisateur de Meetup BDD Paris. C'est aussi un MVP Microsoft pratiquant C# de longue date, mais il code aussi en Java, C/C++ et en Python si le contexte s’y prête. Son entreprise 42skillz qui a pour objectif d'aider les organisations à faire des logiciels et à travailler différemment, il propose des formations, du coaching, du conseil sur la mise en place d’un Story Mapping, un meilleur découpage des stories, la pratique des deux écoles TDD, le processus BDD, l’approche DDD, ainsi que les techniques de refactoring sur le code legacy, afin de faire du neuf avec du vieux.
+Avec plus de 30 ans d'expérience, Bruno Boucard est développeur, formateur, coach agile et conférencier. Il adore expliquer son propos avec des exemples concrets. Il est organisateur de Meetup BDD Paris. C'est aussi un MVP Microsoft pratiquant C# de longue date, mais il code aussi en Java, C/C++ et en Python si le contexte s'y prête. Son entreprise 42skillz qui a pour objectif d'aider les organisations à faire des logiciels et à travailler différemment, il propose des formations, du coaching, du conseil sur la mise en place d'un Story Mapping, un meilleur découpage des stories, la pratique des deux écoles TDD, le processus BDD, l'approche DDD, ainsi que les techniques de refactoring sur le code legacy, afin de faire du neuf avec du vieux.
 --
 
 ----
-Si le Domain-Driven Design était une fleur, le Model-Driven Design en serait le nectar. Je vous propose de faire une plongée au cœur de la modélisation DDD, appelée Model-Driven Design. Afin de comprendre comment obtenir un modèle juste, expressif et frugal, nous visiterons l’essentiel des ateliers qui contribue à nourrir les modèles mentaux associés au domaine métier :
+Si le Domain-Driven Design était une fleur, le Model-Driven Design en serait le nectar. Je vous propose de faire une plongée au cœur de la modélisation DDD, appelée Model-Driven Design. Afin de comprendre comment obtenir un modèle juste, expressif et frugal, nous visiterons l'essentiel des ateliers qui contribue à nourrir les modèles mentaux associés au domaine métier :
 
 Event Storming,
 
@@ -262,7 +260,7 @@ Story Mapping.
 
 Avant de rentrer dans le cœur du sujet, je rappellerai l'origine du DDD selon Eric Evans: Bounded Context et les corollaires associés. Une fois planté le décor, nous pourrons expliquer le Model-Driven Design qui se décompose en deux :
 
-Le Supple Design : une suite de patterns au service d’un code souple et fiable.
+Le Supple Design : une suite de patterns au service d'un code souple et fiable.
 
 Le Deep Model : processus de modélisation du problème métier par raffinement successif. Les plus chanceux auront peut-être un Breakthrough.
 
@@ -283,7 +281,7 @@ TO BE COMPLETED
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/loic_mathieu[Loïc Mathieu], https://cfp.devoxx.fr/2022/speaker/victor_gallet[Victor GALLET]
 --
-*Loïc* : Loïc est consultant formateur chez Zenika Lille et Google Developer Expert (GDE) Google Cloud. Il réalise des missions variées autour de Java, de la JVM, de l’architecture solution et de la performance. Ni le Cloud, ni Kubernetes, ni Kafka ne lui font peur; il aime relever des défis et apprendre de nouvelles choses. Contributeur Quarkus depuis plus de 2 ans, il contribue à plusieurs extensions et parle régulièrement de Quarkus (et d’autres sujets) dans des meetups ou des conférences, et même parfois sur son blog.
+*Loïc* : Loïc est consultant formateur chez Zenika Lille et Google Developer Expert (GDE) Google Cloud. Il réalise des missions variées autour de Java, de la JVM, de l'architecture solution et de la performance. Ni le Cloud, ni Kubernetes, ni Kafka ne lui font peur; il aime relever des défis et apprendre de nouvelles choses. Contributeur Quarkus depuis plus de 2 ans, il contribue à plusieurs extensions et parle régulièrement de Quarkus (et d'autres sujets) dans des meetups ou des conférences, et même parfois sur son blog.
 
 *Victor* : Développeur Java Craft soupoudré d'Ops
 --
@@ -310,10 +308,10 @@ Il parle régulièrement dans des conférences et JUGs notamment JavaOne, Red Ha
 --
 
 ----
-Nous sommes des développeurs applicatifs. Mais c’est loin d’un service en prod. Et de nos jours entre le devops, l'openapi, la constitution d'un SI construit sur des APIs, on est tous responsable d'un service.
-Je vous propose une rétrospective de la transition chez un éditeur d’une équipe de dev produit en une équipe de service cloud faisant tourner des milliers d’instances pour d’autres, les expériences acquises et de tout ce que l’on a dû (dés)apprendre en chemin.
+Nous sommes des développeurs applicatifs. Mais c'est loin d'un service en prod. Et de nos jours entre le devops, l'openapi, la constitution d'un SI construit sur des APIs, on est tous responsable d'un service.
+Je vous propose une rétrospective de la transition chez un éditeur d'une équipe de dev produit en une équipe de service cloud faisant tourner des milliers d'instances pour d'autres, les expériences acquises et de tout ce que l'on a dû (dés)apprendre en chemin.
 
-C’est pas tant le cœur du code qui change, plutôt la culture de l'équipe, la conception des systèmes qui entourent et supportent ce code en prod. Quel impact sur l'architecture ? Comment construire des Standard Operating Procédures ? Comment on pense un SLA ? Comment penser blast radius, voisins bruyants, SRE ? Comment penser le risque ? Etc.
+C'est pas tant le cœur du code qui change, plutôt la culture de l'équipe, la conception des systèmes qui entourent et supportent ce code en prod. Quel impact sur l'architecture ? Comment construire des Standard Operating Procédures ? Comment on pense un SLA ? Comment penser blast radius, voisins bruyants, SRE ? Comment penser le risque ? Etc.
 
 Après cette présentation, vous aurez des clés pour penser la transformation de vos équipes en un modèle où tout le monde est responsable du SLO (Service Level Objective) dont l'indisponibilité fait partie.
 ----
@@ -368,17 +366,17 @@ TO BE COMPLETED
 
 .Speakers : https://cfp.devoxx.fr/2022/speaker/nicolas_jozwiak[Nicolas JOZWIAK], https://cfp.devoxx.fr/2022/speaker/etienne_puissant[Etienne Puissant]
 --
-*Nicolas* : Nicolas est IT Project Manager disposant de 14 ans d’expérience en conception et développement. Son parcours chez un éditeur et une société de consulting avant son entrée chez Betclic lui a notamment permis de développer de solides compétences dans le domaine de la qualité et de l’industrialisation (tests, intégration continue, gestion de configuration, contrôle qualité). Bénéficiant d’une expérience très solide de mise en place des méthodes agiles et d’accompagnement d’équipes sur le terrain, il s’attache à mettre à profit quotidiennement son expérience qui est reconnue pour son approche pragmatique, proactive et pédagogique.
+*Nicolas* : Nicolas est IT Project Manager disposant de 14 ans d'expérience en conception et développement. Son parcours chez un éditeur et une société de consulting avant son entrée chez Betclic lui a notamment permis de développer de solides compétences dans le domaine de la qualité et de l'industrialisation (tests, intégration continue, gestion de configuration, contrôle qualité). Bénéficiant d'une expérience très solide de mise en place des méthodes agiles et d'accompagnement d'équipes sur le terrain, il s'attache à mettre à profit quotidiennement son expérience qui est reconnue pour son approche pragmatique, proactive et pédagogique.
 
 *Etienne* : I am software architect at Betclic, working on API performance and load-testing.
 --
 
 ----
-Le pari sportif connaît depuis quelques années une forte croissance en France et en Europe (+30% en France en 2021, source ANJ). Tous les acteurs du secteur sont confrontés à ce problème : comment permettre une continuité de service sans faille alors même que le nombre de sollicitations des systèmes augmente de manière exponentielle ? Paroxysme de ce phénomène, l’Euro 2020 de football a mis le secteur dans une effervescence inégalée.
+Le pari sportif connaît depuis quelques années une forte croissance en France et en Europe (+30% en France en 2021, source ANJ). Tous les acteurs du secteur sont confrontés à ce problème : comment permettre une continuité de service sans faille alors même que le nombre de sollicitations des systèmes augmente de manière exponentielle ? Paroxysme de ce phénomène, l'Euro 2020 de football a mis le secteur dans une effervescence inégalée.
 
 Pour nous préparer à cet évènement, chez Betclic, nous avons développé une plateforme de génération de tests de charge afin de rejouer des événements passés et les actions associées (placement de paris, consultations des offres, etc). Basée sur un datalake ingérant nos logs, la solution nous permet de simuler une croissance paramétrable (+50%, +100%)
 
-Nous vous proposons une présentation de l’architecture mise en place et des outils utilisés (AWS Glue, Athena), ainsi que nos stratégies de tests de charge mis en place avec l’outil Gatling.
+Nous vous proposons une présentation de l'architecture mise en place et des outils utilisés (AWS Glue, Athena), ainsi que nos stratégies de tests de charge mis en place avec l'outil Gatling.
 ----
 
 ==== Notes
@@ -410,21 +408,21 @@ TO BE COMPLETED
 
 == VENDREDI
 
-=== 09h00 - 09h20 (AB) : Futurospective digitale : le futur est-il encore ce qu’il était ?
+=== 09h00 - 09h20 (AB) : Futurospective digitale : le futur est-il encore ce qu'il était ?
 
 ==== Abstract
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/ludovic_cinquin[Ludovic Cinquin]
 --
-Ludovic Cinquin dirige le cabinet OCTO, filiale d’Accenture, spécialiste de l’agile et des new techs, qu’il a cofondé en 1998. Il est également le CTO d'Accenture France. En parallèle de ses activités de dirigeant, il accompagne les grands comptes dans le cadre de missions de conseil stratégique sur la transition digitale. En tant que conférencier et auteur, Ludovic décrypte les enjeux méthodologiques et culturels liés à l'adoption des technologies digitales dans les entreprises. Son dernier ouvrage "Devenir une entreprise Agile", partage les recettes qu'OCTO à appliquer pour devenir un des précurseurs de l'agilité sur le marche français.
+Ludovic Cinquin dirige le cabinet OCTO, filiale d'Accenture, spécialiste de l'agile et des new techs, qu'il a cofondé en 1998. Il est également le CTO d'Accenture France. En parallèle de ses activités de dirigeant, il accompagne les grands comptes dans le cadre de missions de conseil stratégique sur la transition digitale. En tant que conférencier et auteur, Ludovic décrypte les enjeux méthodologiques et culturels liés à l'adoption des technologies digitales dans les entreprises. Son dernier ouvrage "Devenir une entreprise Agile", partage les recettes qu'OCTO à appliquer pour devenir un des précurseurs de l'agilité sur le marche français.
 --
 
 ----
-Les technologies digitales ont été un puissant moteur de transformation de notre civilisation, à tel point qu’elles se sont immiscées dans tous les recoins de nos vies et de notre planète.
+Les technologies digitales ont été un puissant moteur de transformation de notre civilisation, à tel point qu'elles se sont immiscées dans tous les recoins de nos vies et de notre planète.
 
-Les 10 dernières années ont été ébouriffantes. Qu’en sera-t-il des 10 prochaines ?
+Les 10 dernières années ont été ébouriffantes. Qu'en sera-t-il des 10 prochaines ?
 
-Même si la prévision est un art difficile - surtout en ce qui concerne l’avenir -, nous pouvons identifier quelques macro-tendances qui structureront le futur de notre industrie. Le reste sera à écrire. Avec des lignes de code ?
+Même si la prévision est un art difficile - surtout en ce qui concerne l'avenir -, nous pouvons identifier quelques macro-tendances qui structureront le futur de notre industrie. Le reste sera à écrire. Avec des lignes de code ?
 ----
 
 ==== Notes
@@ -437,7 +435,7 @@ TO BE COMPLETED
 
 .Speakers : https://cfp.devoxx.fr/2022/speaker/le_nguyen_hoang[Lê Nguyên Hoang]
 --
-Diplômé de l’École Polytechnique de Paris, Lê Nguyên Hoang a obtenu une thèse de doctorat à Polytechnique Montréal, puis a été post-doctorant au Massachusetts Institute of Technology (MIT). Il est désormais chercheur en sécurité des algorithmes d’intelligence artificielle et communicateur des sciences du numériques à l’École polytechnique fédérale de Lausanne (EPFL). Lê est aussi YouTubeur sur sa chaîne Science4All, qui possède 200k+ abonnés. Il a aussi publié les livres "La formule du savoir" et "Le fabuleux chantier" (avec El Mahdi El Mhamdi) chez EDP Sciences et "Turing à la plage" (avec Rachid Guerraoui) chez Dunod. Plus récemment, il a co-fondé Tournesol.app, une plateforme pour de la recommandation collaborative de contenus.
+Diplômé de l'École Polytechnique de Paris, Lê Nguyên Hoang a obtenu une thèse de doctorat à Polytechnique Montréal, puis a été post-doctorant au Massachusetts Institute of Technology (MIT). Il est désormais chercheur en sécurité des algorithmes d'intelligence artificielle et communicateur des sciences du numériques à l'École polytechnique fédérale de Lausanne (EPFL). Lê est aussi YouTubeur sur sa chaîne Science4All, qui possède 200k+ abonnés. Il a aussi publié les livres "La formule du savoir" et "Le fabuleux chantier" (avec El Mahdi El Mhamdi) chez EDP Sciences et "Turing à la plage" (avec Rachid Guerraoui) chez Dunod. Plus récemment, il a co-fondé Tournesol.app, une plateforme pour de la recommandation collaborative de contenus.
 --
 
 ----
@@ -462,20 +460,20 @@ TO BE COMPLETED
 --
 *Laurent* : Senior Architect/Consultant at Capgemini, Open Source & Agile supporter, Telosys project leader, Part time professor (Univ. Nantes), Lecturer
 
-*Aurélien* : Architecte avec une expertise particulière du DevOps et une maitrise des technologies JEE. J'aime apporter mon regard sur les pratiques de développement et concevoir l’architecture applicative de mes projets.
+*Aurélien* : Architecte avec une expertise particulière du DevOps et une maitrise des technologies JEE. J'aime apporter mon regard sur les pratiques de développement et concevoir l'architecture applicative de mes projets.
 --
 
 ----
-Associer microservices et conception DDD (Domain-Driven Design) semble une évidence. Le découpage en contextes et les différentes couches d’architecture constituent un cadre séduisant pour bâtir des microservices avec une structure stéréotypée. Mais si on souhaite respecter les fondamentaux du DDD et garantir l’isolation des différentes couches on arrive rapidement à une structure de projet basée sur plusieurs modules qui peuvent devenir complexes à gérer et qui risquent de ralentir le cycle de développement, en particulier lors de la phase de démarrage.
+Associer microservices et conception DDD (Domain-Driven Design) semble une évidence. Le découpage en contextes et les différentes couches d'architecture constituent un cadre séduisant pour bâtir des microservices avec une structure stéréotypée. Mais si on souhaite respecter les fondamentaux du DDD et garantir l'isolation des différentes couches on arrive rapidement à une structure de projet basée sur plusieurs modules qui peuvent devenir complexes à gérer et qui risquent de ralentir le cycle de développement, en particulier lors de la phase de démarrage.
 
-Cette présentation est un retour d’expérience d’un grand projet dans lequel le générateur de code Telosys a été utilisé pour automatiser la phase d’amorçage de chaque microservice.
+Cette présentation est un retour d'expérience d'un grand projet dans lequel le générateur de code Telosys a été utilisé pour automatiser la phase d'amorçage de chaque microservice.
 
 Des démonstrations illustreront le principe de bootstrapping des microservices.
 
 Environnement technique : Java, SpringBoot, Telosys
 ----
 
-=== 11h45 - 12h30 (242AB) : La scale-up, l’autonomie et le sous-marin nucléaire
+=== 11h45 - 12h30 (242AB) : La scale-up, l'autonomie et le sous-marin nucléaire
 
 ==== Abstract
 
@@ -487,15 +485,15 @@ Environnement technique : Java, SpringBoot, Telosys
 --
 
 ----
-La plupart des organisations efficaces ont en commun d’avoir des équipes autonomes. L’autonomie est aussi un moteur individuel puissant : qui n’aime pas se sentir libre de définir sa vie, ses horaires, sa façon de travailler ?
+La plupart des organisations efficaces ont en commun d'avoir des équipes autonomes. L'autonomie est aussi un moteur individuel puissant : qui n'aime pas se sentir libre de définir sa vie, ses horaires, sa façon de travailler ?
 
-_Lorsqu’on travaille dans une scale-up en plein essor et qui grossit de manière exponentielle, l’autonomie n’est plus une option, c’est un carburant indispensable. _ Mais est-ce pour autant facile à mettre en oeuvre ?
+_Lorsqu'on travaille dans une scale-up en plein essor et qui grossit de manière exponentielle, l'autonomie n'est plus une option, c'est un carburant indispensable. _ Mais est-ce pour autant facile à mettre en oeuvre ?
 
-C’est de cette quête d’autonomie dont nous aimerions vous parler à travers nos histoires, nos réussites et nos erreurs. Nous parlerons de full-remote, de release management, de démarche SRE, de conflits d’équipes et de Domain Driven Design.
+C'est de cette quête d'autonomie dont nous aimerions vous parler à travers nos histoires, nos réussites et nos erreurs. Nous parlerons de full-remote, de release management, de démarche SRE, de conflits d'équipes et de Domain Driven Design.
 
-On parlera aussi d’auto-organisation, d’APIs de split de monolithe, mais également de sous-marins nucléaires et de contract tests.
+On parlera aussi d'auto-organisation, d'APIs de split de monolithe, mais également de sous-marins nucléaires et de contract tests.
 
-Au final, pleins de trucs et astuces pour arriver à mettre en place une Culture de l’autonomie qui tienne la route sur le long terme.
+Au final, pleins de trucs et astuces pour arriver à mettre en place une Culture de l'autonomie qui tienne la route sur le long terme.
 ----
 
 ==== Notes
@@ -513,11 +511,11 @@ TO BE COMPLETED
 .Speakers : https://cfp.devoxx.fr/2022/speaker/thomas_pierrain[Nicolas JOZWIAK], https://cfp.devoxx.fr/2022/speaker/pauline_jamin[Etienne Puissant]
 
 ----
-Le pari sportif connaît depuis quelques années une forte croissance en France et en Europe (+30% en France en 2021, source ANJ). Tous les acteurs du secteur sont confrontés à ce problème : comment permettre une continuité de service sans faille alors même que le nombre de sollicitations des systèmes augmente de manière exponentielle ? Paroxysme de ce phénomène, l’Euro 2020 de football a mis le secteur dans une effervescence inégalée.
+Le pari sportif connaît depuis quelques années une forte croissance en France et en Europe (+30% en France en 2021, source ANJ). Tous les acteurs du secteur sont confrontés à ce problème : comment permettre une continuité de service sans faille alors même que le nombre de sollicitations des systèmes augmente de manière exponentielle ? Paroxysme de ce phénomène, l'Euro 2020 de football a mis le secteur dans une effervescence inégalée.
 
-Chez Betclic nous avons fait évolué nos plateformes et pris les bonnes décisions en amont : nous avons mis en place des techniques d’observabilité, de monitoring et de tests de charge. Tout ceci nous a permis de supporter plus de 100 millions de logins en un mois sans aucune interruption de service.
+Chez Betclic nous avons fait évolué nos plateformes et pris les bonnes décisions en amont : nous avons mis en place des techniques d'observabilité, de monitoring et de tests de charge. Tout ceci nous a permis de supporter plus de 100 millions de logins en un mois sans aucune interruption de service.
 
-Venez découvrir les outils qui nous ont permis d’absorber cette forte croissance de façon optimale, et de vivre nos événements sportifs de manière sereine.
+Venez découvrir les outils qui nous ont permis d'absorber cette forte croissance de façon optimale, et de vivre nos événements sportifs de manière sereine.
 ----
 
 ==== Notes
@@ -526,17 +524,17 @@ TO BE COMPLETED
 
 === -------------------- RESEAUTAGE --------------------
 
-=== 16h45 - 17h30 (AB) : La fin des architectures en couches avec l’approche hexagonale
+=== 16h45 - 17h30 (AB) : La fin des architectures en couches avec l'approche hexagonale
 
 ==== Abstract
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/benjamin_legros[Benjamin LEGROS]
 --
-Benjamin pensait faire carrière dans le front et le mobile… Quelques lignes de code plus loin, l’expérience terrain a bien bouleversé son plan, et tant mieux pour lui ! Il fait désormais partie de ces irréductibles passionnés de back et d’architectures Cloud. Sa nouvelle proie ? Le Devops ! Ses nuits passées à dévorer des livres sur Kubernetes ou Prometheus lui auraient-elles montré la voie..?
+Benjamin pensait faire carrière dans le front et le mobile… Quelques lignes de code plus loin, l'expérience terrain a bien bouleversé son plan, et tant mieux pour lui ! Il fait désormais partie de ces irréductibles passionnés de back et d'architectures Cloud. Sa nouvelle proie ? Le Devops ! Ses nuits passées à dévorer des livres sur Kubernetes ou Prometheus lui auraient-elles montré la voie..?
 --
 
 ----
-Attention, cette conférence peut donner des envies de refactoring ! As-tu plein d’annotations sur tes modèles ? Connais-tu un peu MVC, et les suffixes classiques Controller, Service, Repository ? Clean code, les samples de code de Spring Boot et Stack Overflow sont à peu près tes seules références d’architecture ? Dans cette conférence, on parlera des limites de ces modèles, et des différentes contraintes que cela pose sur le code. Vous découvrirez les principes de l’architecture hexagonale et de son mindset. Vous repartirez avec des exemples concrets et des différents scopes dans lesquels vous pourrez l’appliquer efficacement.
+Attention, cette conférence peut donner des envies de refactoring ! As-tu plein d'annotations sur tes modèles ? Connais-tu un peu MVC, et les suffixes classiques Controller, Service, Repository ? Clean code, les samples de code de Spring Boot et Stack Overflow sont à peu près tes seules références d'architecture ? Dans cette conférence, on parlera des limites de ces modèles, et des différentes contraintes que cela pose sur le code. Vous découvrirez les principes de l'architecture hexagonale et de son mindset. Vous repartirez avec des exemples concrets et des différents scopes dans lesquels vous pourrez l'appliquer efficacement.
 ----
 
 ==== Notes
@@ -560,7 +558,7 @@ Il parle régulièrement dans des conférences et JUGs notamment JavaOne, Red Ha
 *Arnaud* : Spécialisé dans le développement logiciels et l'automatisation des processus, il participe depuis de nombreuses années à divers projets opensource comme Jenkins ou Apache Maven. Il contribue autant que possible à différentes communautés autour de Java et DevOps. Il co-anime le podcast Les CastCodeurs et participe à l'organisation de la conférence Devoxx France. +
 En 2015, il rejoint en tant que responsable de l'équipe support CloudBees, Inc., éditeur de logiciels spécialisé dans la livraison en continu et contributeur majeur à Jenkins.
 
-*Audrey* : Audrey est développeur full-stack. Passionnée par son métier, Audrey a toujours été fortement engagée dans la communauté Java au travers de plusieurs JUGs et conférences (Duchess France, Paris JUG, Devoxx France, Devoxx UK) mais aussi au sein d’initiatives visant à faire découvrir la programmation aux plus jeunes (Programatoo, Devoxx4Kids). Plus récemment elle a également rejoint l’équipe des Cast Codeurs.
+*Audrey* : Audrey est développeur full-stack. Passionnée par son métier, Audrey a toujours été fortement engagée dans la communauté Java au travers de plusieurs JUGs et conférences (Duchess France, Paris JUG, Devoxx France, Devoxx UK) mais aussi au sein d'initiatives visant à faire découvrir la programmation aux plus jeunes (Programatoo, Devoxx4Kids). Plus récemment elle a également rejoint l'équipe des Cast Codeurs.
 --
 
 ----
