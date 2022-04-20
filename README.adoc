@@ -98,7 +98,52 @@ Avec l'arrivée du COVID, les entreprises ont dû accélérer l'adoption du tél
 ==== Notes
 
 ===== Why?
-Télétravail, cloud.
+Télétravail, cloud, augmentation de la surface d'attaque. Propice aux ransomwares, et attaques.
+BYOD n'est pas une pratique à recommander
+
+90% des brèches sont de mauvaises configurations
+Des clusters K8S de Tesla étaient mal configurés et ont permis de miner du Bitcoin
+https://cybermap.kaspersky.com
+
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf[NIST Zero Trust Architecture 800-207]
+
+==== Trust no one, verify everything
+* Identity
+* Perimeter
+* Network
+* Application
+* Data
+* Observability
+
+https://orangecyberdefense.com/fr/insights/blog/detection/soc-siem-xdr-mdr-edr-quelles-differences/[SIEM, XDR]
+
+_La confiance n'exclut pas le contrôle_ - Lénine
+
+
+==== Architecture
+* Contrôler l'identité
+    - MFA
+    - Qui je suis
+    - Ce que je sais
+    - Ce que je possède
+
+* Contrôler les devices
+    - MDM
+    - Forcer à avoir des devices à jour
+
+Défense périmétrique ne suffit clairement plus. https://www.clever-cloud.com/blog/guests/2015/06/16/the-end-of-the-fortress-metaphor/[The End of the Fortress Metaphor]
+
+==== Model d'authorisation
+* ACL (Access Control List) une personne peut agir sur un object
+* DAC (Discretionary Access Control) une personne peut agir sur un objet et peut donner cette permission à d'autres
+* MAC (Mandatory Access Control) - SELinux - une personne peut agir sur un object, et l'object peut vérifier qu'une personne peut agir sur lui
+* RBAC (Role Based Access Control) - une personne à un rôle, et par rapport à ce rôle on définit les permissions sur un object
+* ABAC (Attribute Based Access Control) - XACML - une personne peut accéder à un attribut dans un environnement (un contexte)
+
+===== Modèle aéroport
+Modèle de sécurité avec des zones public, privée, duty free, tarmac... qui est bien plus clair que le modèle chateau fort.
+
+
 
 === 17h00 - 17h30 : Pourquoi vous n'attirerez et ne retiendrez pas les femmes dans vos équipes tech !
 
@@ -155,44 +200,29 @@ TO BE COMPLETED
 
 == JEUDI
 
-=== 09h00 - 09h20 (AB) : La Keynote de Devoxx France 2022 - 10 ans déjà
+=== 09h00 - 09h20 : La Keynote de Devoxx France 2022 - 10 ans déjà
 
 ==== Abstract
 
 .Speakers : https://cfp.devoxx.fr/2022/speaker/nicolas_martignole[Nicolas Martignole], https://cfp.devoxx.fr/2022/speaker/antonio_goncalves[Antonio Goncalves], https://cfp.devoxx.fr/2022/speaker/zouheir_cadi[Zouheir Cadi]
+
 --
-*Nicolas* : Nicolas Martignole est l'un des 3 organisateurs et fondateurs de Devoxx France. Lorsqu'il ne s'occupe pas de Devoxx France, il est Principal Engineer chez Doctolib.
-
-*Antonio* : Antonio Goncalves est un développeur senior qui vit à paris. Ancien de chez BEA il est aujourd'hui consultant Java EE indépendant avec une bonne expertise des serveurs d'application comme JBoss, Weblogic ou GlassFish. Il est l'un des fondateurs du Paris Java User Group et plus récemment de Devoxx France. Antonio est aussi l'une des voix des CastCodeurs, auteur de livres sur Java EE.... et Java Champion.
-
-*Zouheir* : Zouheir CADI est consultant spécialisé dans les technologies java/jee. Après plusieurs années dans le développement, il est architecte suivi de production, un métier passionnant, interface entre le développement et les problématiques opérationnelles. Il est également intervenant à Telecom ParisTech où il enseigne les technologies java. +
-Zouheir CADI est membre du bureau du Paris JUG et co-fondateur de Devoxx France.
---
-
-----
 Devoxx France a été créé en 2012, après 4 années d'aventure avec le Paris JUG. C'est le moment de venir partager avec nous quelques souvenirs, de revenir sur ces 10 dernières années.
-----
+--
 
 ==== Notes
 
 TO BE COMPLETED
 
-=== 09h25 - 09h45 (AB) : 10 ans de Tech à travers le podcast Niptech
+=== 09h25 - 09h45 : 10 ans de Tech à travers le podcast Niptech
 
 ==== Abstract
 
 .Speakers : https://cfp.devoxx.fr/2022/speaker/benoit_curdy[Benoit Curdy], https://cfp.devoxx.fr/2022/speaker/michael_monney[Michael Monney], https://cfp.devoxx.fr/2022/speaker/baptiste_freydt[Baptiste Freydt]
+
 --
-*Nicolas* : Co-présentateur du podcast Niptech. Stratégie et innovation à l'office fédéral de l'aviation civile suisse.
-
-*Antonio* : Tech geek, Inspiration freek and co-host of Niptech Podcast
-
-*Zouheir* : Coanimateur du podcast Niptech depuis 2020, Baptiste est aussi étudiant en Data Science à l'ETH Zürich et Lead of Machine learning pour la startup VirtualTrafficLights, qui applique les dernières avancées du Cloud et du Renforcement learning à l'optimisation des feux de circulation
---
-
-----
 Une keynote pour passer en revue les innovations qui ont secoué la tech depuis la naissance de Devoxx FR il y a dix ans. À travers les expériences du podcast Niptech et de sa communauté, nous partagerons des leçons apprises à la dure dans le but de nous aider à préparer ces dix prochaines années.
-----
+--
 
 ==== Notes
 
@@ -204,59 +234,37 @@ TO BE COMPLETED
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/frederic_bordage[Frédéric Bordage]
 --
-Ancien développeur et architecte logiciel, Frédéric Bordage conseille des organisations publiques et privées et des Etats pour les aider à réduire leur empreinte numérique. Auteur de nombreux livres, études et chiffres clés originaux, Frédéric anime depuis 2004 GreenIT.fr le collectif d'experts à l'origine des démarches de sobriété numérique, numérique responsable, et slow-tech. Il intervient aussi régulièrement auprès des pouvoirs publics pour faire évoluer la loi et au sein d'ONG et d'associations telles que Attention Hyperconnexion. Le collectif conception numérique responsable qu'il anime au sein de GreenIT.fr est à l'origine des principaux référentiels et outils d'écoconception dédiés aux développeurs.
+Selon le GIEC, il nous reste 3 ans pour léguer un monde « vivable » à nos enfants. Sacré challenge ! Alors comment agir vite et fort dans notre univers numérique ? Une seule solution : sortir du cadre et hacker le système. C'est que propose la démarche slow.tech. En associant low et high tech, elle permet de diviser par un facteur 4 à 10 nos impacts numériques. De l'usage ingénieux d'un smartphone pour remplacer un cabinet d'ophtalmologie en passant par l'association d'un chien et d'une IA pour détecter un cancer, les écoconcepteurs de la slow.tech détournent les codes et les patterns habituels pour faire mieux avec moins. Prêt.e à emprunter cette « voie du milieu » ? Le hacker qui est en toi doit se réveiller !
 --
 
-----
-Selon le GIEC, il nous reste 3 ans pour léguer un monde « vivable » à nos enfants. Sacré challenge ! Alors comment agir vite et fort dans notre univers numérique ? Une seule solution : sortir du cadre et hacker le système. C'est que propose la démarche slow.tech. En associant low et high tech, elle permet de diviser par un facteur 4 à 10 nos impacts numériques. De l'usage ingénieux d'un smartphone pour remplacer un cabinet d'ophtalmologie en passant par l'association d'un chien et d'une IA pour détecter un cancer, les écoconcepteurs de la slow.tech détournent les codes et les patterns habituels pour faire mieux avec moins. Prêt.e à emprunter cette « voie du milieu » ? Le hacker qui est en toi doit se réveiller !
-----
-
-=== 10h45 - 11h30 (252AB) : Comprendre les enjeux de consommation de ressource et d'énergie dans le secteur numérique
+=== 10h45 - 11h30 : Comprendre les enjeux de consommation de ressource et d'énergie dans le secteur numérique
 
 ==== Abstract
 
 .Speakers : https://cfp.devoxx.fr/2022/speaker/quentin_adam[Quentin Adam], https://cfp.devoxx.fr/2022/speaker/pierre_beyssac[Pierre Beyssac]
 --
-*Quentin* : Quentin ADAM is the CEO of Clever Cloud : a Platform as a Service company allowing you to run java, scala, ruby, node.js, php, python or go applications, with auto scaling and auto healing features. This position allow him to study lots of applications, code, practice, and extract some talks and advises. Regular speaker at various tech conference, he's focused to help developers to deliver quickly and happily good applications.
-
-*Pierre* : J'ai usé mes fonds de culotte dès le collège sur le tout début des micros 8 bits, je me suis brûlé les doigts en bricolant des montages électroniques, et je suis aussi tombé dans l'Internet dès que j'ai pu (~1991-93). +
-J'ai développé avec du Basic Applesoft au Go en passant par le C et Python, pour rester dans l'ordre de l'avouable, sur du 8 bits, de l'embarqué, ou différentes variétés d'Unix, de l'userland au noyau. +
-Du coup j'ai fondé eu.org et eriomem.net, et co-fondé gandi.net, entre autres malversations avouables à mon passif. +
-J'ai également un lourd passif d'ingénieur système et responsable systèmes et réseaux à Télécom ParisTech pendant 11 ans. +
-Je suis aussi un des portes parole du Parti Pirate depuis 2019.
---
-
-----
 L'enjeu de la transition écologique de toutes les activités humaine est également appelé à se généraliser au numérique, et comme les outils informatiques sont symbole de la modernité, une exigence d'exemplarité leur sont souvent demandée, voire même imposée par le biais de rapports “RSE” (obligatoire dans certaines conditions) par exemple. Il appartient donc aujourd'hui de se doter d'outils de réflexion et de compréhension des impacts de nos activités, et une rapide présentation des forces en présence et mécanismes menant à la législation environnementale.
 
 Dans cet exposé, les orateurs vont d'abord présenter le cadre général de consommation de ressources, définir quelles ressources et à quel moment du cycle de vie. Ensuite seront étudiées les différentes phases de consommations, l'importance des variations de mesure, de pilotage des consommation, les différentes conceptions, et les impacts provoqués par le code ou la consommation réseau.
 
 L'objectif de la présentation est de ressortir avec un panorama clair des enjeux et impacts de la chaîne de production IT, les différents niveaux d'actions possibles en fonction de son poste, les bonnes pratiques possibles à étudier pour son or
-----
+--
 
 ==== Notes
 
 TO BE COMPLETED
 
-=== 11h45 - 12h30 (AB) : Model-Driven Design
+=== 11h45 - 12h30 : Model-Driven Design
 
 ==== Abstract
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/bruno_boucard[Bruno Boucard]
 --
-Avec plus de 30 ans d'expérience, Bruno Boucard est développeur, formateur, coach agile et conférencier. Il adore expliquer son propos avec des exemples concrets. Il est organisateur de Meetup BDD Paris. C'est aussi un MVP Microsoft pratiquant C# de longue date, mais il code aussi en Java, C/C++ et en Python si le contexte s'y prête. Son entreprise 42skillz qui a pour objectif d'aider les organisations à faire des logiciels et à travailler différemment, il propose des formations, du coaching, du conseil sur la mise en place d'un Story Mapping, un meilleur découpage des stories, la pratique des deux écoles TDD, le processus BDD, l'approche DDD, ainsi que les techniques de refactoring sur le code legacy, afin de faire du neuf avec du vieux.
---
-
-----
 Si le Domain-Driven Design était une fleur, le Model-Driven Design en serait le nectar. Je vous propose de faire une plongée au cœur de la modélisation DDD, appelée Model-Driven Design. Afin de comprendre comment obtenir un modèle juste, expressif et frugal, nous visiterons l'essentiel des ateliers qui contribue à nourrir les modèles mentaux associés au domaine métier :
-
-Event Storming,
-
-Example Mapping,
-
-CRC Cards,
-
-Story Mapping.
+- Event Storming,
+- Example Mapping,
+- CRC Cards,
+- Story Mapping.
 
 Avant de rentrer dans le cœur du sujet, je rappellerai l'origine du DDD selon Eric Evans: Bounded Context et les corollaires associés. Une fois planté le décor, nous pourrons expliquer le Model-Driven Design qui se décompose en deux :
 
@@ -267,28 +275,47 @@ Le Deep Model : processus de modélisation du problème métier par raffinement 
 Je conclurais par le Whirlpool Process of Model Exploration proposé par Eric Evans
 
 Après cette conférence, vous ne verrez plus le Domain-Driven Design tout à fait de la même façon.
-----
+--
 
 ==== Notes
 
 TO BE COMPLETED
 
-=== -------------------- REPAS --------------------
-
-=== 13h30 - 14h15 (AM) : Traiter 1 million de messages par CPU par Go de mémoire avec Quarkus et Microprofile reactive messaging kafka à Décathlon
+=== 13h00 - 13h15 : Equity for software engineers
 
 ==== Abstract
 
-.Speaker : https://cfp.devoxx.fr/2022/speaker/loic_mathieu[Loïc Mathieu], https://cfp.devoxx.fr/2022/speaker/victor_gallet[Victor GALLET]
+.Speaker : https://cfp.devoxx.fr/2022/speaker/damien_pacaud[Damien Pacaud]
 --
-*Loïc* : Loïc est consultant formateur chez Zenika Lille et Google Developer Expert (GDE) Google Cloud. Il réalise des missions variées autour de Java, de la JVM, de l'architecture solution et de la performance. Ni le Cloud, ni Kubernetes, ni Kafka ne lui font peur; il aime relever des défis et apprendre de nouvelles choses. Contributeur Quarkus depuis plus de 2 ans, il contribue à plusieurs extensions et parle régulièrement de Quarkus (et d'autres sujets) dans des meetups ou des conférences, et même parfois sur son blog.
+De plus en plus d entreprises proposent, en complément de la rémunération, des « packages d'équity ».
+C'est un cercle vertueux qui démarre en Europe et il peut être utile de prendre ces éléments en compte lorsque vous cherchez votre nouvel emploi.
+Bien souvent, les développeurs en France considèrent peu ces éléments de rémunération et n'y prêtent pas beaucoup d'attention.
 
-*Victor* : Développeur Java Craft soupoudré d'Ops
+Ce talk a pour but de démystifier le monde bizarre des BSPCE, AGA, RSU, Warrants et autres Stock options.
 --
 
-----
-Venez découvrir VCStream : la plateforme d'intégration de données créée par l'équipe Age Of Access Accelerator pour la Value Chain de Décathlon. VCStream permet de connecter les systèmes historiques de la value chain (ERP, AS/400) au reste du système d'information. VCStream a été développé avec Quarkus et Microprofile reactive messaging Kafka, et grâce à ces frameworks peut atteindre un débit important de traitement de message avec très peu de ressources tout en étant résilient et tolérant à la panne. Victor et Loïc, vous expliquerons comment ils sont arrivé à ce niveau de performance tout en gardant une implémentation simple et compréhensible. Attendez-vous à voir du code et des schémas !
-----
+==== Notes
+
+TO BE COMPLETED
+
+
+=== 13h30 - 14h15 : Protéger son organisation des attaques par le système de build
+
+==== Abstract
+
+.Speaker : https://cfp.devoxx.fr/2022/speaker/louis_jacomet[Louis Jacomet]
+--
+Tous les jours, les développeurs assemblent du code des dizaines de fois. Parfois de façon transparente dans l'IDE, explicitement en ligne de commande ou sur l'environnement de CI. Lors de ces actions, la notion de sécurité est souvent reléguée au second plan voire simplement ignorée.
+
+Cette présentation illustrera les vecteurs d'attaque et expliquera comment les mitiger. L'outil de build est par définition à risque car il s'agit d'un environnement d'exécution. Certaines pratiques permettent heureusement de réduire significativement ces risques:
+- S'assurer que les dépendances sont celles attendues
+- Rejeter les dépendances vulnérables (Log4j??)
+- Avoir un build reproductible
+- Utiliser un environnement éphémère
+- Valider les contributions externes
+
+Nous illustrerons ces points avec Gradle mais la plupart des recommandations sont valables pour Apache Maven aussi.
+--
 
 ==== Notes
 
@@ -300,111 +327,112 @@ TO BE COMPLETED
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/emmanuel_bernard[Emmanuel Bernard]
 --
-Emmanuel est Java Champion, Distinguished Engineer et Chief Architect services cloud applicatifs chez Red Hat. Son travail est Open Source. Il est connu pour ses contributions et sa direction des projets Quarkus, Hibernate ainsi qu'à ses contributions aux standards Java.
-
-Son aventure la plus récente est la construction d'un Kafka as a service managé par les équipes Red Hat
-
-Il parle régulièrement dans des conférences et JUGs notamment JavaOne, Red Hat Summit et Devoxx. Il est l'hôte de plusieurs podcasts et notamment Les Cast Codeurs.
---
-
-----
 Nous sommes des développeurs applicatifs. Mais c'est loin d'un service en prod. Et de nos jours entre le devops, l'openapi, la constitution d'un SI construit sur des APIs, on est tous responsable d'un service.
 Je vous propose une rétrospective de la transition chez un éditeur d'une équipe de dev produit en une équipe de service cloud faisant tourner des milliers d'instances pour d'autres, les expériences acquises et de tout ce que l'on a dû (dés)apprendre en chemin.
 
 C'est pas tant le cœur du code qui change, plutôt la culture de l'équipe, la conception des systèmes qui entourent et supportent ce code en prod. Quel impact sur l'architecture ? Comment construire des Standard Operating Procédures ? Comment on pense un SLA ? Comment penser blast radius, voisins bruyants, SRE ? Comment penser le risque ? Etc.
 
 Après cette présentation, vous aurez des clés pour penser la transformation de vos équipes en un modèle où tout le monde est responsable du SLO (Service Level Objective) dont l'indisponibilité fait partie.
-----
+--
 
 ==== Notes
 
 TO BE COMPLETED
 
-=== 15h30 - 16h15 (253) : Anatomie d'une base SQL distribuée (YugabyteDB)
+=== 15h30 - 16h15 : Coder pour l'Éternité, comprendre le développement sur la blockchain Ethereum
 
 ==== Abstract
 
-.Speaker : https://cfp.devoxx.fr/2022/speaker/franck_pachot[Franck Pachot]
+.Speaker : https://cfp.devoxx.fr/2022/speaker/mathias_herberts[Mathias Herberts]
 --
-Love to learn and share, with 20 years in databases from dev to prod - Oracle Certified Master, AWS Data Hero, PostgreSQL fan and now 🚀 YugabyteDB (open-source distributed SQL database) Developer Advocate
+La blockchain est de toutes les discussions, mais trop souvent on assimile blockchain et cryptomonnaies. Quel que soit l'avis que l'on peut avoir sur la question, il ne faut pas oublier que la blockchain c'est avant tout du code qui s'exécute dans un environnement très particulier. Cette présentation vise à plonger dans les profondeurs de la blockchain Ethereum en couvrant des sujets comme la machine virtuelle sous-jacente, le rôle des mineurs, les contrats intelligents et leur modèle d'exécution, les oracles. Vous sortirez de là en ayant une compréhension de la blockchain Ethereum du point de vue du code et avec un peu de chance l'envie de laisser une trace pour la postérité en déployant votre propre code sur cette blockchain.
 --
-
-----
-Proposer toutes les fonctionnalités de PostgreSQL sur une base distribuée qui "scale" horizontalement, c'est un challenge. Mais aussi l'occasion de moderniser les technos sous-jacentes de la DB, qui devient "cloud-native": protocoles de consensus, horloges logiques. Et pour remplacer les index B-Tree: les LSM Tree et SSTables plus adaptées au SSD.
-
-YugabyteDB est open-source, et nous rentrerons dans les détails de l'architecture, au carrefour de PostgreSQL, Spanner, Cassandra, RocksDB... pour mieux comprendre les raisons d'une nouvelle base de donnée, et son fonctionnement interne
-----
 
 ==== Notes
 
 TO BE COMPLETED
 
-=== 16h45 - 17h30 (AM) : Montée de version sans interruption
+=== 16h45 - 17h30 : S'affranchir de la Pyramide des Tests
 
 ==== Abstract
 
-.Speaker : https://cfp.devoxx.fr/2022/speaker/nelson_dionisi[Nelson Dionisi]
+.Speaker : https://cfp.devoxx.fr/2022/speaker/jonathan_boccara[Jonathan Boccara]
 --
-Lead Developer @Mirakl
+Tester son code c'est facile à dire, mais écrire des tests utiles dans du code en entreprise, c'est pas toujours facile à faire.
+
+En théorie les tests doivent nous aider, pourtant: - Le code ne se prête pas toujours aux tests unitaires, - On se retrouve parfois à refactorer les tests quand on refactore le code, - La pyramide des tests est souvent inversée, - Certains tests sont toujours verts, sauf quand ils sont rouges pour de mauvaises raisons, - On a beau tester le code, on a toujours des bugs, - Etc.
+La meilleure façon d'éviter ces problèmes est d'avoir les clefs pour choisir le bon test à écrire (ou à ne pas écrire!) en fonction du code à tester.
+Le but de cette présentation est de vous rendre autonome sur votre stratégie de tests, en vous présentant les tenants et aboutissants des différents types de test et du testing en général.
+En particulier vous verrez: - pourquoi la pyramide des tests est contre-productive - quand écrire des tests unitaires et quand ne surtout pas en écrire, - comment rédiger des tests robustes et clairs - les différentes abstractions que l'on peut tester
 --
-
-----
-Beaucoup d'éditeurs logiciels fournissent leurs solutions en SaaS, et tendent à déployer leurs applications en Continuous Delivery. Les contraintes business impliquent souvent de pouvoir déployer un nouvelle version applicative sans interruption de service.
-
-Les techniques classiques de Rolling Update permettent de réaliser une montée de version sans interruption de service facilement. La complexité intervient lorsque l'on gère une base de données relationnelle, et que l'on souhaite faire évoluer son schéma, toujours sans interruption de service.
-
-Ce talk est un retour d'expérience présentant les mécanismes que j'ai eu l'occasion de mettre en place pour réaliser ces montées de version sans interruption. Il se concentre sur la partie applicative, et les problématiques engendrées par un tel process. Le but est d'être le plus concret possible, avec des exemples de "la vraie vie", notamment quelques astuces pour réaliser ses migrations sans douleur avec des frameworks comme Hibernate ou jOOQ. Les exemples sont donnés en Java avec une base de données PostgreSQL, mais les principes s'appliquent à n'importe quel language et à la plupart des bases de données relationnelles.
-----
 
 ==== Notes
 
 TO BE COMPLETED
 
-=== 17h45 - 18h15 (251) : Comment Betclic utilise son datalake pour générer des tests de charge et simuler des évènements sportifs ?
+=== 17h45 - 18h15 : Git, back to the future
 
 ==== Abstract
 
-.Speakers : https://cfp.devoxx.fr/2022/speaker/nicolas_jozwiak[Nicolas JOZWIAK], https://cfp.devoxx.fr/2022/speaker/etienne_puissant[Etienne Puissant]
+.Speakers : https://cfp.devoxx.fr/2022/speaker/antoine_ceol[Antoine Ceol]
 --
-*Nicolas* : Nicolas est IT Project Manager disposant de 14 ans d'expérience en conception et développement. Son parcours chez un éditeur et une société de consulting avant son entrée chez Betclic lui a notamment permis de développer de solides compétences dans le domaine de la qualité et de l'industrialisation (tests, intégration continue, gestion de configuration, contrôle qualité). Bénéficiant d'une expérience très solide de mise en place des méthodes agiles et d'accompagnement d'équipes sur le terrain, il s'attache à mettre à profit quotidiennement son expérience qui est reconnue pour son approche pragmatique, proactive et pédagogique.
+Tout le monde utilise Git (où presque) et tout le monde s'est déjà retrouvé dans un état WTF 😱🤬🤯.
 
-*Etienne* : I am software architect at Betclic, working on API performance and load-testing.
+On va prendre ensemble un peu moins de 30 minutes pour apprendre à se dépatouiller quand on veut revenir en arrière, améliorer, et pourquoi pas, effacer son historique. Ça peut-être dangereux, mais, connaissant les avantages et anticipant les risques, ca en vaut la peine. L'approche se fera par l'exemple en ligne de commande ⌨️, un (git) bash suffit, pas besoin de DeLorean
 --
-
-----
-Le pari sportif connaît depuis quelques années une forte croissance en France et en Europe (+30% en France en 2021, source ANJ). Tous les acteurs du secteur sont confrontés à ce problème : comment permettre une continuité de service sans faille alors même que le nombre de sollicitations des systèmes augmente de manière exponentielle ? Paroxysme de ce phénomène, l'Euro 2020 de football a mis le secteur dans une effervescence inégalée.
-
-Pour nous préparer à cet évènement, chez Betclic, nous avons développé une plateforme de génération de tests de charge afin de rejouer des événements passés et les actions associées (placement de paris, consultations des offres, etc). Basée sur un datalake ingérant nos logs, la solution nous permet de simuler une croissance paramétrable (+50%, +100%)
-
-Nous vous proposons une présentation de l'architecture mise en place et des outils utilisés (AWS Glue, Athena), ainsi que nos stratégies de tests de charge mis en place avec l'outil Gatling.
-----
 
 ==== Notes
 
 TO BE COMPLETED
 
-=== -------------------- RESEAUTAGE --------------------
+=== 18h30 - 19h00 : Jouer à Minecraft avec une IA générée par GPT-3
 
-=== 21h00 - 21h50 (242AB) : Il y a des cloud en Europe ?
+==== Abstract
+
+.Speakers : https://cfp.devoxx.fr/2022/speaker/wassim_chegham[Wassim Chegham] et https://cfp.devoxx.fr/2022/speaker/tiffany_souterre[Tiffany_souterre]
+--
+Il y a des joueurs qui jouent à Minecraft pour le plaisir de jouer, d'autres pour développer leur créativité. Mais il y a une autre façon de jouer à Minecraft, c'est en utilisant une intelligence artificielle générée par GPT-3.
+
+Dans cette présentation, nous allons parler un peu d'IA et de ML, de GPT-3 et de Codex, mais surtout, nous allons nous amuser à générer du code pour contrôler un bot dans Minecraft, le tout dans la bonne humeur ! Ca vous tente ?
+--
+
+==== Notes
+
+TO BE COMPLETED
+
+=== 20h00 - 20h50 : 10 ans déjà ! Devoxx France , l'envers du décors
+
+==== Abstract
+
+.Speakers : Arnaud Héritier, Nicolas Martignole, Antonio Goncalves, Zouheir Cadi
+--
+10 ans que Devoxx France accueille tous les ans plus de 2000 participants.
+Comment en sommes nous arrivés là?
+Comment se prépare un tel événement ?
+
+De la sélection des sujets aux commandes de sodas, venez discuter avec l'équipe organisatrice pour tout savoir sur Devoxx France.
+--
+
+==== Notes
+
+TO BE COMPLETED
+
+=== 21h00 - 21h50 : Il y a des cloud en Europe ?
 
 ==== Abstract
 
 .Speakers : https://cfp.devoxx.fr/2022/speaker/quentin_adam[Quentin Adam], https://cfp.devoxx.fr/2022/speaker/horacio_gonzalez[Horacio Gonzalez]
 --
-*Horacio* : Malgré ce que son accent espagnol bien prononcé peut suggérer, Horacio est arrivé en France il y a plus d'une vingtaine d'années. Passionné d'informatique, dans laquelle il est tombé depuis tout petit,Horacio est Directeur de Developer Relations chez OVHcloud. Il est cofondateur du @FinistDevs, et des @RdvSpeakers.
-
-Passionné par le développement web et tout ce qui gravite autour des composants web et des standards web, Horacio aime aussi discuter de Kubernetes, AI et le cloud en général. Il est Google Developer Expert (GDE) en Web Technologies and Flutter.
---
-
-----
 Si la domination sur le marché français des cloud américains est notable, de plus en plus de voix se retrouvent sur l'idée qu'il existe des alternatives européennes. De EUCLIDIA, à Hertzner, OVH, Clever Cloud, Scaleway, Orange... Nombre de solutions existent. Mais que leur manquent-t-elles ?
 
 Le but du BoF est de retrouver les faiseurs de solutions et ceux qui sont intéressés à leur faire des feedbacks.
-----
+--
 
 ==== Notes
 
 TO BE COMPLETED
+
+=== -------------------- PROGRAMME TBD --------------------
 
 == VENDREDI
 
