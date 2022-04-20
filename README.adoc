@@ -107,7 +107,7 @@ https://cybermap.kaspersky.com
 
 https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf[NIST Zero Trust Architecture 800-207]
 
-==== Trust no one, verify everything
+===== Trust no one, verify everything
 * Identity
 * Perimeter
 * Network
@@ -120,7 +120,7 @@ https://orangecyberdefense.com/fr/insights/blog/detection/soc-siem-xdr-mdr-edr-q
 _La confiance n'exclut pas le contrôle_ - Lénine
 
 
-==== Architecture
+===== Architecture
 * Contrôler l'identité
     - MFA
     - Qui je suis
@@ -133,7 +133,7 @@ _La confiance n'exclut pas le contrôle_ - Lénine
 
 Défense périmétrique ne suffit clairement plus. https://www.clever-cloud.com/blog/guests/2015/06/16/the-end-of-the-fortress-metaphor/[The End of the Fortress Metaphor]
 
-==== Model d'authorisation
+===== Model d'authorisation
 * ACL (Access Control List) une personne peut agir sur un object
 * DAC (Discretionary Access Control) une personne peut agir sur un objet et peut donner cette permission à d'autres
 * MAC (Mandatory Access Control) - SELinux - une personne peut agir sur un object, et l'object peut vérifier qu'une personne peut agir sur lui
@@ -143,7 +143,7 @@ Défense périmétrique ne suffit clairement plus. https://www.clever-cloud.com/
 ===== Modèle aéroport
 Modèle de sécurité avec des zones public, privée, duty free, tarmac... qui est bien plus clair que le modèle chateau fort.
 
-==== Principes de Zero Trust
+===== Principes de Zero Trust
 1. All data sources and compute services are considered resources
 2. Toutes les communications sont sécurisées, quelques soient l'endroit sur le réseau
 3. Les accès individuels sont granted par une session (avec un TTL)
@@ -152,18 +152,18 @@ Modèle de sécurité avec des zones public, privée, duty free, tarmac... qui e
 6. authent et authorization doivent être validée avant de donner accès à une donnée
 7. Collecte d'un maximum d'info sur le réseau, les assets, pour détecter des failles
 
-==== Demo Harshicorp
+===== Demo Harshicorp
 https://www.boundaryproject.io[Boundary]
 Semble fonctionner comme un bastion, mais qui gère authentification + autorisation, et de plus boundary génère à la volée des clés pour accéder au VM du subnet private, fonctionne aussi pour un accès BDD PostgreSQL. Les crédentials temporaires sont stockés dans un Vault.
 Comme les users sont créés à la volée, il faut faire de la corrélation entre la trace dans la BDD et les logs d'accès Boundary.
 
 Boundary est pour du Human 2 Machine. Si besoin de faire du Machine 2 Machine, il faut plutôt faire un Consul avec un Vault.
 
-==== https://www.beyondcorp.com[BeyondCorp Enterprise]
+===== https://www.beyondcorp.com[BeyondCorp Enterprise]
 * N'importe quel googlers peut se connecter depuis n'importe quel réseaux *sans passer par un VPN*
 
 
-==== Takeaways
+===== Takeaways
 * Sécu périmétrique n'est plus une option
 * Zero trust framework basé sur device, identité, automation pour protéger les data, et bien sur le reseau
 * Des solutions existent déjà (boundary, beyondcorp)
@@ -205,7 +205,7 @@ Encouragez à prendre la parole, à être des roles modèles.
 La diversité et inclusion est un élément indispensable, augmente la productivité et la satisfaction globale
 
 
-=== 17h45 - 18h15 : Bien maîtriser les Dev Tools de vos navigateurs
+=== Bien maîtriser les Dev Tools de vos navigateurs
 
 ==== Abstract
 
@@ -221,8 +221,49 @@ Nous nous focaliserons en grande partie sur les Dev Tools de Chrome, mais nous �
 ----
 
 ==== Notes
+Une fois le DevTools ouvert, tappez `Cmd + Shift + P` (comme dans VSCode) et les noms des tools ci-dessous:
 
-TO BE COMPLETED
+===== Lighthouse
+Lighthouse pour analyser les performances - LighthouseCI pour la version CICD
+
+===== Performance insights (experimental tool)
+affiche les infos de façon bien plus claire qu'avant
+
+===== Recorder (experimental tool)
+Permet de rejouer un scénario, avec une mesure des perfs
+--> possibilité de l'exporter en puppeter :)
+
+===== Coverage
+Montre ce qui est chargé mais pas utilisé dans le JS et le CSS
+
+===== CSS overview (experimental tool)
+Pb de contraste, liste des fonts, les declarations unused
+Utile pour l'accessibilité
+
+===== Rendering
+Simuler un site sans couleur, flou, etc... pour simuler certains pb de perception.
+
+===== Network condition
+Simuler une déconnection, une slow 3G, etc..
+
+===== Sensor
+Changer notre géoloc, timezone, locale. Simulation de l'orientation de notre device
+
+Flex ou CSS grid, on peut cliquer directement sur un petit bouton à coté de `display: flex` pour changer des propriétés pour tester.
+
+===== Source
+`Enable local override` permet de conserver les modifs faites dans la console.
+
+===== Console
+Clic sur l'oeil -> permet d'évaluer des expressions en live
+Ctrl + L pour clean
+$ ou $$
+$_
+$0 / $1 -> dernier élément inspecté
+monitor(fn)
+monitorEvents() --> ne marche pas avec les customEvents
+
+---> Vidéo à partager.
 
 === 18h30 - 19h00 Github Co-Pilot : Addictif ou Efficace ?
 
@@ -269,7 +310,7 @@ Une keynote pour passer en revue les innovations qui ont secoué la tech depuis 
 
 TO BE COMPLETED
 
-=== 09h50 - 10h10 (AB) : Slow.tech : il est urgent de hacker le système !
+=== 09h50 - 10h10 : Slow.tech : il est urgent de hacker le système !
 
 ==== Abstract
 
