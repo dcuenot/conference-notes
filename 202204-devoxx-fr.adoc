@@ -76,6 +76,15 @@ Github utilise GraphQL, voici https://docs.github.com/en/graphql/overview/explor
 
 L'objectif de GraphQL est de limiter la data qui transite sur le réseau, c'est le client qui défini les champs à récupérer, l'ordre d'affichage...
 
+Si un champs est associé à une fonction côté serveur, s'il n'est pas requêté par le client, la fonction ne sera pas appelée, ce qui permet de fortement optimiser les temps de réponse si la fonction fait une recherche en BDD par ex.
+
+En GraphQL, il y a 3 types de requêtes différents:
+- `Query`: Requête de lecture
+- `Mutation`: Requête de mise à jour. Si plusieurs mutations sont demandées dans la même query, elles sont exécutées séquentiellement
+- `Subscription`: Streaming
+
+
+
 === 13h30 - 16h30 Zero Trust : the new normal !
 
 ==== Abstract
