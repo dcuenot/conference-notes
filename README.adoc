@@ -210,7 +210,7 @@ La diversité et inclusion est un élément indispensable, augmente la productiv
 ==== Abstract
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/romain_linsolas[Romain Linsolas]
-----
+--
 Développer avec efficacité, c'est non seulement choisir les bons outils, mais surtout bien savoir les utiliser. Pour le développement web, si l'éditeur reste l'outil principal, le navigateur est lui aussi un élément primordial.
 
 La grande majorité des développeurs et développeuses web est familière avec les fonctionnalités de base des Dev Tools intégrés aux navigateurs. Pourtant dans les faits, il s'avère que beaucoup d'entre eux n'utilisent qu'une petite partie de leurs capacités, et même ignorent bon nombre des fonctionnalités offertes par ces outils.
@@ -218,7 +218,7 @@ La grande majorité des développeurs et développeuses web est familière avec 
 Dans ce Tools In Action, au travers de différentes démonstrations, nous allons voir les possibilités avancées offertes par ces outils : comment détecter et analyser les problèmes de performances, comment simuler d'autres environnements ou contextes (latences réseaux, problèmes d'accessibilité, etc.) ou encore découvrir des fonctions très intéressantes pour améliorer ses développements.
 
 Nous nous focaliserons en grande partie sur les Dev Tools de Chrome, mais nous évoquerons aussi les différences avec ceux des principaux navigateurs concurrents.
-----
+--
 
 ==== Notes
 Une fois le DevTools ouvert, tappez `Cmd + Shift + P` (comme dans VSCode) et les noms des tools ci-dessous:
@@ -265,20 +265,32 @@ monitorEvents() --> ne marche pas avec les customEvents
 
 ---> Vidéo à partager.
 
-=== 18h30 - 19h00 Github Co-Pilot : Addictif ou Efficace ?
+=== Github Co-Pilot : Addictif ou Efficace ?
 
 ==== Abstract
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/johan_jublanc[Johan Jublanc] et https://cfp.devoxx.fr/2022/speaker/simon_provost[Simon Provost]
-----
+--
 Au cours de cette conversation, nous partagerons notre retour d'expérience sur l'utilisation d'un outil de pair programming intelligent (AI pair programmer) : GitHub Copilot. Nous examinerons comment l'utiliser, les avantages qu'il procure et les limites que nous avons identifiées. Nous tenterons ainsi de donner des éléments pour déterminer si ce plugin tient bien la promesse d'aider les développeurs à écrire du code plus rapidement et avec moins de travail.
 
 Nous commencerons par une micro-session de "live-coding" en direct pour suivre les suggestions en temps réel et comparer ce qui est proposé d'un utilisateur à l'autre. Nous verrons ensuite les points forts et les questions qui se posent lors de l'utilisation de l'outil. Enfin, nous terminerons par une courte discussion sur comment GitHub Copilot fait évoluer la manière dont les développeurs documentent leur code.
-----
+--
 
 ==== Notes
 
-TO BE COMPLETED
+Copilot aka AI pair-programmer
+===== Pros
+Copilot utilise le Model GPT-3 (fait par OpenAI)
+Permet de choisir entre plusieurs option, et permet de gagner du temps
+Force à commenter, car Copilot s'appuie sur ce contenu pour générer des suggestions
+
+===== Cons
+Accepte du code sur des libs anciennes / obsolètes
+Code pas optimal
+Copilot est très linéaire, et ne prend pas en compte les autres fichiers de votre projet
+
+Démonstration assez bluffante de Copilot avec génération de 2 functions et d'une classe main pour classifier des images en Python, basé sur des réseaux neuronnes.
+--> à tester, j'ai accès à la beta de Copilot, mais je ne sais pas si ça marche sur du code APEX / LWC
 
 == JEUDI
 
@@ -292,10 +304,6 @@ TO BE COMPLETED
 Devoxx France a été créé en 2012, après 4 années d'aventure avec le Paris JUG. C'est le moment de venir partager avec nous quelques souvenirs, de revenir sur ces 10 dernières années.
 --
 
-==== Notes
-
-TO BE COMPLETED
-
 === 09h25 - 09h45 : 10 ans de Tech à travers le podcast Niptech
 
 ==== Abstract
@@ -307,8 +315,26 @@ Une keynote pour passer en revue les innovations qui ont secoué la tech depuis 
 --
 
 ==== Notes
+#Tech - #Startup - #Inspiration
 
-TO BE COMPLETED
+Feedback sur 10 ans du podcast.
+Radio / webradio
+Podcast démarré en octobre 2004
+
+Stack technique pour le podcast a peu évolué, et en terme de format, ils sont restés dans le format de niche malgré de nombreuses expérimentations
+
+@bcurdie
+La tendance Quantified Self est moins hype qu'il y a 3/4 ans.
+Drones avec le gouvernement Suisse -> https://www.amsterdamdroneweek.com/news/utm/interuss-enable-between-multiple-drone-services/[interUSS]
+
+Bcp d'expérimentation, de tests pour mieux comprendre la tech, et réduire le bruit versus le signal.
+
+3 défis:
+* Données vs services (ex: collecter des data c'est cool, mais comment on l'utilise ?)
+* Bundling vs unbundling (ex: voix + quantified self)
+* Innover vs réguler (ex: drone)
+
+Citation : "Seuls les poissons morts nagent dans le sens du courant" - https://fr.wikipedia.org/wiki/Akiva_Orr[/Akiva Orr]
 
 === 09h50 - 10h10 : Slow.tech : il est urgent de hacker le système !
 
@@ -318,6 +344,21 @@ TO BE COMPLETED
 --
 Selon le GIEC, il nous reste 3 ans pour léguer un monde « vivable » à nos enfants. Sacré challenge ! Alors comment agir vite et fort dans notre univers numérique ? Une seule solution : sortir du cadre et hacker le système. C'est que propose la démarche slow.tech. En associant low et high tech, elle permet de diviser par un facteur 4 à 10 nos impacts numériques. De l'usage ingénieux d'un smartphone pour remplacer un cabinet d'ophtalmologie en passant par l'association d'un chien et d'une IA pour détecter un cancer, les écoconcepteurs de la slow.tech détournent les codes et les patterns habituels pour faire mieux avec moins. Prêt.e à emprunter cette « voie du milieu » ? Le hacker qui est en toi doit se réveiller !
 --
+
+==== Notes
+Quel le point commun entre Appolo 13 et l'avenir de l'humanité?
+* CO<sub>2</sub>
+* Lowtech 
+* Hackers
+
+Trouver une solution simple, lowtech pour filtrer le CO2. Idée trouvée par des Mc Gyver, aka hackers
+3 ans pour passer le pic d'émission de C0<sub>2</sub>
+8 ans pour diviser par 2 le CO<sub>2</sub>
+
+Ecoconception & Slow tech
+Dans 30 ans, plus d'ordinateur.. doubting
+
+https://github.com/cnumr[Collectif Conception Numérique Responsable]
 
 === 10h45 - 11h30 : Comprendre les enjeux de consommation de ressource et d'énergie dans le secteur numérique
 
@@ -334,7 +375,7 @@ L'objectif de la présentation est de ressortir avec un panorama clair des enjeu
 
 ==== Notes
 
-TO BE COMPLETED
+Attention de plusieurs rapports il y a des erreurs de conversion d'unité entre bit & bytes par ex.
 
 === 11h45 - 12h30 : Model-Driven Design
 
