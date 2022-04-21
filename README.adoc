@@ -294,7 +294,7 @@ Démonstration assez bluffante de Copilot avec génération de 2 functions et d'
 
 == JEUDI
 
-=== 09h00 - 09h20 : La Keynote de Devoxx France 2022 - 10 ans déjà
+=== La Keynote de Devoxx France 2022 - 10 ans déjà
 
 ==== Abstract
 
@@ -304,7 +304,7 @@ Démonstration assez bluffante de Copilot avec génération de 2 functions et d'
 Devoxx France a été créé en 2012, après 4 années d'aventure avec le Paris JUG. C'est le moment de venir partager avec nous quelques souvenirs, de revenir sur ces 10 dernières années.
 --
 
-=== 09h25 - 09h45 : 10 ans de Tech à travers le podcast Niptech
+=== 10 ans de Tech à travers le podcast Niptech
 
 ==== Abstract
 
@@ -336,7 +336,7 @@ Bcp d'expérimentation, de tests pour mieux comprendre la tech, et réduire le b
 
 Citation : "Seuls les poissons morts nagent dans le sens du courant" - https://fr.wikipedia.org/wiki/Akiva_Orr[/Akiva Orr]
 
-=== 09h50 - 10h10 : Slow.tech : il est urgent de hacker le système !
+=== Slow.tech : il est urgent de hacker le système !
 
 ==== Abstract
 
@@ -360,7 +360,7 @@ Dans 30 ans, plus d'ordinateur.. doubting
 
 https://github.com/cnumr[Collectif Conception Numérique Responsable]
 
-=== 10h45 - 11h30 : Comprendre les enjeux de consommation de ressource et d'énergie dans le secteur numérique
+=== Comprendre les enjeux de consommation de ressource et d'énergie dans le secteur numérique
 
 ==== Abstract
 
@@ -432,7 +432,7 @@ Combattre l'obsolesence / massifier les softs / compiler les softs pour utiliser
 
 Encourager le télétravail
 
-=== 11h45 - 12h30 : Model-Driven Design
+=== Model-Driven Design
 
 ==== Abstract
 
@@ -460,7 +460,7 @@ Après cette conférence, vous ne verrez plus le Domain-Driven Design tout à fa
 Moralité, lire le https://www.domainlanguage.com/ddd/blue-book/[blue book] mais surtout ne pas l'appliquer by the book.
 Terminologie très pompeuse pour des activités assez simples comme l'example mapping
 
-=== 13h00 - 13h15 : Equity for software engineers
+=== Equity for software engineers
 
 ==== Abstract
 
@@ -513,7 +513,7 @@ Stratégie
    * côté en bourse -> risque faible
 
 
-=== 13h30 - 14h15 : Protéger son organisation des attaques par le système de build
+=== Protéger son organisation des attaques par le système de build
 
 ==== Abstract
 
@@ -550,7 +550,7 @@ https://blog.sigstore.dev/whats-next-for-sigstore-1969e7321f75
 * vérifier les wrappers Gradle (Github action pour ça)
 
 
-=== 14h30 - 15h15 (252AB) : Vers une culture où tout le monde est responsable de l'indisponibilité
+=== 14h30 - 15h15 : Vers une culture où tout le monde est responsable de l'indisponibilité
 
 ==== Abstract
 
