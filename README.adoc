@@ -43,6 +43,7 @@ toc::[]
 * Et c'est parti pour Devoxx France 2022, *les "vrais" 10 ans de Devoxx France* ! 😁😁😁
 * Template inspiré par https://twitter.com/thomasschwender[@thomasschwender], merci à lui!
 * Doc AsiiDoctor: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+* Les talks avec un 🎥 dans le titre, sont les talks où je recommande de regarder le replay quand il sera disponible.
 
 === Comprendre GraphQL
 
@@ -86,7 +87,7 @@ En GraphQL tout est en POST, et les réponses sont en 200 ou 500. 500 quand la q
 
 https://www.apollographql.com[Apollo] propose différents outils pour explorer, stitcher des graphs: Rover, Studio, explorer
 
-=== Zero Trust : the new normal !
+=== 🎥 Zero Trust : the new normal !
 
 ==== Abstract
 
@@ -205,7 +206,7 @@ Encouragez à prendre la parole, à être des roles modèles.
 La diversité et inclusion est un élément indispensable, augmente la productivité et la satisfaction globale
 
 
-=== Bien maîtriser les Dev Tools de vos navigateurs
+=== 🎥 Bien maîtriser les Dev Tools de vos navigateurs
 
 ==== Abstract
 
@@ -360,7 +361,7 @@ Dans 30 ans, plus d'ordinateur.. doubting
 
 https://github.com/cnumr[Collectif Conception Numérique Responsable]
 
-=== Comprendre les enjeux de consommation de ressource et d'énergie dans le secteur numérique
+=== 🎥 Comprendre les enjeux de consommation de ressource et d'énergie dans le secteur numérique
 
 ==== Abstract
 
@@ -460,7 +461,7 @@ Après cette conférence, vous ne verrez plus le Domain-Driven Design tout à fa
 Moralité, lire le https://www.domainlanguage.com/ddd/blue-book/[blue book] mais surtout ne pas l'appliquer by the book.
 Terminologie très pompeuse pour des activités assez simples comme l'example mapping
 
-=== Equity for software engineers
+=== 🎥 Equity for software engineers
 
 ==== Abstract
 
@@ -550,7 +551,7 @@ https://blog.sigstore.dev/whats-next-for-sigstore-1969e7321f75
 * vérifier les wrappers Gradle (Github action pour ça)
 
 
-=== 14h30 - 15h15 : Vers une culture où tout le monde est responsable de l'indisponibilité
+=== 🎥 Vers une culture où tout le monde est responsable de l'indisponibilité
 
 ==== Abstract
 
@@ -566,7 +567,50 @@ Après cette présentation, vous aurez des clés pour penser la transformation d
 
 ==== Notes
 
-TO BE COMPLETED
+Penser service is a journey we learn from experience and not from books!
+Quand on gère son service, si qqch plante c'est "notre" problème.
+
+Définir ce qu'on veut offrir:
+* Définir les limites du système
+* Définir les comportements attendus (availability, latency, error ratio, etc.)
+
+Il est très difficile de définir les choses a priori. Apprendre à le faire tourner, mesurer les choses importantes.
+
+Si on défini les limites, il faut les mesurer et prévenir l'utilisateur, et bloquer le service si on dépasse.
+
+SLA is just a legal lie.
+SLO défini vraiment un objectif, une aspiration.
+
+Depuis un SLO, on peut dériver:
+* de l'investissement
+* revoir une archi
+* indicateurs / alerts
+
+SLO is function of MTBF (Mean Team Between Failure), MTTD (Mean Team To Discover) and MTTR (Mean Team To Recover).
+Définition des alertes, et des procédures standards de recovery
+
+Service = Application code + config / SLO / Deployment pipeline / Pager / Tickets / Scripts...
+
+Si le code existe, il faut passer du temps à se poser des questions (what if...)
+Blast radius -> réduire l'impact, déploiement progressif ?
+Canary testing
+
+==== D'un point vue ops
+SRE = Ops avec un mentalité de Dev
+
+Build communication and trust
+SLO outil de communication entre Dev & Ops/SRE
+
+Garder les metrics TRES simples pour suivre l'état d'un service
+Rollback / Rollforward
+
+Toute alerte doit avoir une Standard Operating Procedure (SOP)
+La procédure doit être la plus claire possible, lisible par qqun de HS à 4h du mat
+
+1. no alert, et on devine à partir du monitoring
+2. no metrics to anticipate, but we have SOP to get out of the mess
+3. ..
+
 
 === 15h30 - 16h15 : Coder pour l'Éternité, comprendre le développement sur la blockchain Ethereum
 
