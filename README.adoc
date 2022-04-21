@@ -457,7 +457,8 @@ Après cette conférence, vous ne verrez plus le Domain-Driven Design tout à fa
 
 ==== Notes
 
-TO BE COMPLETED
+Moralité, lire le https://www.domainlanguage.com/ddd/blue-book/[blue book] mais surtout ne pas l'appliquer by the book.
+Terminologie très pompeuse pour des activités assez simples comme l'example mapping
 
 === 13h00 - 13h15 : Equity for software engineers
 
