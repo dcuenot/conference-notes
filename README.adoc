@@ -705,8 +705,6 @@ Le but du BoF est de retrouver les faiseurs de solutions et ceux qui sont intér
 
 TO BE COMPLETED
 
-=== -------------------- PROGRAMME TBD --------------------
-
 == VENDREDI
 
 === 09h00 - 09h20 : Futurospective digitale : le futur est-il encore ce qu'il était ?
@@ -745,13 +743,13 @@ J'essaierai de convaincre le public que la recherche et le développement de tel
 
 TO BE COMPLETED
 
-=== 10h45 - 11h30 : Développ(eur|euse) Senior avec 6 ans d’expérience, et après ?
+=== 10h45 - 11h30 : Développ(eur|euse) Senior avec 6 ans d'expérience, et après ?
 
 ==== Abstract
 
 .Speakers : Hugo Lassiege et Dimitri BAELI
 --
-Le sujet récurrent dans l’IT : si on est senior avec 6 ans d’expérience, quelle est l’étape d’après ? Faut-il devenir manager pour progresser ? Dans cette session nous vous proposons de découvrir les rôles de Staff Engineer, Principal Engineer, Fellow, Distinguished et la notion d’impact qui accompagne ces rôles. Nous espérons vous faire réfléchir également à la notion de leadership dans vos métiers, vos équipes, vos produits et l’entreprise.
+Le sujet récurrent dans l'IT : si on est senior avec 6 ans d'expérience, quelle est l'étape d'après ? Faut-il devenir manager pour progresser ? Dans cette session nous vous proposons de découvrir les rôles de Staff Engineer, Principal Engineer, Fellow, Distinguished et la notion d'impact qui accompagne ces rôles. Nous espérons vous faire réfléchir également à la notion de leadership dans vos métiers, vos équipes, vos produits et l'entreprise.
 --
 
 ==== Notes
@@ -793,11 +791,11 @@ TO BE COMPLETED
 
 .Speakers : Maxime Odye et Mathieu Pousse
 --
-Shérif, le manager, est en colère. Il vient de surprendre toute l’équipe de développement autour d’une même machine. Rendez-vous compte ! Après des comparaisons douteuses avec la DDE, il les a bien sermonnés et leur a ordonné de retourner à leur poste de travail immédiatement, un peu de sérieux ! Avec Shérif, la bamboche, c’est terminé !
+Shérif, le manager, est en colère. Il vient de surprendre toute l'équipe de développement autour d'une même machine. Rendez-vous compte ! Après des comparaisons douteuses avec la DDE, il les a bien sermonnés et leur a ordonné de retourner à leur poste de travail immédiatement, un peu de sérieux ! Avec Shérif, la bamboche, c'est terminé !
 Malheureusement, des Shérif, il en existe encore beaucoup dans les open-spaces de nos DSI. Partager un ordinateur entre plusieurs développeurs, mais pourquoi donc ?
 
-Le MOB programming est une pratique s’appuyant sur le Lean et sur Extreme Programming qui consiste à réaliser une tâche, qu’elle soit technique ou non, à plusieurs. Les groomings, planifications et autres réunions de conception, ne serait-ce pas déjà des MOBs ?
-De mythe à réalité, nous vous proposons de faire un retour d’expérience du MOB programming dans une équipe produit chez Ouest-France. Nous vous offrirons deux points de vue, celui du lead, présent depuis le début du projet (5 ans) et celui d’un développeur qui a rejoint l’équipe début 2021.
+Le MOB programming est une pratique s'appuyant sur le Lean et sur Extreme Programming qui consiste à réaliser une tâche, qu'elle soit technique ou non, à plusieurs. Les groomings, planifications et autres réunions de conception, ne serait-ce pas déjà des MOBs ?
+De mythe à réalité, nous vous proposons de faire un retour d'expérience du MOB programming dans une équipe produit chez Ouest-France. Nous vous offrirons deux points de vue, celui du lead, présent depuis le début du projet (5 ans) et celui d'un développeur qui a rejoint l'équipe début 2021.
 --
 
 ==== Notes
@@ -836,7 +834,7 @@ La plupart des clients que nous accompagnons disent faire du DevOps. Pourtant la
 
 Quelles sont les promesses de DevOps et pourquoi ne sont-elles pas tenues ? Est-ce que le monde des Devs est incompatible avec le monde des Ops ou est-ce que le problème est ailleurs ?
 
-Nous allons partir des bases pour comprendre ce qu’il y a derrière le mot DevOps et partager nos expériences afin d'explorer les pratiques, bonnes ou mauvaises, rencontrées sur le terrain.
+Nous allons partir des bases pour comprendre ce qu'il y a derrière le mot DevOps et partager nos expériences afin d'explorer les pratiques, bonnes ou mauvaises, rencontrées sur le terrain.
 
 Après notre slot, vous aurez une compréhension claire du DevOps ainsi que des trucs et astuces pour amorcer cette transformation culturelle en évitant les pièges les plus communs.
 --
