@@ -377,6 +377,61 @@ L'objectif de la présentation est de ressortir avec un panorama clair des enjeu
 
 Attention de plusieurs rapports il y a des erreurs de conversion d'unité entre bit & bytes par ex.
 
+
+L'empreinte carbone des mails ? 
+Envoyer un mail à 10 destinataires = 73g de CO<sub>2</sub>
+-> comment on arrive à ces chiffres ? bullshit
+
+Quantifier - analyse du cycle du vie des produits tech
+* Fabrication
+* Run
+* End of life
+---> exercice hyper compliqué
+
+===== Run
+Le plus simple à quantifier.
+En France, la production d'électricité génère peu de CO<sub>2</sub>
+La quantité de CO<sub>2</sub> générée par MWh est différent au fil de la journée
+
+https://electricitymap.org
+
+Datacenter peuvent "stocker" de la fraicheur avec les principes de frigorie (2 piscines eau chaude / froide) quand EDF n'est pas en tension.
+Donner un chiffre sans parler localisation et heure est discutable..
+
+Consommation operateurs 2018    4 TWh
+Consommation nationnal 2019     473 TWh
+
+*2/3% de consommation française pour la partie Run*
+
+Eteindre une box -> FBI, car le matériel de ce type est fait pour tourner. Les éteindre la nuit, use les composants.
+
+Model 1 byte -> quantité d'énergie nécessaire par byte
+Modèle fumeux :)
+
+*Pas de correlation entre energie consommée et données transférées*
+
+==== Coût de fab > run
+Comment côter ça avec son transport ?
+Incapable de le faire, car il y a moult sous-traitant
+
+Terres rares -> faux pb, car on trouve des workarounds, et si qqch devient rare, il devient rentable d'explorer une nouvelle approche.
+Acheter du bon matos, et le mettre dans le marché secondaire.
+
+L'économie, la mesure du C0<sub>2</sub> est devenu marché.
+On a ajouté le compteur de C0<sub>2</sub> sur les factures Orange ou SFR, mais on n'a pas cette métrique pour les voitures pour un trajet de vacs.
+
+Empreinte carbone du site du Monde = 10 000km d'une voiture à essence
+
+==== Question politique ?
+Une mesure sans marge d'erreur, ce n'est pas une mesure
+Capteur: marge d'erreur, fréquence et résolution
+
+==== réductionnisme vs complexité
+Descartes - un corps n'est pas simplement la somme des organes
+Combattre l'obsolesence / massifier les softs / compiler les softs pour utiliser les ressources CPU
+
+Encourager le télétravail
+
 === 11h45 - 12h30 : Model-Driven Design
 
 ==== Abstract
