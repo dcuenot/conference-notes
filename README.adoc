@@ -681,7 +681,7 @@ Les bugs coutent TRES chers (3 bugs dans les 3 derniers mois à plus de 100 mill
 
 EVM pourrait intégré un sous-ensemble de Webassembly
 
-=== 16h45 - 17h30 : S'affranchir de la Pyramide des Tests
+=== 🎥 S'affranchir de la Pyramide des Tests
 
 ==== Abstract
 
@@ -697,7 +697,37 @@ En particulier vous verrez: - pourquoi la pyramide des tests est contre-producti
 
 ==== Notes
 
-TO BE COMPLETED
+Doctolib s'affranchi de la pyramide de tests, c'est plutot un rectangle (1/3 E2E, 1/3 Unit, 1/3 Integration)
+
+===== Historique de la pyramide
+Première apparition en 2009 dans un book
+Tests E2E lents, pénibles à écrire et peuvent casser facilement
+
+===== UT better?
+UT Benefices: rapides, faciles à trouver dans le code, faciles à débug
+UT Costs: ? Vraiment difficile à évaluer, mais c'est pas gratuit
+
+Les tests figent les interfaces de votre code.
+
+Intéressant d'écrire des UT sur les interfaces pour lesquelles ont s'engagent (aka stable)
+Figé les contrats c'est compliqués pour les évolutions futures
+
+===== E2E fragiles ?
+On peut encapsuler les détails d'implémentation comme du code classique, et donc le rendre robuste et stable.
+
+===== E2E lents ?
+40 000 tests dont 1/3 en E2E, et à chaque commit lancent tous les tests sur un ensemble de machines
+Approche qui a tenu 9 années, et maintenant l'idée est de lancer certains tests à certains moments
+
+===== Comment améliorer les tests?
+Pourquoi on teste? pour éviter de casser des choses.
+* User use case
+* Attacker use case (sensitive data not leaked)
+* developpers use case (logs)
+* Data use cases (usage metrics)
+
+L'important est de définir pourquoi on teste, et après si la forme est une pyramide, un rectangle, une montgolfière, on s'en moque :)
+
 
 === 17h45 - 18h15 : Git, back to the future
 
