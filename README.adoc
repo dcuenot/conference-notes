@@ -729,7 +729,7 @@ Pourquoi on teste? pour éviter de casser des choses.
 L'important est de définir pourquoi on teste, et après si la forme est une pyramide, un rectangle, une montgolfière, on s'en moque :)
 
 
-=== 17h45 - 18h15 : Git, back to the future
+=== Git, back to the future
 
 ==== Abstract
 
@@ -742,7 +742,31 @@ On va prendre ensemble un peu moins de 30 minutes pour apprendre à se dépatoui
 
 ==== Notes
 
-TO BE COMPLETED
+https://github.com/paxtonhare/demo-magic[Demo Magic] - tooling pour faire des démos de script shell
+
+```bash
+git commit --allow-empty -m "message"
+```
+
+```bash
+git log --walk-reflogs --pretty=oneline --abbrev-commit
+```
+Permet de retrouver les commits qui ont amender.
+
+git show HEAD~0  --> pointer un "vrai" commit
+git show HEAD@{1} --> pointer un commit dans le reflog
+
+```bash
+git commit --fixup <commitId>
+git rebase -i main --autosquash
+```
+
+git push --force-with-lease
+
+===== Gitmoji 🥰
+https://gitmoji.dev/[Gitmoji]
+https://github.com/carloscuesta/gitmoji-cli[Gitmoji CLI]
+
 
 === 18h30 - 19h00 : Jouer à Minecraft avec une IA générée par GPT-3
 
@@ -753,38 +777,6 @@ TO BE COMPLETED
 Il y a des joueurs qui jouent à Minecraft pour le plaisir de jouer, d'autres pour développer leur créativité. Mais il y a une autre façon de jouer à Minecraft, c'est en utilisant une intelligence artificielle générée par GPT-3.
 
 Dans cette présentation, nous allons parler un peu d'IA et de ML, de GPT-3 et de Codex, mais surtout, nous allons nous amuser à générer du code pour contrôler un bot dans Minecraft, le tout dans la bonne humeur ! Ca vous tente ?
---
-
-==== Notes
-
-TO BE COMPLETED
-
-=== 20h00 - 20h50 : 10 ans déjà ! Devoxx France , l'envers du décors
-
-==== Abstract
-
-.Speakers : Arnaud Héritier, Nicolas Martignole, Antonio Goncalves, Zouheir Cadi
---
-10 ans que Devoxx France accueille tous les ans plus de 2000 participants.
-Comment en sommes nous arrivés là?
-Comment se prépare un tel événement ?
-
-De la sélection des sujets aux commandes de sodas, venez discuter avec l'équipe organisatrice pour tout savoir sur Devoxx France.
---
-
-==== Notes
-
-TO BE COMPLETED
-
-=== 21h00 - 21h50 : Il y a des cloud en Europe ?
-
-==== Abstract
-
-.Speakers : https://cfp.devoxx.fr/2022/speaker/quentin_adam[Quentin Adam], https://cfp.devoxx.fr/2022/speaker/horacio_gonzalez[Horacio Gonzalez]
---
-Si la domination sur le marché français des cloud américains est notable, de plus en plus de voix se retrouvent sur l'idée qu'il existe des alternatives européennes. De EUCLIDIA, à Hertzner, OVH, Clever Cloud, Scaleway, Orange... Nombre de solutions existent. Mais que leur manquent-t-elles ?
-
-Le but du BoF est de retrouver les faiseurs de solutions et ceux qui sont intéressés à leur faire des feedbacks.
 --
 
 ==== Notes
