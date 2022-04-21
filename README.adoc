@@ -612,7 +612,7 @@ La procédure doit être la plus claire possible, lisible par qqun de HS à 4h d
 3. ..
 
 
-=== 15h30 - 16h15 : Coder pour l'Éternité, comprendre le développement sur la blockchain Ethereum
+=== Coder pour l'Éternité, comprendre le développement sur la blockchain Ethereum
 
 ==== Abstract
 
@@ -623,7 +623,63 @@ La blockchain est de toutes les discussions, mais trop souvent on assimile block
 
 ==== Notes
 
-TO BE COMPLETED
+Vitalik Buterin vision is that of a global decentralized computer.
+en 2014, mise en place de la fondation Ethereum, ETHDev
+
+2000 ETH = 1 BTC, et on pouvait investir jusqu'à 500 000 BTC (1BTC = 570USD)
+
+===== Crypto
+Arbre de Merkle: arbre binaire, et à chaque étage, on a un hash de la concaténation des deux fils.
+ECC - Elliptic Curve Cryptography
+La clé privée est beaucoup plus petite qu'avec RSA
+
+ECDSA - Elliptic Curve Digital Signature Algorithm
+Ledger ou metamask sont initialisé avec une seedphrase pour dériver des clés privées.
+
+===== Blockchain
+Block chain = arbre de Merkel
+
+===== Ethereum
+EVM = Ethereum Virtual Machine
+Elle peut intéragir avec la mémoire, du stockage et une stack de 1024 levels
+Pas de possibilité de faire des appels externes (http requests)
+
+Les machines exécutent toutes les mêmes transactions. L'execution est déterministe, donc on peut valider le changement d'état.
+
+===== Gas
+Chaque instruction de la machine Ethereum est associé à un coût = le Gas
+L'interaction avec le stockage a un cout aussi
+La taille des blocs est limité par construction, car il y a une limite de gas (30 millions par block)
+Faut payer des gas premium fee au mineur si on veut que notre transaction soit minée plus vite
+
+https://etherscan.io[etherscan.io]
+Premier consommateur de gas - https://opensea.io[Opensea]
+
+Actions possibles avec la BlockChain Eth:
+* Sending ETH
+* Deployer un smart contract
+* Intéragir avec un smart contract
+
+===== Smart Contracts
+Morceau de code qui s'exécute sur la blockchain, et qui peut être déployé.
+Ils ne sont pas intelligents, et ce sont pas des contrats
+
+Le code est immuable et potentiellement immortel (sauf si SELF_DESTRUCT n'est pas implémenté) 
+Bugs pour l'éternité :)
+
+Langage: Solidity, Viper
+IDE: Truffle, Remix
+Blockchain: Ethereum
+
+ABI Application Binary Interface
+
+USD Coin
+year.finance
+Uniswap
+
+Les bugs coutent TRES chers (3 bugs dans les 3 derniers mois à plus de 100 millions d'USD)  
+
+EVM pourrait intégré un sous-ensemble de Webassembly
 
 === 16h45 - 17h30 : S'affranchir de la Pyramide des Tests
 
