@@ -475,7 +475,42 @@ Ce talk a pour but de démystifier le monde bizarre des BSPCE, AGA, RSU, Warrant
 
 ==== Notes
 
-TO BE COMPLETED
+===== Options
+BSPCE
+Stock Options
+Warrants
+
+===== Actions
+AGA (attribution gratuite d'action)= RSU (restricted stock unit)
+
+Période de vesting classique:
+* 1ère année -> touche rien
+* à la date d'anniversaire, on touche 25%
+
+Vente
+* Actions -> les actions sont acquises et on peut faire ce qu'on veut
+* Options -> chaque option acquise peut etre exercée
+
+Upside / underwater (avec les actions on gagne tjs, alors qu'avec des options c'est moins sûr)
+
+Départ de l'entreprise
+* Actions -> les actions vestés sont dispo
+* Options -> le droit doit être
+
+BSPCE
+* flat tax de 30% après 3 ans
+
+RSU
+* Tranche Marginale d'Imposition de la valeur à la date d'achat
+* Flat Tax sur la plus value de cession
+
+Stratégie
+* Négocier de l'equity dans son package
+* Attention aux valorisations
+* Estimer votre risque
+   * Series A/B -> risque fort
+   * Serices C / pre-ipo -> moins de risques
+   * côté en bourse -> risque faible
 
 
 === 13h30 - 14h15 : Protéger son organisation des attaques par le système de build
@@ -498,7 +533,22 @@ Nous illustrerons ces points avec Gradle mais la plupart des recommandations son
 
 ==== Notes
 
-TO BE COMPLETED
+https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610[Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies] --> vicieux, mais peut nous arriver
+
+===== New code & CI
+* CLAs
+* Sign commits
+
+===== Valider les dépendances
+https://www.simplify4u.org/pgpverify-maven-plugin/
+https://docs.npmjs.com/verifying-the-pgp-signature-for-a-package-from-the-npm-public-registry
+
+https://github.blog/2021-12-06-safeguard-container-signing-capability-actions/
+https://blog.sigstore.dev/whats-next-for-sigstore-1969e7321f75
+
+===== Tooling
+* vérifier les wrappers Gradle (Github action pour ça)
+
 
 === 14h30 - 15h15 (252AB) : Vers une culture où tout le monde est responsable de l'indisponibilité
 
