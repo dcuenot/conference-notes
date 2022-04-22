@@ -768,7 +768,7 @@ https://gitmoji.dev/[Gitmoji]
 https://github.com/carloscuesta/gitmoji-cli[Gitmoji CLI]
 
 
-=== 18h30 - 19h00 : Jouer à Minecraft avec une IA générée par GPT-3
+=== Jouer à Minecraft avec une IA générée par GPT-3
 
 ==== Abstract
 
@@ -781,7 +781,17 @@ Dans cette présentation, nous allons parler un peu d'IA et de ML, de GPT-3 et d
 
 ==== Notes
 
-TO BE COMPLETED
+La demo a été montré dans une vidéo avec Micode
+Comme toutes les démos avec AI, ça ne marche pas à tous les coups, pas hyper stable
+
+L'abstract plus haut a été écrit pas GPT-3, mais chuut.
+
+Le joueur écrit "jump" dans le chat du jeu
+Le bot récupère le chat et ajoute du contexte, et l'envoie à GPT-3.
+https://beta.openai.com/codex-javascript-sandbox[Playground openAI - Codex]
+
+Repo de code sur Github: minecraft-openai (sera opensourced plus tard)
+
 
 == VENDREDI
 
