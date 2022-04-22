@@ -949,14 +949,11 @@ Delivery: Reliability, scalability, security, performance
 
 C'est bien d'identifier les problèmes, mais il faut contribuer pour les résoudre, et ne pas être le raleur de service.
 
-Culture du feedback
-https://www.dirigeant.fr/points-de-vue/le-management-chez-netflix-instaurer-la-culture-du-feedback-2-10/
-https://corporate-rebels.com/feedback-at-netflix/
+Culture du feedback https://www.dirigeant.fr/points-de-vue/le-management-chez-netflix-instaurer-la-culture-du-feedback-2-10/[FR] & https://corporate-rebels.com/feedback-at-netflix/[EN]
 
-https://staffeng.com[StaffEng]
-https://about.gitlab.com/handbook/engineering/career-development/[Career Development]
-http://www.engineeringladders.com[EngineeringLadders]
-
+* https://staffeng.com[StaffEng]
+* https://about.gitlab.com/handbook/engineering/career-development/[Career Development]
+* http://www.engineeringladders.com[EngineeringLadders]
 
 
 === À la découverte des Docker Dev Environments
