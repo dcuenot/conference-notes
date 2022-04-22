@@ -173,7 +173,7 @@ Boundary est pour du Human 2 Machine. Si besoin de faire du Machine 2 Machine, i
 === Pourquoi vous n'attirerez et ne retiendrez pas les femmes dans vos équipes tech !
 
 [#img-attirerez-femmes] 
-.Keynote d'ouverture à #DevoxxFR! https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
+.Diversité et l’inclusion des femmes en entreprise. https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
 [link=https://twitter.com/AmelieBenoit33/status/1517213307228278784?s=20&t=8Hn5ZP6JlhLLJZe7B_A35w] 
 image::attirerez-femmes.jpeg[Diversité et l’inclusion des femmes en entreprise,560,800]
 
@@ -475,7 +475,6 @@ Après cette conférence, vous ne verrez plus le Domain-Driven Design tout à fa
 ==== Notes
 
 Moralité, lire le https://www.domainlanguage.com/ddd/blue-book/[blue book] mais surtout ne pas l'appliquer by the book.
-Terminologie très pompeuse pour des activités assez simples comme l'example mapping
 
 === :movie_camera: Equity for software engineers
 
@@ -839,9 +838,9 @@ Keynote Accenture / Octo - Technology vision, comme à l'époque.
 .3 scénarios pour le futur:
 - World tech companies
 - Digital Cold War
+- ...
 
-Les chiffres présentés et le raisonnement sont exactement les erreurs pointées par Quentin Adam dans la conf d'hier..
-.. Boring :sleeping:
+Doubt par rapport aux chiffres annoncés concernant la consommation en CO~2~ d'un bitcoin. 
 
 https://www.usievents.com/fr/[Unexpected Sources of Inspiration]
 
@@ -972,6 +971,8 @@ Permet de shiper un environnement de dev, avec les fichiers non commité, les d�
 
 https://github.com/docker/roadmap[Docker roadmap]
 
+Pour comprendre, le plus simple est de faire les 2 exemples proposés dans Docker Desktop > Dev Environment.
+
 === Réception d'image satellite 🛰️ avec un Raspberry
 
 ==== Abstract
@@ -997,7 +998,13 @@ Protocole: Automatic Picture Transmission
 Pi alimenté via Ethernet PoE. Mais avec 30m de câble, il faut compter 1.5V de perte. Donc il faut envoyer 12V pour recevoir 10V, puis passer dans un régulateur de tension.
 
 
-=== Mob programming, la véritable approche du développement en équipe
+===  :movie_camera: Mob programming, la véritable approche du développement en équipe
+
+
+[#img-mob] 
+.Mob programming https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
+[link=https://twitter.com/AmelieBenoit33/status/1517513417166368768?s=20&t=bImL0MITMA3BDm3-X8L-rw] 
+image::mob.jpeg[Mob programming,800,560]
 
 ==== Abstract
 
@@ -1103,38 +1110,37 @@ Pouvoir débrayer si besoin.
 La vie de couple CI/CD est parfois difficile. Pour faire la thérapie de couple, arrive un 3e laron: DevOps
 Pas compris la conclusion du talk.
 
+https://to-be-continuous.gitlab.io/doc[CI/CD]
 
-=== 16h45 - 17h30 : Pourquoi DevOps ne tient pas ses promesses ?
+=== Créer un jeu cross plateforme... en Rust! :crab:
 
 ==== Abstract
 
-.Speaker : Gérôme Egron et Guillaume Mathieu
+.Speaker : François Mockers
 --
-La plupart des clients que nous accompagnons disent faire du DevOps. Pourtant la réalité est loin de nous apporter satisfaction et les bénéfices attendus d'un point de vue théorique ne sont pas au rendez-vous.
+Avez vous déjà codé la lumière ? Le plus difficile, c'est les ombres !
+L'écosystème du jeu vidéo en Rust est en plein boom ! Après avoir conquis les amateurs et indépendants, même les grands studios s'y mettent.
+Après un tour de quelque projets Rust dans le monde du jeu vidéo (Amethyst, Macroquad, rg3d, Nannou, ...), nous nous concentrerons sur le moteur de jeu Bevy et ce qu'il propose :
 
-Quelles sont les promesses de DevOps et pourquoi ne sont-elles pas tenues ? Est-ce que le monde des Devs est incompatible avec le monde des Ops ou est-ce que le problème est ailleurs ?
+un ECS (Entity Component System) s'appuyant sur le système de type Rust
+un moteur de rendu moderne modulable grâce à un graph de rendu
+un support cross plateforme grâce à webgpu Sur ces bases et une super communauté, en un an et demi d'existence Bevy est rentré dans le top 5 des moteurs de jeu open source sur GitHub.
+Venez explorer les idées de Pipeline Rendering, shaders, ECS, Global Illumination, Ray Tracing, Clustered Forward Rendering et tant d'autres!
 
-Nous allons partir des bases pour comprendre ce qu'il y a derrière le mot DevOps et partager nos expériences afin d'explorer les pratiques, bonnes ou mauvaises, rencontrées sur le terrain.
-
-Après notre slot, vous aurez une compréhension claire du DevOps ainsi que des trucs et astuces pour amorcer cette transformation culturelle en évitant les pièges les plus communs.
+Et comment, grâce à un moteur de jeu qui vous semblera rapidement naturel, vous pourrez enfin faire ce jeu auquel vous rêvez depuis tout petit....
 --
 
 ==== Notes
 
-TO BE COMPLETED
+Ca manquait un peu de Rust dans cette conférence :grin:
 
-=== 17h45 - 18h30 (252AB) : Les Cast Codeurs en 🪑 et en 🦴
+https://arewegameyet.rs[Are we game yet?]
+http://rg3d.rs[Fyrox Game Engine]
 
-==== Abstract
+ECS: Entity Component System
+Modèle de composition plutôt qu'héritage
 
-.Speakers : https://cfp.devoxx.fr/2022/speaker/emmanuel_bernard[Emmanuel Bernard], https://cfp.devoxx.fr/2022/speaker/guillaume_laforge[Guillaume Laforge], https://cfp.devoxx.fr/2022/speaker/antonio_goncalves[Antonio Goncalves], https://cfp.devoxx.fr/2022/speaker/arnaud_heritier[Arnaud Héritier], https://cfp.devoxx.fr/2022/speaker/audrey_neveu[Audrey Neveu],
---
-👻 Guillaume sort de ce titre ! 🤡
+https://bevyengine.org[Bevy]
+https://bevyengine.org/examples/[Examples]
 
-Les Cast Codeurs, le papy des podcasts de développement francophones revient cette année à Devoxx pour clôturer cette belle conférence dans la relaxation, la joie et peut être la blague carambar. Venez partager avec le public vos impressions de cette cuvée Devoxx, des choses qui vous on surpris, des tendances qui se dessinent.
---
-
-==== Notes
-
-TO BE COMPLETED
-
+https://itch.io/jam/bevy-jam-1[Bevy Jam]
