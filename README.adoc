@@ -44,7 +44,7 @@ toc::[]
 * Template inspiré par https://twitter.com/thomasschwender[@thomasschwender], merci à lui!
 * Doc AsiiDoctor: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
 * Les sketchs notes ont été réalisées par icon:twitter[role="aqua"] https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
-* Les talks avec un 🎥 dans le titre, sont les talks où je recommande de regarder le replay quand il sera disponible.
+* Les talks avec un :movie_camera: dans le titre, sont les talks où je recommande de regarder le replay quand il sera disponible.
 
 === Comprendre GraphQL
 
@@ -88,7 +88,7 @@ En GraphQL tout est en POST, et les réponses sont en 200 ou 500. 500 quand la q
 
 https://www.apollographql.com[Apollo] propose différents outils pour explorer, stitcher des graphs: Rover, Studio, explorer
 
-=== 🎥 Zero Trust : the new normal !
+=== :movie_camera: Zero Trust : the new normal !
 
 ==== Abstract
 
@@ -213,7 +213,7 @@ Encouragez à prendre la parole, à être des roles modèles.
 La diversité et inclusion est un élément indispensable, augmente la productivité et la satisfaction globale
 
 
-=== 🎥 Bien maîtriser les Dev Tools de vos navigateurs
+=== :movie_camera: Bien maîtriser les Dev Tools de vos navigateurs
 
 ==== Abstract
 
@@ -377,7 +377,7 @@ Dans 30 ans, plus d'ordinateur.. doubting
 
 https://github.com/cnumr[Collectif Conception Numérique Responsable]
 
-=== 🎥 Comprendre les enjeux de consommation de ressource et d'énergie dans le secteur numérique
+=== :movie_camera: Comprendre les enjeux de consommation de ressource et d'énergie dans le secteur numérique
 
 ==== Abstract
 
@@ -477,7 +477,7 @@ Après cette conférence, vous ne verrez plus le Domain-Driven Design tout à fa
 Moralité, lire le https://www.domainlanguage.com/ddd/blue-book/[blue book] mais surtout ne pas l'appliquer by the book.
 Terminologie très pompeuse pour des activités assez simples comme l'example mapping
 
-=== 🎥 Equity for software engineers
+=== :movie_camera: Equity for software engineers
 
 ==== Abstract
 
@@ -568,7 +568,7 @@ https://blog.sigstore.dev/whats-next-for-sigstore-1969e7321f75
 Vérifier les wrappers Gradle (Github action pour ça)
 
 
-=== 🎥 Vers une culture où tout le monde est responsable de l'indisponibilité
+=== :movie_camera: Vers une culture où tout le monde est responsable de l'indisponibilité
 
 ==== Abstract
 
@@ -699,7 +699,7 @@ Les bugs coutent TRES chers (3 bugs dans les 3 derniers mois à plus de 100 mill
 
 EVM pourrait intégré un sous-ensemble de Webassembly
 
-=== 🎥 S'affranchir de la Pyramide des Tests
+=== :movie_camera: S'affranchir de la Pyramide des Tests
 
 [#img-pyramide-tests]] 
 .S'affranchir de la pyramide des tests - https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
@@ -819,7 +819,7 @@ Repo de code sur Github: minecraft-openai (sera opensourced plus tard)
 
 == VENDREDI
 
-=== 09h00 - 09h20 : Futurospective digitale : le futur est-il encore ce qu'il était ?
+=== Futurospective digitale : le futur est-il encore ce qu'il était ?
 
 ==== Abstract
 
@@ -902,7 +902,7 @@ Renforcement fort de biais, et risque fort sur les algo de recommandations
 
 *Chaque année FB retire 7 milliard de faux compte*
 
-=== 🎥 Développ(eur|euse) Senior avec 6 ans d'expérience, et après ?
+=== :movie_camera: Développ(eur|euse) Senior avec 6 ans d'expérience, et après ?
 
 ==== Abstract
 
@@ -959,7 +959,7 @@ http://www.engineeringladders.com[EngineeringLadders]
 
 
 
-=== 11h45 - 12h30 : À la découverte des Docker Dev Environments
+=== À la découverte des Docker Dev Environments
 
 ==== Abstract
 
@@ -969,6 +969,25 @@ Imaginez-vous en plein travail sur une nouvelle fonctionnalité et vous devez ab
 Et si nous vous proposions une nouvelle expérience de développement ? Comment ? Et pourquoi pas par un simple Copier/Coller de l'url de votre repository GIT dans Docker Desktop ?
 
 Les Dev Environments sont une manière d'isoler votre code, vos dépendances et processus en cours, vous permettant ainsi d'avoir plusieurs versions d'un même projet en test sur votre machine. Et bien plus encore, partagez simplement votre code avec les autres membres de votre équipe, interagissez via Docker Compose avec une stack applicative complexe ...
+--
+
+==== Notes
+
+Feature déjà présente sur Docker Desktop depuis plusieurs mois.
+Permet de shiper un environnement de dev, avec les fichiers non commité, les dépendances...
+
+:bulb: Idée intéressante, à voir si on peut faire une version avec SFDX + CCI + npm
+
+=== 13h00 - 13h15 : Tests Cucumber: légendes et réalité
+
+==== Abstract
+
+.Speakers : Michaël Strauss
+--
+Ecrire des tests, une nécessité pas toujours aguichante. Alors, quand des frameworks semblent permettre d'écrire des tests en langage naturel, facilement et rapidement, les attentes des utilisateurs - et du management ! - s'envolent.
+Mais qu'en est-il vraiment ?
+
+Ce talk vous présente un retour d'expérience de l'utilisation du framework cucumber, lors d'un projet concret, et confronte les promesses et les mythes avec la réalité.
 --
 
 ==== Notes
