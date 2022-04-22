@@ -299,9 +299,9 @@ Démonstration assez bluffante de Copilot avec génération de 2 functions et d'
 === La Keynote de Devoxx France 2022 - 10 ans déjà
 
 [#img-sunset] 
-.A mountain (C) sunset 
-[link=https://www.flickr.com/photos/javh/5448336655] 
-image::keynote.jpeg[Sunset,200,100]
+.Keynote d'ouverture à #DevoxxFR! (C) Amélie Benoit 
+[link=https://twitter.com/AmelieBenoit33/status/1517139342166163459?s=20&t=8Hn5ZP6JlhLLJZe7B_A35w] 
+image::keynote.jpeg[Keynote d'ouverture,565,395]
 
 ==== Abstract
 
@@ -843,7 +843,8 @@ J'essaierai de convaincre le public que la recherche et le développement de tel
 
 ==== Notes
 
-TO BE COMPLETED
+WetechCare - La gouvernance collaborative du web
+Utiliser la tech pour résoudre l'équation sociale
 
 === 10h45 - 11h30 : Développ(eur|euse) Senior avec 6 ans d'expérience, et après ?
 
