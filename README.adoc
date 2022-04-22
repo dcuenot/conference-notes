@@ -845,6 +845,13 @@ Les chiffres présentés et le raisonnement sont exactement les erreurs pointée
 
 https://www.usievents.com/fr/[Unexpected Sources of Inspiration]
 
+===== Impact
+Avez-vous eu de l'impact dans votre entreprise ?
+Etes-vous capable de le mesurer ? Quel est le retour business?
+
+* Junior: impact is individual
+
+
 === LesBonsclics, une plateforme pédagogique au service du 1er réseau européen d'aidants numériques.
 
 ==== Abstract
