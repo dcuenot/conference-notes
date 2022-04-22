@@ -403,7 +403,7 @@ Quantifier - analyse du cycle du vie des produits tech
 * Fabrication
 * Run
 * End of life
----> exercice hyper compliqué
+-> exercice hyper compliqué
 
 ===== Run
 Le plus simple à quantifier.
@@ -423,7 +423,7 @@ Consommation nationnal 2019     473 TWh
 Eteindre une box -> FBI, car le matériel de ce type est fait pour tourner. Les éteindre la nuit, use les composants.
 
 Model 1 byte -> quantité d'énergie nécessaire par byte
-Modèle fumeux :)
+Modèle fumeux :kissing_closed_eyes:
 
 *Pas de correlation entre energie consommée et données transférées*
 
@@ -443,11 +443,11 @@ Empreinte carbone du site du Monde = 10 000km d'une voiture à essence
 Une mesure sans marge d'erreur, ce n'est pas une mesure
 Capteur: marge d'erreur, fréquence et résolution
 
-==== réductionnisme vs complexité
-Descartes - un corps n'est pas simplement la somme des organes
+==== Réductionnisme vs complexité
+Un corps n'est pas simplement la somme des organes
 Combattre l'obsolesence / massifier les softs / compiler les softs pour utiliser les ressources CPU
 
-Encourager le télétravail
+Encourager le télétravail :computer:
 
 === Model-Driven Design
 
@@ -539,6 +539,7 @@ Stratégie
 Tous les jours, les développeurs assemblent du code des dizaines de fois. Parfois de façon transparente dans l'IDE, explicitement en ligne de commande ou sur l'environnement de CI. Lors de ces actions, la notion de sécurité est souvent reléguée au second plan voire simplement ignorée.
 
 Cette présentation illustrera les vecteurs d'attaque et expliquera comment les mitiger. L'outil de build est par définition à risque car il s'agit d'un environnement d'exécution. Certaines pratiques permettent heureusement de réduire significativement ces risques:
+
 - S'assurer que les dépendances sont celles attendues
 - Rejeter les dépendances vulnérables (Log4j??)
 - Avoir un build reproductible
@@ -564,7 +565,7 @@ https://github.blog/2021-12-06-safeguard-container-signing-capability-actions/
 https://blog.sigstore.dev/whats-next-for-sigstore-1969e7321f75
 
 ===== Tooling
-* vérifier les wrappers Gradle (Github action pour ça)
+Vérifier les wrappers Gradle (Github action pour ça)
 
 
 === 🎥 Vers une culture où tout le monde est responsable de l'indisponibilité
@@ -586,7 +587,6 @@ Après cette présentation, vous aurez des clés pour penser la transformation d
 Penser service is a journey we learn from experience and not from books!
 Quand on gère son service, si qqch plante c'est "notre" problème.
 
-Définir ce qu'on veut offrir:
 * Définir les limites du système
 * Définir les comportements attendus (availability, latency, error ratio, etc.)
 
@@ -598,6 +598,7 @@ SLA is just a legal lie.
 SLO défini vraiment un objectif, une aspiration.
 
 Depuis un SLO, on peut dériver:
+
 * de l'investissement
 * revoir une archi
 * indicateurs / alerts
@@ -672,6 +673,7 @@ https://etherscan.io[etherscan.io]
 Premier consommateur de gas - https://opensea.io[Opensea]
 
 Actions possibles avec la BlockChain Eth:
+
 * Sending ETH
 * Deployer un smart contract
 * Intéragir avec un smart contract
@@ -742,6 +744,7 @@ Approche qui a tenu 9 années, et maintenant l'idée est de lancer certains test
 
 ===== Comment améliorer les tests?
 Pourquoi on teste? pour éviter de casser des choses.
+
 * User use case
 * Attacker use case (sensitive data not leaked)
 * developpers use case (logs)
@@ -802,12 +805,12 @@ Dans cette présentation, nous allons parler un peu d'IA et de ML, de GPT-3 et d
 
 ==== Notes
 
-La demo a été montré dans une vidéo avec Micode
+La demo a été montré dans une vidéo avec Micode.
 Comme toutes les démos avec AI, ça ne marche pas à tous les coups, pas hyper stable
 
 L'abstract plus haut a été écrit pas GPT-3, mais chuut.
 
-Le joueur écrit "jump" dans le chat du jeu
+Le joueur écrit "jump" dans le chat du jeu. 
 Le bot récupère le chat et ajoute du contexte, et l'envoie à GPT-3.
 https://beta.openai.com/codex-javascript-sandbox[Playground openAI - Codex]
 
@@ -838,7 +841,7 @@ Keynote Accenture / Octo - Technology vision, comme à l'époque.
 - Digital Cold War
 
 Les chiffres présentés et le raisonnement sont exactement les erreurs pointées par Quentin Adam dans la conf d'hier..
-.. Boring :(
+.. Boring :sleeping:
 
 https://www.usievents.com/fr/[Unexpected Sources of Inspiration]
 
@@ -903,7 +906,14 @@ Le sujet récurrent dans l'IT : si on est senior avec 6 ans d'expérience, quell
 
 ==== Notes
 
-TO BE COMPLETED
+Carreer de Contributeur Individuel.
+*Senior, Staff engineer, Principal Engineer, Fellow/Distinguished Engineer, CTO*
+--> Leadership path
+
+Other path: Manager path. But you cannot do both at the same time.
+https://charity.wtf/2017/05/11/the-engineer-manager-pendulum/[The Engineer, Manager, and the Pendulum]
+
+
 
 === 11h45 - 12h30 : À la découverte des Docker Dev Environments
 
