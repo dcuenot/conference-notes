@@ -997,7 +997,7 @@ Protocole: Automatic Picture Transmission
 Pi alimenté via Ethernet PoE. Mais avec 30m de câble, il faut compter 1.5V de perte. Donc il faut envoyer 12V pour recevoir 10V, puis passer dans un régulateur de tension.
 
 
-=== 14h30 - 15h15 : Mob programming, la véritable approche du développement en équipe
+=== Mob programming, la véritable approche du développement en équipe
 
 ==== Abstract
 
@@ -1012,7 +1012,47 @@ De mythe à réalité, nous vous proposons de faire un retour d'expérience du M
 
 ==== Notes
 
-TO BE COMPLETED
+Réunir la team sur le même sujet, au même moment, et au même endroit (un peu comme le principe des urgences hospitalières)
+Objectif du mob, lisser par le haut.
+
+1 Driver, N navigateurs, et toutes les x min, on change de rôle.
+Navigateur énonce les idées / concepts, mais ce n'est pas une dictée.
+
+Full / Swap stacks --> agnostic de la stack techno.
+
+===== Pros
+Partage des pratiques, outils, historique du projet, réflexion/solution, moments d'équipe, front/back/ops
+Montée en compétences & onboarding simplifiés
+Pas de code review, moins de standup, plus de développement
+
+===== Cons
+Equipe injoignable
+Débats philosophiques.
+MOB mal préparé, trop exploratoire, trop ambitieux.
+
+===== Règles
+MOB le mercredi après-midi only
+Pas de sujet = pas de MOB
+Pour chaque sujet, il faut un "leader" pour le préparer, poser le contexte, dimensionner
+Pas de sujet de conception pure
+Rester focus sur l'objectif (comme dans un dev classique)
+
+IDE partagé, et configuré de la même façon. Ne cacher les numéros de ligne
+
+===== Sujets
+Définir la liste des sujets en amont comme étant elligible à un MOB.
+Loi des 2 pieds
+
+===== Difficultés
+Rythme: quand ça manque de rythme, les gens décrochent vite. Trop soutenu, c'est pas mieux. Pas de saisie en parallèle, car impossible à suivre.
+Fatigue intellectuelle forte.
+
+===== Productivité?
+Bénéfices: Team building, bienveillance, soft skills, entretien de la sécurité psychologique
+Montée en compétence: technique, fonctionnelle, organisationnelle, tips & tricks
+
+L'exercice de MOB est intéressant car il y a eu bcp d'échec => boucle de feedback courte, pratique agile - improvement
+
 
 === 15h30 - 16h15 : CI/CD, le divorce serait-il prononcé ?
 
