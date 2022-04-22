@@ -155,8 +155,7 @@ Modèle de sécurité avec des zones public, privée, duty free, tarmac... qui e
 7. Collecte d'un maximum d'info sur le réseau, les assets, pour détecter des failles
 
 ===== Demo Harshicorp
-https://www.boundaryproject.io[Boundary]
-Semble fonctionner comme un bastion, mais qui gère authentification + autorisation, et de plus boundary génère à la volée des clés pour accéder au VM du subnet private, fonctionne aussi pour un accès BDD PostgreSQL. Les crédentials temporaires sont stockés dans un Vault.
+https://www.boundaryproject.io[Boundary] semble fonctionner comme un bastion, mais qui gère authentification + autorisation, et de plus boundary génère à la volée des clés pour accéder au VM du subnet private, fonctionne aussi pour un accès BDD PostgreSQL. Les crédentials temporaires sont stockés dans un Vault.
 Comme les users sont créés à la volée, il faut faire de la corrélation entre la trace dans la BDD et les logs d'accès Boundary.
 
 Boundary est pour du Human 2 Machine. Si besoin de faire du Machine 2 Machine, il faut plutôt faire un Consul avec un Vault.
@@ -169,6 +168,7 @@ Boundary est pour du Human 2 Machine. Si besoin de faire du Machine 2 Machine, i
 * Sécu périmétrique n'est plus une option
 * Zero trust framework basé sur device, identité, automation pour protéger les data, et bien sur le reseau
 * Des solutions existent déjà (boundary, beyondcorp)
+
 
 === Pourquoi vous n'attirerez et ne retiendrez pas les femmes dans vos équipes tech !
 
@@ -263,6 +263,7 @@ Flex ou CSS grid, on peut cliquer directement sur un petit bouton à coté de `d
 `Enable local override` permet de conserver les modifs faites dans la console.
 
 ===== Console
+```
 Clic sur l'oeil -> permet d'évaluer des expressions en live
 Ctrl + L pour clean
 $ ou $$
@@ -270,8 +271,7 @@ $_
 $0 / $1 -> dernier élément inspecté
 monitor(fn)
 monitorEvents() --> ne marche pas avec les customEvents
-
----> Vidéo à partager.
+```
 
 === Github Co-Pilot : Addictif ou Efficace ?
 
@@ -287,6 +287,7 @@ Nous commencerons par une micro-session de "live-coding" en direct pour suivre l
 ==== Notes
 
 Copilot aka AI pair-programmer
+
 ===== Pros
 Copilot utilise le Model GPT-3 (fait par OpenAI)
 Permet de choisir entre plusieurs option, et permet de gagner du temps
@@ -298,7 +299,9 @@ Code pas optimal
 Copilot est très linéaire, et ne prend pas en compte les autres fichiers de votre projet
 
 Démonstration assez bluffante de Copilot avec génération de 2 functions et d'une classe main pour classifier des images en Python, basé sur des réseaux neuronnes.
---> à tester, j'ai accès à la beta de Copilot, mais je ne sais pas si ça marche sur du code APEX / LWC
+
+_à tester, j'ai accès à la beta de Copilot, mais je ne sais pas si ça marche sur du code APEX / LWC_
+*Test en cours pour la rédaction de ces notes*
 
 == JEUDI
 
@@ -336,13 +339,13 @@ Podcast démarré en octobre 2004
 
 Stack technique pour le podcast a peu évolué, et en terme de format, ils sont restés dans le format de niche malgré de nombreuses expérimentations
 
-@bcurdie
 La tendance Quantified Self est moins hype qu'il y a 3/4 ans.
 Drones avec le gouvernement Suisse -> https://www.amsterdamdroneweek.com/news/utm/interuss-enable-between-multiple-drone-services/[interUSS]
 
 Bcp d'expérimentation, de tests pour mieux comprendre la tech, et réduire le bruit versus le signal.
 
-3 défis:
+3 défis de la tech pour l'avenir:
+
 * Données vs services (ex: collecter des data c'est cool, mais comment on l'utilise ?)
 * Bundling vs unbundling (ex: voix + quantified self)
 * Innover vs réguler (ex: drone)
@@ -360,13 +363,14 @@ Selon le GIEC, il nous reste 3 ans pour léguer un monde « vivable » à nos en
 
 ==== Notes
 Quel le point commun entre Appolo 13 et l'avenir de l'humanité?
-* CO<sub>2</sub>
+
+* CO~2~
 * Lowtech 
 * Hackers
 
-Trouver une solution simple, lowtech pour filtrer le CO2. Idée trouvée par des Mc Gyver, aka hackers
-3 ans pour passer le pic d'émission de C0<sub>2</sub>
-8 ans pour diviser par 2 le CO<sub>2</sub>
+Trouver une solution simple, lowtech pour filtrer le CO~2~. Idée trouvée par des Mc Gyver, aka hackers
+3 ans pour passer le pic d'émission de C0~2~
+8 ans pour diviser par 2 le CO~2~
 
 Ecoconception & Slow tech
 Dans 30 ans, plus d'ordinateur.. doubting
@@ -390,12 +394,12 @@ L'objectif de la présentation est de ressortir avec un panorama clair des enjeu
 
 Attention de plusieurs rapports il y a des erreurs de conversion d'unité entre bit & bytes par ex.
 
-
 L'empreinte carbone des mails ? 
-Envoyer un mail à 10 destinataires = 73g de CO<sub>2</sub>
+Envoyer un mail à 10 destinataires = 73g de CO~2~
 -> comment on arrive à ces chiffres ? bullshit
 
 Quantifier - analyse du cycle du vie des produits tech
+
 * Fabrication
 * Run
 * End of life
@@ -403,8 +407,8 @@ Quantifier - analyse du cycle du vie des produits tech
 
 ===== Run
 Le plus simple à quantifier.
-En France, la production d'électricité génère peu de CO<sub>2</sub>
-La quantité de CO<sub>2</sub> générée par MWh est différent au fil de la journée
+En France, la production d'électricité génère peu de CO~2~
+La quantité de CO~2~ générée par MWh est différent au fil de la journée
 
 https://electricitymap.org
 
@@ -430,8 +434,8 @@ Incapable de le faire, car il y a moult sous-traitant
 Terres rares -> faux pb, car on trouve des workarounds, et si qqch devient rare, il devient rentable d'explorer une nouvelle approche.
 Acheter du bon matos, et le mettre dans le marché secondaire.
 
-L'économie, la mesure du C0<sub>2</sub> est devenu marché.
-On a ajouté le compteur de C0<sub>2</sub> sur les factures Orange ou SFR, mais on n'a pas cette métrique pour les voitures pour un trajet de vacs.
+L'économie, la mesure du C0~2~ est devenu marché.
+On a ajouté le compteur de C0~2~ sur les factures Orange ou SFR, mais on n'a pas cette métrique pour les voitures pour un trajet de vacs.
 
 Empreinte carbone du site du Monde = 10 000km d'une voiture à essence
 
