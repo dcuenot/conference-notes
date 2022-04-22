@@ -196,6 +196,7 @@ Groupe majoritaire - Biais de confirmation - biais de sympathie
 
 Avec une logique du groupe majoritaire, il y a 2 dynamique possible: le groupe inclu, ou exclu
 Attitude face au changement:
+
 * 15% de refractaire
 * 70% de neutre
 * 15% de partants
