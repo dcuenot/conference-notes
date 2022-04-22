@@ -299,7 +299,7 @@ Démonstration assez bluffante de Copilot avec génération de 2 functions et d'
 === La Keynote de Devoxx France 2022 - 10 ans déjà
 
 [#img-sunset] 
-.Keynote d'ouverture à #DevoxxFR! icon:twitter[role="aqua"] https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
+.Keynote d'ouverture à #DevoxxFR! https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
 [link=https://twitter.com/AmelieBenoit33/status/1517139342166163459?s=20&t=8Hn5ZP6JlhLLJZe7B_A35w] 
 image::keynote.jpeg[Keynote d'ouverture,565,395]
 
