@@ -1134,13 +1134,12 @@ Et comment, grâce à un moteur de jeu qui vous semblera rapidement naturel, vou
 
 Ca manquait un peu de Rust dans cette conférence :grin:
 
-https://arewegameyet.rs[Are we game yet?]
-http://rg3d.rs[Fyrox Game Engine]
+* https://arewegameyet.rs[Are we game yet?]
+* http://rg3d.rs[Fyrox Game Engine]
 
 ECS: Entity Component System
 Modèle de composition plutôt qu'héritage
 
-https://bevyengine.org[Bevy]
-https://bevyengine.org/examples/[Examples]
-
-https://itch.io/jam/bevy-jam-1[Bevy Jam]
+* https://bevyengine.org[Bevy]
+* https://bevyengine.org/examples/[Examples]
+* https://itch.io/jam/bevy-jam-1[Bevy Jam]
