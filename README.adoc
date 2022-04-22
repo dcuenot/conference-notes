@@ -902,7 +902,7 @@ Renforcement fort de biais, et risque fort sur les algo de recommandations
 
 *Chaque année FB retire 7 milliard de faux compte*
 
-=== 10h45 - 11h30 : Développ(eur|euse) Senior avec 6 ans d'expérience, et après ?
+=== 🎥 Développ(eur|euse) Senior avec 6 ans d'expérience, et après ?
 
 ==== Abstract
 
@@ -919,6 +919,43 @@ Carreer de Contributeur Individuel.
 
 Other path: Manager path. But you cannot do both at the same time.
 https://charity.wtf/2017/05/11/the-engineer-manager-pendulum/[The Engineer, Manager, and the Pendulum]
+
+===== Impact
+Avez-vous eu de l'impact dans votre entreprise ?
+
+Junior: impact is individual
+: team squad
+Senior: chapter guild
+Staff: product line
+Principal: impact on company - anticipation
+Fellow: impact on the industry
+
+Quatre axes pour le developpement perso:
+1. Expertise tech
+2. Capacité à produire des choses - Efficience - getting things done
+3. Business
+4. People - Leadership
+
+===== Comment déveloper Leadership - Business
+Identifier soit même les sujets.
+Leadership is another side of management.
+
+Pour passer de senior à staff, faut faire de la communication.
+
+Créer de l'impact ?
+Objectives (problem to solve)
+Discovery: Value, usability, feasability, viability
+Delivery: Reliability, scalability, security, performance
+
+C'est bien d'identifier les problèmes, mais il faut contribuer pour les résoudre, et ne pas être le raleur de service.
+
+Culture du feedback
+https://www.dirigeant.fr/points-de-vue/le-management-chez-netflix-instaurer-la-culture-du-feedback-2-10/
+https://corporate-rebels.com/feedback-at-netflix/
+
+https://staffeng.com[StaffEng]
+https://about.gitlab.com/handbook/engineering/career-development/[Career Development]
+http://www.engineeringladders.com[EngineeringLadders]
 
 
 
