@@ -1054,7 +1054,7 @@ Montée en compétence: technique, fonctionnelle, organisationnelle, tips & tric
 L'exercice de MOB est intéressant car il y a eu bcp d'échec => boucle de feedback courte, pratique agile - improvement
 
 
-=== 15h30 - 16h15 : CI/CD, le divorce serait-il prononcé ?
+=== CI/CD, le divorce serait-il prononcé ?
 
 ==== Abstract
 
@@ -1074,7 +1074,35 @@ Pour que maintenir vos pipelines reste un jeu d'enfant...
 
 ==== Notes
 
-TO BE COMPLETED
+CI: Contexte du dévelopeur - Build & Tests
+CD: CDelivery du livrable aux utilisateurs. CDeployment sur un env. CDevelopment déployer aux users finaux.
+
+pipeline = workflow = graphset
+
+===== Dis, comment on fait un pipeline ?
+1. Définir les objectifs et contraintes
+2. Analyser le process de dev/déploiement existant
+3. Déterminer les étapes clés ou cas particuliers
+4. Définir les feedbacks aux différentes étapes (notif, board de management)
+5. Définir les déclenchements automatisés
+6. Choisir les outils
+7. Faire un premier pipeline
+
+
+DRY: Faire des librairies de pipelines. Factoriser c'est bien, mais attention au blast radius
+SOLID: Les mêmes principes qu'en dev peuvent être appliqués dans le développement de CI/CD
+
+.3 pipelines différents
+Build
+Deliver
+Deploy
+
+Et définir les étapes clés, posées des questions, ...
+Pouvoir débrayer si besoin.
+
+La vie de couple CI/CD est parfois difficile. Pour faire la thérapie de couple, arrive un 3e laron: DevOps
+Pas compris la conclusion du talk.
+
 
 === 16h45 - 17h30 : Pourquoi DevOps ne tient pas ses promesses ?
 
