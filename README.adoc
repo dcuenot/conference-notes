@@ -43,6 +43,7 @@ toc::[]
 * Et c'est parti pour Devoxx France 2022, *les "vrais" 10 ans de Devoxx France* ! 😁😁😁
 * Template inspiré par https://twitter.com/thomasschwender[@thomasschwender], merci à lui!
 * Doc AsiiDoctor: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+* Les sketchs notes ont été réalisées par icon:twitter[role="aqua"] https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
 * Les talks avec un 🎥 dans le titre, sont les talks où je recommande de regarder le replay quand il sera disponible.
 
 === Comprendre GraphQL
@@ -154,8 +155,7 @@ Modèle de sécurité avec des zones public, privée, duty free, tarmac... qui e
 7. Collecte d'un maximum d'info sur le réseau, les assets, pour détecter des failles
 
 ===== Demo Harshicorp
-https://www.boundaryproject.io[Boundary]
-Semble fonctionner comme un bastion, mais qui gère authentification + autorisation, et de plus boundary génère à la volée des clés pour accéder au VM du subnet private, fonctionne aussi pour un accès BDD PostgreSQL. Les crédentials temporaires sont stockés dans un Vault.
+https://www.boundaryproject.io[Boundary] semble fonctionner comme un bastion, mais qui gère authentification + autorisation, et de plus boundary génère à la volée des clés pour accéder au VM du subnet private, fonctionne aussi pour un accès BDD PostgreSQL. Les crédentials temporaires sont stockés dans un Vault.
 Comme les users sont créés à la volée, il faut faire de la corrélation entre la trace dans la BDD et les logs d'accès Boundary.
 
 Boundary est pour du Human 2 Machine. Si besoin de faire du Machine 2 Machine, il faut plutôt faire un Consul avec un Vault.
@@ -169,7 +169,13 @@ Boundary est pour du Human 2 Machine. Si besoin de faire du Machine 2 Machine, i
 * Zero trust framework basé sur device, identité, automation pour protéger les data, et bien sur le reseau
 * Des solutions existent déjà (boundary, beyondcorp)
 
+
 === Pourquoi vous n'attirerez et ne retiendrez pas les femmes dans vos équipes tech !
+
+[#img-attirerez-femmes] 
+.Keynote d'ouverture à #DevoxxFR! https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
+[link=https://twitter.com/AmelieBenoit33/status/1517213307228278784?s=20&t=8Hn5ZP6JlhLLJZe7B_A35w] 
+image::attirerez-femmes.jpeg[Diversité et l’inclusion des femmes en entreprise,560,800]
 
 ==== Abstract
 
@@ -190,6 +196,7 @@ Groupe majoritaire - Biais de confirmation - biais de sympathie
 
 Avec une logique du groupe majoritaire, il y a 2 dynamique possible: le groupe inclu, ou exclu
 Attitude face au changement:
+
 * 15% de refractaire
 * 70% de neutre
 * 15% de partants
@@ -256,6 +263,7 @@ Flex ou CSS grid, on peut cliquer directement sur un petit bouton à coté de `d
 `Enable local override` permet de conserver les modifs faites dans la console.
 
 ===== Console
+```
 Clic sur l'oeil -> permet d'évaluer des expressions en live
 Ctrl + L pour clean
 $ ou $$
@@ -263,8 +271,7 @@ $_
 $0 / $1 -> dernier élément inspecté
 monitor(fn)
 monitorEvents() --> ne marche pas avec les customEvents
-
----> Vidéo à partager.
+```
 
 === Github Co-Pilot : Addictif ou Efficace ?
 
@@ -280,6 +287,7 @@ Nous commencerons par une micro-session de "live-coding" en direct pour suivre l
 ==== Notes
 
 Copilot aka AI pair-programmer
+
 ===== Pros
 Copilot utilise le Model GPT-3 (fait par OpenAI)
 Permet de choisir entre plusieurs option, et permet de gagner du temps
@@ -291,11 +299,18 @@ Code pas optimal
 Copilot est très linéaire, et ne prend pas en compte les autres fichiers de votre projet
 
 Démonstration assez bluffante de Copilot avec génération de 2 functions et d'une classe main pour classifier des images en Python, basé sur des réseaux neuronnes.
---> à tester, j'ai accès à la beta de Copilot, mais je ne sais pas si ça marche sur du code APEX / LWC
+
+_à tester, j'ai accès à la beta de Copilot, mais je ne sais pas si ça marche sur du code APEX / LWC_
+*Test en cours pour la rédaction de ces notes*
 
 == JEUDI
 
 === La Keynote de Devoxx France 2022 - 10 ans déjà
+
+[#img-keynote] 
+.Keynote d'ouverture à #DevoxxFR! https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
+[link=https://twitter.com/AmelieBenoit33/status/1517139342166163459?s=20&t=8Hn5ZP6JlhLLJZe7B_A35w] 
+image::keynote.jpeg[Keynote d'ouverture,800,560]
 
 ==== Abstract
 
@@ -324,13 +339,13 @@ Podcast démarré en octobre 2004
 
 Stack technique pour le podcast a peu évolué, et en terme de format, ils sont restés dans le format de niche malgré de nombreuses expérimentations
 
-@bcurdie
 La tendance Quantified Self est moins hype qu'il y a 3/4 ans.
 Drones avec le gouvernement Suisse -> https://www.amsterdamdroneweek.com/news/utm/interuss-enable-between-multiple-drone-services/[interUSS]
 
 Bcp d'expérimentation, de tests pour mieux comprendre la tech, et réduire le bruit versus le signal.
 
-3 défis:
+3 défis de la tech pour l'avenir:
+
 * Données vs services (ex: collecter des data c'est cool, mais comment on l'utilise ?)
 * Bundling vs unbundling (ex: voix + quantified self)
 * Innover vs réguler (ex: drone)
@@ -348,13 +363,14 @@ Selon le GIEC, il nous reste 3 ans pour léguer un monde « vivable » à nos en
 
 ==== Notes
 Quel le point commun entre Appolo 13 et l'avenir de l'humanité?
-* CO<sub>2</sub>
+
+* CO~2~
 * Lowtech 
 * Hackers
 
-Trouver une solution simple, lowtech pour filtrer le CO2. Idée trouvée par des Mc Gyver, aka hackers
-3 ans pour passer le pic d'émission de C0<sub>2</sub>
-8 ans pour diviser par 2 le CO<sub>2</sub>
+Trouver une solution simple, lowtech pour filtrer le CO~2~. Idée trouvée par des Mc Gyver, aka hackers
+3 ans pour passer le pic d'émission de C0~2~
+8 ans pour diviser par 2 le CO~2~
 
 Ecoconception & Slow tech
 Dans 30 ans, plus d'ordinateur.. doubting
@@ -378,21 +394,21 @@ L'objectif de la présentation est de ressortir avec un panorama clair des enjeu
 
 Attention de plusieurs rapports il y a des erreurs de conversion d'unité entre bit & bytes par ex.
 
-
 L'empreinte carbone des mails ? 
-Envoyer un mail à 10 destinataires = 73g de CO<sub>2</sub>
+Envoyer un mail à 10 destinataires = 73g de CO~2~
 -> comment on arrive à ces chiffres ? bullshit
 
 Quantifier - analyse du cycle du vie des produits tech
+
 * Fabrication
 * Run
 * End of life
----> exercice hyper compliqué
+-> exercice hyper compliqué
 
 ===== Run
 Le plus simple à quantifier.
-En France, la production d'électricité génère peu de CO<sub>2</sub>
-La quantité de CO<sub>2</sub> générée par MWh est différent au fil de la journée
+En France, la production d'électricité génère peu de CO~2~
+La quantité de CO~2~ générée par MWh est différent au fil de la journée
 
 https://electricitymap.org
 
@@ -407,7 +423,7 @@ Consommation nationnal 2019     473 TWh
 Eteindre une box -> FBI, car le matériel de ce type est fait pour tourner. Les éteindre la nuit, use les composants.
 
 Model 1 byte -> quantité d'énergie nécessaire par byte
-Modèle fumeux :)
+Modèle fumeux :kissing_closed_eyes:
 
 *Pas de correlation entre energie consommée et données transférées*
 
@@ -418,8 +434,8 @@ Incapable de le faire, car il y a moult sous-traitant
 Terres rares -> faux pb, car on trouve des workarounds, et si qqch devient rare, il devient rentable d'explorer une nouvelle approche.
 Acheter du bon matos, et le mettre dans le marché secondaire.
 
-L'économie, la mesure du C0<sub>2</sub> est devenu marché.
-On a ajouté le compteur de C0<sub>2</sub> sur les factures Orange ou SFR, mais on n'a pas cette métrique pour les voitures pour un trajet de vacs.
+L'économie, la mesure du C0~2~ est devenu marché.
+On a ajouté le compteur de C0~2~ sur les factures Orange ou SFR, mais on n'a pas cette métrique pour les voitures pour un trajet de vacs.
 
 Empreinte carbone du site du Monde = 10 000km d'une voiture à essence
 
@@ -427,11 +443,11 @@ Empreinte carbone du site du Monde = 10 000km d'une voiture à essence
 Une mesure sans marge d'erreur, ce n'est pas une mesure
 Capteur: marge d'erreur, fréquence et résolution
 
-==== réductionnisme vs complexité
-Descartes - un corps n'est pas simplement la somme des organes
+==== Réductionnisme vs complexité
+Un corps n'est pas simplement la somme des organes
 Combattre l'obsolesence / massifier les softs / compiler les softs pour utiliser les ressources CPU
 
-Encourager le télétravail
+Encourager le télétravail :computer:
 
 === Model-Driven Design
 
@@ -523,6 +539,7 @@ Stratégie
 Tous les jours, les développeurs assemblent du code des dizaines de fois. Parfois de façon transparente dans l'IDE, explicitement en ligne de commande ou sur l'environnement de CI. Lors de ces actions, la notion de sécurité est souvent reléguée au second plan voire simplement ignorée.
 
 Cette présentation illustrera les vecteurs d'attaque et expliquera comment les mitiger. L'outil de build est par définition à risque car il s'agit d'un environnement d'exécution. Certaines pratiques permettent heureusement de réduire significativement ces risques:
+
 - S'assurer que les dépendances sont celles attendues
 - Rejeter les dépendances vulnérables (Log4j??)
 - Avoir un build reproductible
@@ -548,7 +565,7 @@ https://github.blog/2021-12-06-safeguard-container-signing-capability-actions/
 https://blog.sigstore.dev/whats-next-for-sigstore-1969e7321f75
 
 ===== Tooling
-* vérifier les wrappers Gradle (Github action pour ça)
+Vérifier les wrappers Gradle (Github action pour ça)
 
 
 === 🎥 Vers une culture où tout le monde est responsable de l'indisponibilité
@@ -570,7 +587,6 @@ Après cette présentation, vous aurez des clés pour penser la transformation d
 Penser service is a journey we learn from experience and not from books!
 Quand on gère son service, si qqch plante c'est "notre" problème.
 
-Définir ce qu'on veut offrir:
 * Définir les limites du système
 * Définir les comportements attendus (availability, latency, error ratio, etc.)
 
@@ -582,6 +598,7 @@ SLA is just a legal lie.
 SLO défini vraiment un objectif, une aspiration.
 
 Depuis un SLO, on peut dériver:
+
 * de l'investissement
 * revoir une archi
 * indicateurs / alerts
@@ -656,6 +673,7 @@ https://etherscan.io[etherscan.io]
 Premier consommateur de gas - https://opensea.io[Opensea]
 
 Actions possibles avec la BlockChain Eth:
+
 * Sending ETH
 * Deployer un smart contract
 * Intéragir avec un smart contract
@@ -682,6 +700,11 @@ Les bugs coutent TRES chers (3 bugs dans les 3 derniers mois à plus de 100 mill
 EVM pourrait intégré un sous-ensemble de Webassembly
 
 === 🎥 S'affranchir de la Pyramide des Tests
+
+[#img-pyramide-tests]] 
+.S'affranchir de la pyramide des tests - https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
+[link=https://twitter.com/AmelieBenoit33/status/1517178423403233280?s=20&t=8Hn5ZP6JlhLLJZe7B_A35w] 
+image::pyramide-tests.jpeg[S'affranchir de la pyramide des tests,800,560]
 
 ==== Abstract
 
@@ -721,6 +744,7 @@ Approche qui a tenu 9 années, et maintenant l'idée est de lancer certains test
 
 ===== Comment améliorer les tests?
 Pourquoi on teste? pour éviter de casser des choses.
+
 * User use case
 * Attacker use case (sensitive data not leaked)
 * developpers use case (logs)
@@ -781,12 +805,12 @@ Dans cette présentation, nous allons parler un peu d'IA et de ML, de GPT-3 et d
 
 ==== Notes
 
-La demo a été montré dans une vidéo avec Micode
+La demo a été montré dans une vidéo avec Micode.
 Comme toutes les démos avec AI, ça ne marche pas à tous les coups, pas hyper stable
 
 L'abstract plus haut a été écrit pas GPT-3, mais chuut.
 
-Le joueur écrit "jump" dans le chat du jeu
+Le joueur écrit "jump" dans le chat du jeu. 
 Le bot récupère le chat et ajoute du contexte, et l'envoie à GPT-3.
 https://beta.openai.com/codex-javascript-sandbox[Playground openAI - Codex]
 
@@ -810,9 +834,50 @@ Même si la prévision est un art difficile - surtout en ce qui concerne l'aveni
 
 ==== Notes
 
-TO BE COMPLETED
+Keynote Accenture / Octo - Technology vision, comme à l'époque.
 
-=== 09h50 - 10h10 : La quête d'une gouvernance collaborative du web
+3 scénarios pour le futur:
+- World tech companies
+- Digital Cold War
+
+Les chiffres présentés et le raisonnement sont exactement les erreurs pointées par Quentin Adam dans la conf d'hier..
+.. Boring :sleeping:
+
+https://www.usievents.com/fr/[Unexpected Sources of Inspiration]
+
+===== Impact
+Avez-vous eu de l'impact dans votre entreprise ?
+Etes-vous capable de le mesurer ? Quel est le retour business?
+
+* Junior: impact is individual
+
+
+=== LesBonsclics, une plateforme pédagogique au service du 1er réseau européen d'aidants numériques.
+
+==== Abstract
+
+.Speaker : https://cfp.devoxx.fr/2022/speaker/thomas_vandriessche[Thomas Vandriessche]
+--
+Wetechcare est une association active en France et en Belgique dont la mission est de faire du numérique une opportunité pour tous.
+L'association est à l'origine d'un projet de plateforme digitale, Lesbonsclics, à destination de tout citoyen qui souhaite aider une personne en fragilité numérique sur l'acquisition des compétences numériques de base.
+
+Elle regroupe notamment des contenus pédagogiques et des éléments méthodologiques pour permettre un accompagnement ludique et efficace.
+Les utilisateurs bénéficient d'un programme d'animation en ligne permettant de développer ses compétences en fonction de leurs sujets d'intérêt et de leur temps disponible.
+En 2021, la plateforme a permis l'accompagnement de plus de 500000 personnes.
+
+Lesbonsclics connaît un succès permanent depuis sa création, chaque mois elle intègre plus de 2000 nouveaux aidants.
+L'association s'appuie notamment sur du mécénat de compétences de développeurs pour le développement de sa solution.
+--
+
+==== Notes
+
+https://wetechcare.org[WetechCare] - La gouvernance collaborative du web
+Utiliser la tech pour résoudre l'équation sociale
+
+Objectif: réduire la fracture numérique.
+Permettre à chacun d'accompagner à son échelle des publics en difficulté.
+
+=== La quête d'une gouvernance collaborative du web
 
 ==== Abstract
 
@@ -829,7 +894,13 @@ J'essaierai de convaincre le public que la recherche et le développement de tel
 
 ==== Notes
 
-TO BE COMPLETED
+https://tournesol.app/[Tournesol] - La plateforme de gouvernance collaborative du web
+Plateforme de recommandation de l'information. Exemple on nous présente 2 vidéos, et il faut élire laquelle on recommenderait le plus.
+
+Ajouter de la donnée dans la BDD d'entrainement d'un algo (comme GPT-3) c'est comme un "vote".
+Renforcement fort de biais, et risque fort sur les algo de recommandations
+
+*Chaque année FB retire 7 milliard de faux compte*
 
 === 10h45 - 11h30 : Développ(eur|euse) Senior avec 6 ans d'expérience, et après ?
 
@@ -842,7 +913,14 @@ Le sujet récurrent dans l'IT : si on est senior avec 6 ans d'expérience, quell
 
 ==== Notes
 
-TO BE COMPLETED
+Carreer de Contributeur Individuel.
+*Senior, Staff engineer, Principal Engineer, Fellow/Distinguished Engineer, CTO*
+--> Leadership path
+
+Other path: Manager path. But you cannot do both at the same time.
+https://charity.wtf/2017/05/11/the-engineer-manager-pendulum/[The Engineer, Manager, and the Pendulum]
+
+
 
 === 11h45 - 12h30 : À la découverte des Docker Dev Environments
 
