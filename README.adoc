@@ -172,6 +172,11 @@ Boundary est pour du Human 2 Machine. Si besoin de faire du Machine 2 Machine, i
 
 === Pourquoi vous n'attirerez et ne retiendrez pas les femmes dans vos équipes tech !
 
+[#img-attirerez-femmes] 
+.Keynote d'ouverture à #DevoxxFR! https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
+[link=https://twitter.com/AmelieBenoit33/status/1517213307228278784?s=20&t=8Hn5ZP6JlhLLJZe7B_A35w] 
+image::attirerez-femmes.jpeg[Diversité et l’inclusion des femmes en entreprise,560,800]
+
 ==== Abstract
 
 .Speaker : https://cfp.devoxx.fr/2022/speaker/marcy_ericka_charollois[Marcy Ericka Charollois]
@@ -828,10 +833,36 @@ Keynote Accenture / Octo - Technology vision, comme à l'époque.
 - Digital Cold War
 
 Les chiffres présentés et le raisonnement sont exactement les erreurs pointées par Quentin Adam dans la conf d'hier..
+.. Boring :(
 
 https://www.usievents.com/fr/[Unexpected Sources of Inspiration]
 
-=== 09h50 - 10h10 : La quête d'une gouvernance collaborative du web
+=== LesBonsclics, une plateforme pédagogique au service du 1er réseau européen d'aidants numériques.
+
+==== Abstract
+
+.Speaker : https://cfp.devoxx.fr/2022/speaker/thomas_vandriessche[Thomas Vandriessche]
+--
+Wetechcare est une association active en France et en Belgique dont la mission est de faire du numérique une opportunité pour tous.
+L'association est à l'origine d'un projet de plateforme digitale, Lesbonsclics, à destination de tout citoyen qui souhaite aider une personne en fragilité numérique sur l'acquisition des compétences numériques de base.
+
+Elle regroupe notamment des contenus pédagogiques et des éléments méthodologiques pour permettre un accompagnement ludique et efficace.
+Les utilisateurs bénéficient d'un programme d'animation en ligne permettant de développer ses compétences en fonction de leurs sujets d'intérêt et de leur temps disponible.
+En 2021, la plateforme a permis l'accompagnement de plus de 500000 personnes.
+
+Lesbonsclics connaît un succès permanent depuis sa création, chaque mois elle intègre plus de 2000 nouveaux aidants.
+L'association s'appuie notamment sur du mécénat de compétences de développeurs pour le développement de sa solution.
+--
+
+==== Notes
+
+https://wetechcare.org[WetechCare] - La gouvernance collaborative du web
+Utiliser la tech pour résoudre l'équation sociale
+
+Objectif: réduire la fracture numérique.
+Permettre à chacun d'accompagner à son échelle des publics en difficulté.
+
+=== La quête d'une gouvernance collaborative du web
 
 ==== Abstract
 
@@ -848,13 +879,13 @@ J'essaierai de convaincre le public que la recherche et le développement de tel
 
 ==== Notes
 
-https://wetechcare.org[WetechCare] - La gouvernance collaborative du web
-Utiliser la tech pour résoudre l'équation sociale
+https://tournesol.app/[Tournesol] - La plateforme de gouvernance collaborative du web
+Plateforme de recommandation de l'information. Exemple on nous présente 2 vidéos, et il faut élire laquelle on recommenderait le plus.
 
-Objectif: réduire la fracture numérique.
-Permettre à chacun d'accompagner à son échelle des publics en difficulté.
+Ajouter de la donnée dans la BDD d'entrainement d'un algo (comme GPT-3) c'est comme un "vote".
+Renforcement fort de biais, et risque fort sur les algo de recommandations
 
-
+*Chaque année FB retire 7 milliard de faux compte*
 
 === 10h45 - 11h30 : Développ(eur|euse) Senior avec 6 ans d'expérience, et après ?
 
