@@ -303,8 +303,6 @@ Démonstration assez bluffante de Copilot avec génération de 2 functions et d'
 [link=https://twitter.com/AmelieBenoit33/status/1517139342166163459?s=20&t=8Hn5ZP6JlhLLJZe7B_A35w] 
 image::keynote.jpeg[Keynote d'ouverture,800,560]
 
-565,395
-
 ==== Abstract
 
 .Speakers : https://cfp.devoxx.fr/2022/speaker/nicolas_martignole[Nicolas Martignole], https://cfp.devoxx.fr/2022/speaker/antonio_goncalves[Antonio Goncalves], https://cfp.devoxx.fr/2022/speaker/zouheir_cadi[Zouheir Cadi]
@@ -690,6 +688,11 @@ Les bugs coutent TRES chers (3 bugs dans les 3 derniers mois à plus de 100 mill
 EVM pourrait intégré un sous-ensemble de Webassembly
 
 === 🎥 S'affranchir de la Pyramide des Tests
+
+[#img-pyramide-tests]] 
+.S'affranchir de la pyramide des tests - https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
+[link=https://twitter.com/AmelieBenoit33/status/1517178423403233280?s=20&t=8Hn5ZP6JlhLLJZe7B_A35w] 
+image::pyramide-tests.jpeg[S'affranchir de la pyramide des tests,800,560]
 
 ==== Abstract
 
