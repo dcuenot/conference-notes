@@ -500,28 +500,28 @@ Warrants
 ===== Actions
 AGA (attribution gratuite d'action)= RSU (restricted stock unit)
 
-Période de vesting classique:
+.Période de vesting classique:
 * 1ère année -> touche rien
 * à la date d'anniversaire, on touche 25%
 
-Vente
+.Vente
 * Actions -> les actions sont acquises et on peut faire ce qu'on veut
 * Options -> chaque option acquise peut etre exercée
 
 Upside / underwater (avec les actions on gagne tjs, alors qu'avec des options c'est moins sûr)
 
-Départ de l'entreprise
+.Départ de l'entreprise
 * Actions -> les actions vestés sont dispo
 * Options -> le droit doit être
 
-BSPCE
+.BSPCE
 * flat tax de 30% après 3 ans
 
-RSU
+.RSU
 * Tranche Marginale d'Imposition de la valeur à la date d'achat
 * Flat Tax sur la plus value de cession
 
-Stratégie
+.Stratégie
 * Négocier de l'equity dans son package
 * Attention aux valorisations
 * Estimer votre risque
@@ -836,7 +836,7 @@ Même si la prévision est un art difficile - surtout en ce qui concerne l'aveni
 
 Keynote Accenture / Octo - Technology vision, comme à l'époque.
 
-3 scénarios pour le futur:
+.3 scénarios pour le futur:
 - World tech companies
 - Digital Cold War
 
@@ -844,12 +844,6 @@ Les chiffres présentés et le raisonnement sont exactement les erreurs pointée
 .. Boring :sleeping:
 
 https://www.usievents.com/fr/[Unexpected Sources of Inspiration]
-
-===== Impact
-Avez-vous eu de l'impact dans votre entreprise ?
-Etes-vous capable de le mesurer ? Quel est le retour business?
-
-* Junior: impact is individual
 
 
 === LesBonsclics, une plateforme pédagogique au service du 1er réseau européen d'aidants numériques.
@@ -922,15 +916,16 @@ https://charity.wtf/2017/05/11/the-engineer-manager-pendulum/[The Engineer, Mana
 
 ===== Impact
 Avez-vous eu de l'impact dans votre entreprise ?
+Etes-vous capable de le mesurer ? Quel est le retour business?
 
-Junior: impact is individual
-: team squad
-Senior: chapter guild
-Staff: product line
-Principal: impact on company - anticipation
-Fellow: impact on the industry
+* Junior Software engineer: impact is individual
+* Software engineer : team squad
+* Senior: chapter guild
+* Staff: product line
+* Principal: impact on company - anticipation
+* Fellow: impact on the industry
 
-Quatre axes pour le developpement perso:
+.Quatre axes pour le developpement perso
 1. Expertise tech
 2. Capacité à produire des choses - Efficience - getting things done
 3. Business
@@ -975,23 +970,9 @@ Permet de shiper un environnement de dev, avec les fichiers non commité, les d�
 
 :bulb: Idée intéressante, à voir si on peut faire une version avec SFDX + CCI + npm
 
-=== 13h00 - 13h15 : Tests Cucumber: légendes et réalité
+https://github.com/docker/roadmap[Docker roadmap]
 
-==== Abstract
-
-.Speakers : Michaël Strauss
---
-Ecrire des tests, une nécessité pas toujours aguichante. Alors, quand des frameworks semblent permettre d'écrire des tests en langage naturel, facilement et rapidement, les attentes des utilisateurs - et du management ! - s'envolent.
-Mais qu'en est-il vraiment ?
-
-Ce talk vous présente un retour d'expérience de l'utilisation du framework cucumber, lors d'un projet concret, et confronte les promesses et les mythes avec la réalité.
---
-
-==== Notes
-
-TO BE COMPLETED
-
-=== 13h30 - 14h15 : Réception d'image satellite 🛰️ avec un Raspberry
+=== Réception d'image satellite 🛰️ avec un Raspberry
 
 ==== Abstract
 
@@ -1002,7 +983,19 @@ Vous avez tous déjà vu les images météo satellites diffusées pendant la mé
 
 ==== Notes
 
-TO BE COMPLETED
+https://www.mydiy.dev[MyDIY]
+
+Satellite NOAA - programme des années 60 qui continuent à graviter autour de la Terre - reste 3.
+Protocole: Automatic Picture Transmission
+
+.Matériel utilisé.
+- Clé USB TNT++ avec un chipset modifié pour écouter la bande de fréquence.
+- Antenne custom pour capter le signal satellite.
+- Raspberry Pi 2
+- Logiciel: `rtl_fm | sox > .wav | wxtoimg``
+
+Pi alimenté via Ethernet PoE. Mais avec 30m de câble, il faut compter 1.5V de perte. Donc il faut envoyer 12V pour recevoir 10V, puis passer dans un régulateur de tension.
+
 
 === 14h30 - 15h15 : Mob programming, la véritable approche du développement en équipe
 
