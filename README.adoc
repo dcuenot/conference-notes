@@ -43,6 +43,7 @@ toc::[]
 * Et c'est parti pour Devoxx France 2022, *les "vrais" 10 ans de Devoxx France* ! 😁😁😁
 * Template inspiré par https://twitter.com/thomasschwender[@thomasschwender], merci à lui!
 * Doc AsiiDoctor: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+* Les sketchs notes ont été réalisées par icon:twitter[role="aqua"] https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
 * Les talks avec un 🎥 dans le titre, sont les talks où je recommande de regarder le replay quand il sera disponible.
 
 === Comprendre GraphQL
@@ -296,6 +297,11 @@ Démonstration assez bluffante de Copilot avec génération de 2 functions et d'
 == JEUDI
 
 === La Keynote de Devoxx France 2022 - 10 ans déjà
+
+[#img-sunset] 
+.A mountain (C) sunset 
+[link=https://www.flickr.com/photos/javh/5448336655] 
+image::images/keynote.jpeg[Sunset,200,100]
 
 ==== Abstract
 
@@ -810,7 +816,15 @@ Même si la prévision est un art difficile - surtout en ce qui concerne l'aveni
 
 ==== Notes
 
-TO BE COMPLETED
+Keynote Accenture / Octo - Technology vision, comme à l'époque.
+
+3 scénarios pour le futur:
+- World tech companies
+- Digital Cold War
+
+Les chiffres présentés et le raisonnement sont exactement les erreurs pointées par Quentin Adam dans la conf d'hier..
+
+https://www.usievents.com/fr/[Unexpected Sources of Inspiration]
 
 === 09h50 - 10h10 : La quête d'une gouvernance collaborative du web
 
