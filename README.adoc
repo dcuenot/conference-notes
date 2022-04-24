@@ -38,6 +38,8 @@ endif::[]
 [link=https://cfp.devoxx.fr/2022/index.html] 
 image::header.jpeg[Devoxx France 2022 - Les 10 ans !,800,560]
 
+
+
 toc::[]
 
 == MERCREDI
@@ -918,6 +920,8 @@ Renforcement fort de biais, et risque fort sur les algo de recommandations
 --
 Le sujet récurrent dans l'IT : si on est senior avec 6 ans d'expérience, quelle est l'étape d'après ? Faut-il devenir manager pour progresser ? Dans cette session nous vous proposons de découvrir les rôles de Staff Engineer, Principal Engineer, Fellow, Distinguished et la notion d'impact qui accompagne ces rôles. Nous espérons vous faire réfléchir également à la notion de leadership dans vos métiers, vos équipes, vos produits et l'entreprise.
 --
+
+:notebook: https://docs.google.com/presentation/d/1BhMVAut9E7o2Tlizb1m6qIInuKbZqo35eBHukjnnx_4/edit#slide=id.g11e2cbf4653_0_0[Presentation]
 
 ==== Notes
 
