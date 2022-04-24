@@ -33,6 +33,11 @@ endif::[]
 // To turn off ALL captions
 // :caption:
 
+[#img-header] 
+.Devoxx France 2022 - Les 10 ans !
+[link=https://cfp.devoxx.fr/2022/index.html] 
+image::header.jpeg[Devoxx France 2022 - Les 10 ans !,800,560]
+
 toc::[]
 
 == MERCREDI
@@ -173,9 +178,9 @@ Boundary est pour du Human 2 Machine. Si besoin de faire du Machine 2 Machine, i
 === Pourquoi vous n'attirerez et ne retiendrez pas les femmes dans vos équipes tech !
 
 [#img-attirerez-femmes] 
-.Diversité et l’inclusion des femmes en entreprise. https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
+.Diversité et l'inclusion des femmes en entreprise. https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
 [link=https://twitter.com/AmelieBenoit33/status/1517213307228278784?s=20&t=8Hn5ZP6JlhLLJZe7B_A35w] 
-image::attirerez-femmes.jpeg[Diversité et l’inclusion des femmes en entreprise,560,800]
+image::attirerez-femmes.jpeg[Diversité et l'inclusion des femmes en entreprise,560,800]
 
 ==== Abstract
 
@@ -477,6 +482,11 @@ Après cette conférence, vous ne verrez plus le Domain-Driven Design tout à fa
 Moralité, lire le https://www.domainlanguage.com/ddd/blue-book/[blue book] mais surtout ne pas l'appliquer by the book.
 
 === :movie_camera: Equity for software engineers
+
+[#img-equity] 
+.Avantages d'un package comprenant des options ou des actions. https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
+[link=https://twitter.com/AmelieBenoit33/status/1517900334940753985?s=20&t=BHaA-Hsb0Dm6KiaXdUbBJg] 
+image::equity.jpeg[Avantages d'un package comprenant des options ou des actions,800,560]
 
 ==== Abstract
 
@@ -817,6 +827,11 @@ Repo de code sur Github: minecraft-openai (sera opensourced plus tard)
 
 
 == VENDREDI
+
+[#img-keynote2] 
+.Keynote: On a parlé futur, inclusion et gouvernance ce matin. https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
+[link=https://twitter.com/AmelieBenoit33/status/1517592970257698818?s=20&t=BHaA-Hsb0Dm6KiaXdUbBJg] 
+image::keynote2.jpeg[Keynote: On a parlé futur, inclusion et gouvernance ce matin,800,560]
 
 === Futurospective digitale : le futur est-il encore ce qu'il était ?
 
