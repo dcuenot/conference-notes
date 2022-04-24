@@ -488,7 +488,7 @@ Moralité, lire le https://www.domainlanguage.com/ddd/blue-book/[blue book] mais
 [#img-equity] 
 .Avantages d'un package comprenant des options ou des actions. https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
 [link=https://twitter.com/AmelieBenoit33/status/1517900334940753985?s=20&t=BHaA-Hsb0Dm6KiaXdUbBJg] 
-image::equity.jpeg[Avantages d'un package comprenant des options ou des actions,800,560]
+image::equity.jpeg[Avantages d'un package comprenant des options ou des actions,560,800]
 
 ==== Abstract
 
