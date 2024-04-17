@@ -1036,8 +1036,6 @@ Le MOB programming est une pratique s'appuyant sur le Lean et sur Extreme Progra
 De mythe à réalité, nous vous proposons de faire un retour d'expérience du MOB programming dans une équipe produit chez Ouest-France. Nous vous offrirons deux points de vue, celui du lead, présent depuis le début du projet (5 ans) et celui d'un développeur qui a rejoint l'équipe début 2021.
 --
 
-:notebook: https://docs.google.com/presentation/d/1evQxU6y8NdxZw8UycwBBWc5Js-0FpxGmkcWCXiH-QZY/mobilepresent?slide=id.p[Presentation]
-
 ==== Notes
 
 Réunir la team sur le même sujet, au même moment, et au même endroit (un peu comme le principe des urgences hospitalières)
