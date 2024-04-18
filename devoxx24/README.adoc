@@ -36,7 +36,7 @@ endif::[]
 [#img-header] 
 .Devoxx France 2024
 [link=https://cfp.devoxx.fr/2024/index.html] 
-image::header.jpeg[Devoxx France 2024,970,250]
+image::header.png[Devoxx France 2024,970,250]
 
 
 
@@ -50,50 +50,220 @@ toc::[]
 * Et c'est parti pour Devoxx France 2024, ma 5e édition
 * Template inspiré par https://twitter.com/thomasschwender[@thomasschwender], merci à lui!
 * Doc AsiiDoctor: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
-* Les sketchs notes ont été réalisées par icon:twitter[role="aqua"] https://twitter.com/AmelieBenoit33[@AmelieBenoit33]
 * Les talks avec un :movie_camera: dans le titre, sont les talks où je recommande de regarder le replay quand il sera disponible.
 
-=== :movie_camera: Comprendre GraphQL
+=== IA en médecine : où en sommes-nous ?
 
 ==== Abstract
 
-.Speakers : https://cfp.devoxx.fr/2022/speaker/geoffroy_couprie[Geoffroy Couprie] et https://cfp.devoxx.fr/2022/speaker/guillaume_scheibel[Guillaume Scheibel]
+.Speakers : Jean-Emmanuel Bibault
 --
-GraphQL est une spécification décrivant un language de requêtes pour API sur une base d'un contrat fortement typé. En plus du contrat, GraphQL se base sur une sélection explicite des champs permettant un requêtage riche évitant soit "l'overfetching" (recevoir des données inutiles) ou la multiplications des requêtes.
-
-GraphQL est aussi connu pour son écosystème clients (web et mobiles) ou serveur avec la possibilité d'écrire des services dans une multitude de langages. Durant cette session, nous verrons comment développer un schéma GraphQL avec différents languages (tel que typescript, kotlin voir rust). Nous aborderons entre autres:
-- Le système de types en GraphQL: objet, types polymorphiques, queries (lectures), mutations (écritures), subscriptions (streaming)
-- La gestion des erreurs
-- Strategies de résolutions des requêtes (avec par exemples les coroutines)
-- Technique plus avancées (context de requêtes, chaines d'interceptions etc).
+Les techniques de machine learning sont actuellement utilisées pour entraîner de nombreux modèles en médecine. Pourquoi connaissons-nous un tel âge d'or de l'IA appliquée à la médecine ? 
+Cette présentation illustrera l'utilisation de l'IA par différents exemples publiés : prédiction du risque de développer un risque 5 ans à l'avance, interprétation automatisée d'image médicale, détection par Deep Learning de mélanome, prédiction de la survie sur simple scanner, pilotage de robots chirurgicaux, dépistage de la dépression sur instagram, chaque exemple sera expliqué et commenté. Mais l'IA comporte également des risques liés à la gestion des données d'entraînement, aux biais ou encore les attaques adversarielles. Les perspectives de développement à 10 à 15 ans seront enfin abordées pour comprendre comment l'IA va changer la santé de tous.
 --
 
 ==== Notes
 
-Bare minimal query
-```
-schema {
-    query {}
+IA en médecine --> anylise d'image, pose de diagnostique (ce qu'on fait déjà)
+Tâches de prédiction & de personnalisation (plus difficile car on ne le fait pas déjà en médecine)
+
+En médecine, dataset petits, données très peu structurées --> overfitting
+L'effet boîte noire est perturbant en médecine, mais visiblement ça s'arrange
+
+protastecancersurvival.stanford.org
+
+Que peut-on faire à partir d'analyse d'image (deep learning)
+Détection du cancer du sein, du poumon / Classification / Monitoring
+cheXnet (radio thorax) --> données un peu biaisée, car certaines reconnaissances ce sont basées sur le label de l'hopital sur la radio
+
+Analyse des fonds d'oeil / analyse de photos de grain de beauté
+Photos insta pour détecter la dépression
+ResNet50 pour détecter des risques de cancer par image satelitte..
+
+IA générative
+85* de bonnes réponses au test US pour devenir médecin (mieux que le taux requis)
+Commence à avoir de meilleur diagnostic qu'un médecin, et il y a plus d'empathie qu'avec un médecin
+
+Risques
+Assez facile de feinter un système de reconnaissance d'image
+Biais dans les données
+Début de possibilités pour "lire dans les pensées", capacité de reproduire une image à partir d'activité cérébrale
+
+
+=== Hands-on Gemini, the Google DeepMind LLM
+
+==== Abstract
+
+.Speakers : Mete Atamel & Valentin Deleplace & Guillaume Laforge
+--
+In this hands-on workshop, you will get to code using Gemini, the new Large Language Model from Google DeepMind. You will first start by familiarizing yourself with the model's capabilities. Then you will use Gemini in different concrete cases, such as extracting data from unstructured text, document classification, but also searching your own documents, or how to supplement the model by integrating the call to external APIs.
+The workshop will be conducted using the Java language and the LangChain4j library. Come equipped with a laptop. We will code together in the cloud, no need for any special installation on your machine.
+--
+
+==== Notes
+AI > Machine Learning > Deep Learning > Generative > Image Gen / LLMs (transformers)
+https://s10251.pcdn.co/wp-content/uploads/2024/03/2024-Alan-D-Thompson-AI-Bubbles-Planets-Rev-6.png
+
+Gemma is the open source of Gemini
+
+Workshop based on Vertex AI, and what will do is not fully compatible with Google AI Studio
+
+
+LangChain4j
+Great abstraction and high level
+There is a java SDK, but for the workshop we will use LangChain4j
+
+Link to the lab: http://bit.ly/gemini-devoxx-2024
+
+
+Gemini can speak French, but when I changed the temperature to 1, its creativity disappeard :(
+....
+Je suis désolé, mais je ne peux pas vous répondre en français car je ne suis pas encore configuré pour cela. 
+Je suis toujours en développement et j'apprends de nouvelles choses chaque jour. 
+Pour l'instant, je ne peux que répondre en anglais.
+....
+
+Gemini is multimodal and can describe images. I did a test with [this one](https://www.devoxx.fr/wp-content/uploads/2023/11/21-1200x630-Facebook-Feed-Image2.png)
+....
+ The picture shows a robot running in a stadium with a crowd of people watching. 
+ The robot is wearing a black and gold suit and has a green light on its chest. 
+ The stadium is lit up by bright lights. 
+ The picture is taken from a low angle, making the robot look larger than life.
+....
+
+Retrieval Augmented Generation (RAG)
+_I'm finaly starting what my team is doing.. _
+
+image::indexing_querying.png[Ingestion and Querying]
+
+
+
+Function calling
+https://github.com/glaforge/gemini-workshop-for-java-developers/blob/main/app/src/main/java/gemini/workshop/MultiFunctionCalling.java
+
+
+=== Je me suis fait voler la carte de crédit de ma banque en ligne et mon téléphone portable... C'est grave docteur ?
+
+==== Abstract
+
+.Speakers : Patrick Merlin
+--
+Retour sur un incident de sécurité incluant vol de téléphone.
+Le téléphone permet de valider toutes les transactions.
+Nous verrons ce qu'il ne faut surtout pas faire pour éviter les pépins !
+--
+
+==== Notes
+
+Les retraits DAB ont été remboursés
+Les virements faits avec la double d'authentification n'ont pas été remboursé
+Si l'opérateur bloque la ligne, les SMS sont toujours distribués
+
+Les codes MFA de secours, ça dépanne toujours
+
+=== Du Clic à la Conversation : remplaçons boutons et formulaires par un LLM !
+
+==== Abstract
+
+.Speakers : Marie-Alice Blete
+--
+Préparez-vous à voyager dans le domaine de l'interaction homme/machine. Vous connaissez la première révolution : la souris et l'interface graphique ? Nous sommes désormais à l'ère de la deuxième révolution : l'interaction en langage naturel grâce a l'intelligence artificielle.
+Dans cette présentation, nous allons metamorphoser une application standard en une application basée sur un LLM. Dites adieu aux boutons et formulaires car nous nous apprêtons à réécrire les règles de l'interface utilisateur !
+Nous débuterons par les bases, avec un bref rappel des principes de LLM, suivi d'une première solution exploitant l'API OpenAI. Ensuite, nous verrons deux autres solutions plus avancées, dont une comprenant l'utilisation d'agents avec le framework LangChain.
+À la fin de cette présentation, vous disposerez de toutes les connaissances nécessaires pour vous lancer. Vous aurez également une liste d'astuces, de conseils, ainsi qu'une bonne compréhension des écueils pour intégrer des LLM dans vos developpements. Passons du clic à la conversation !
+--
+
+==== Notes
+
+https://github.com/malywut/clicks2conversations
+https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/
+
+
+=== Nous sommes tous rassemblés - We are all to gather
+
+==== Abstract
+
+.Speakers : Rémi Forax
+--
+Java 22 est sorti avec en preview une nouvelle API pour créer soi-même ses propres opérations sur les Streams, un peu comme l'API des collecteurs mais pour les transformations intermédiaires effectuées par un stream.
+Je vous propose d'en profiter pour faire un petit retour sur les concepts derrière un Stream, comment cela fonctionne en interne, comment les opérations (parallel/stateful/short-circuit) sont définies. Puis de sauter dans le grand bain et découvrir la nouvelle méthode gather() et l'API des Gatherers et ce que l'on peut faire avec. Enfin, nous verrons les limitations et les améliorations possibles de cette nouvelle API.
+--
+
+==== Notes
+Stream ?
+Spliterator > Filter (Interdemediate op) > FlatMap > toList (Terminal op)
+Spliterator push les données (à la différence d'un Iterator qui pull)
+
+A Gather
+Objectif implémenter n'importe quelle opération intermediaire
+stream.gather(Gatherers.fold(..)).toList()
+
+Modelisation
+....
+Gatherer<String, ?, String> filter() {
+    return Gatherer.of((_, element, downstream) -> {
+        if(elemeent.endsWith("1")){
+            return downstream.push(element);
+        }
+        return true;
+    })
 }
-```
+....
 
-Dans une query, on ajoute un ! pour signaler qu'un champ est obligatoire, et ne doit pas être null, permet de gérer des modes dégradés.
+Parallel or Sequential
+Stateless or Stateful
+Short-circuit (peut s'arrêter en cours, ex: limit) vs Greedy (ne peut pas s'arrêter)
 
-La https://spec.graphql.org/June2018/[spécification GraphQL] est la bible
-Github utilise GraphQL, voici https://docs.github.com/en/graphql/overview/explorer[la doc]
+jmh pour tester les perfs
+Pour l'instant gather est plus lent que les map / mapToInt natif, car ces derniers contiennent des optimisations
 
-L'objectif de GraphQL est de limiter la data qui transite sur le réseau, c'est le client qui défini les champs à récupérer, l'ordre d'affichage...
-
-Si un champs est associé à une fonction côté serveur, s'il n'est pas requêté par le client, la fonction ne sera pas appelée, ce qui permet de fortement optimiser les temps de réponse si la fonction fait une recherche en BDD par ex.
-
-En GraphQL, il y a 3 types de requêtes différents:
-- `Query`: Requête de lecture
-- `Mutation`: Requête de mise à jour. Si plusieurs mutations sont demandées dans la même query, elles sont exécutées séquentiellement
-- `Subscription`: Streaming
-
-En GraphQL tout est en POST, et les réponses sont en 200 ou 500. 500 quand la query n'est pas valable, et si c'est une error métier, on reçoit un 200 et dans le body de réponse le bloc `error` est non vide.
-
-https://www.apollographql.com[Apollo] propose différents outils pour explorer, stitcher des graphs: Rover, Studio, explorer
+API en preview dans java 23
 
 
+
+=== :movie_camera: Crafting your own RAG system: Leveraging 30+ LLMs for enhanced performance
+
+==== Abstract
+
+.Speakers : Stephan Janssen
+--
+In this talk you'll learn how to set up a RAG (Retrieval-Augmented Generation) system against 30+ different Large Language Models using Java.
+We'll show you step-by-step how to ingest documents, choose the best text splitter strategies, find similar documents, answer questions, and create a chatbot.
+Then, we’ll see how to test and compare different AI models, both from open sources and private ones, and whether they are stored on your own computer or accessed online.
+You'll walk away knowing how to setup a well balanced RAG system using Java and the best performing and/or cheapest LLM.
+--
+
+Embedding --> convert a text to vector
+QueryTransformer generate Sub-questions
+Agents (or Tools)  can answer directly with data on DB / websites
+
+ReRanker supported: Cohere (cost) + (free one: https://github.com/stephanj/BM25 (troll ;)) )
+
+*How do we correctly split text?*
+To split or not to split? That's the question
+
+window context of 4K to 200K tokens... to 1M tokens
+120$ for 1M tokens per query
+Response time
+
+Greg Kamradt (youtube) explains how to split
+https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3D8OJC21T2SL4&ved=2ahUKEwjDuPSstMmFAxXETKQEHWgYBAMQwqsBegQICxAG&usg=AOvVaw0M6zfJI40tTM5-FIAnltcz
+
+*Vector store*
+pgVector / Milvius / Elastic...
+Alexander Chatzizacharias
+https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DW-i8bcxkXok&ved=2ahUKEwjokcq9tcmFAxVuUKQEHbkaDr4QtwJ6BAgREAI&usg=AOvVaw27WlIgOmfG3jRGrqY2XIoz
+
+https://github.com/weaviate/weaviate
+https://www.anthropic.com/news/claude-3-family
+
+*Embedding*
+OpenAI / Nomic / HuggingFace / Cohere v3 (multi language)
+All MiniLM L6 V2 / E5 Small V2
+https://github.com/stephanj/langchain4j-cohere
+
+/!\ Max input limit
+
+*Evaluate your RAG*
+https://github.com/stephanj/rag-genie
 
