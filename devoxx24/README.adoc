@@ -229,9 +229,11 @@ API en preview dans java 23
 --
 In this talk you'll learn how to set up a RAG (Retrieval-Augmented Generation) system against 30+ different Large Language Models using Java.
 We'll show you step-by-step how to ingest documents, choose the best text splitter strategies, find similar documents, answer questions, and create a chatbot.
-Then, we’ll see how to test and compare different AI models, both from open sources and private ones, and whether they are stored on your own computer or accessed online.
+Then, we'll see how to test and compare different AI models, both from open sources and private ones, and whether they are stored on your own computer or accessed online.
 You'll walk away knowing how to setup a well balanced RAG system using Java and the best performing and/or cheapest LLM.
 --
+
+==== Notes
 
 Embedding --> convert a text to vector
 QueryTransformer generate Sub-questions
@@ -267,3 +269,66 @@ https://github.com/stephanj/langchain4j-cohere
 *Evaluate your RAG*
 https://github.com/stephanj/rag-genie
 
+
+== JEUDI
+
+=== Programming's Greatest Mistakes
+
+==== Abstract
+
+.Speakers : Mark Rendle
+--
+Most of the time when we make mistakes in our code, a message gets displayed wrong or an invoice doesn't get sent. But sometimes when people make mistakes in code, things literally explode, or bankrupt companies, or make web development a living hell for millions of programmers for years to come.
+ 
+Join Mark on a tour through some of the worst mistakes in the history of programming. Learn what went wrong, why it went wrong, how much it cost, and how things can be pretty funny when they're not happening to you.
+--
+
+==== Notes
+
+$500,000,000,000 due to Y2K bug, mainly in Mainframe
+Y2K22 22220101 can't be parsed as a Long
+
+Pentium FPU (Floating Point Unit)
+
+Null (billion dollars mistake)
+issue introduced in Algol W (first language with null)
+
+Bugs in space
+In space noone can set a breakpoint
+
+Mars Climtae Orbiter
+Orbiter failed due to conversion issue between imperial & metric systems
+
+Ariane 5
+Copy paste code btw Ariane 4 & 5, but they changed the processor (moved to 64 bits processor)
+
+Don't trust computer :)
+
+
+=== Un monde shooté aux métaux
+
+==== Abstract
+
+.Speakers : Agnes Crepet & Guillaume Pitron
+----
+Dans cette conférence intitulée "Un monde shooté aux métaux", Guillaume Pitron, expert des enjeux géopolitiques liés aux ressources naturelles, et Agnes Crepet, spécialiste en technologies éco-responsables, s'unissent pour aborder la dépendance croissante de nos sociétés aux métaux rares et ses implications profondes. Ils exploreront comment cette consommation excessive impacte l'environnement, l'économie mondiale et les relations sociales, en dévoilant les chaînes d'approvisionnement complexes qui relient les mines isolées aux technologies quotidiennes. La discussion soulignera les conséquences environnementales de l'extraction des métaux, les défis éthiques et les tensions géopolitiques qu'elle engendre.
+----
+
+==== Notes
+
+
+
+
+
+== VENDREDI
+
+=== Comment modéliser l'état du monde en 2100 ? Le Rapport Meadows
+
+==== Abstract
+
+.Speakers : Anatole Chouard
+--
+Comment modéliser l'état du monde en 2100 ? Pas la question la plus simple ! Mais en 1972 un groupe de chercheurs du MIT a essayé de répondre à cette question : c'est le fameux et fascinant rapport Meadows. Et ils ont compris bien des choses avant tout le monde. Dans cette conférence interactive, je vous fais un résumé en 20 minutes de la méthode et surtout des résultats du rapport Meadows !
+--
+
+==== Notes
