@@ -57,10 +57,10 @@ toc::[]
 ==== Abstract
 
 .Speakers : Jean-Emmanuel Bibault
---
+----
 Les techniques de machine learning sont actuellement utilisées pour entraîner de nombreux modèles en médecine. Pourquoi connaissons-nous un tel âge d'or de l'IA appliquée à la médecine ? 
 Cette présentation illustrera l'utilisation de l'IA par différents exemples publiés : prédiction du risque de développer un risque 5 ans à l'avance, interprétation automatisée d'image médicale, détection par Deep Learning de mélanome, prédiction de la survie sur simple scanner, pilotage de robots chirurgicaux, dépistage de la dépression sur instagram, chaque exemple sera expliqué et commenté. Mais l'IA comporte également des risques liés à la gestion des données d'entraînement, aux biais ou encore les attaques adversarielles. Les perspectives de développement à 10 à 15 ans seront enfin abordées pour comprendre comment l'IA va changer la santé de tous.
---
+----
 
 ==== Notes
 
@@ -95,10 +95,10 @@ Début de possibilités pour "lire dans les pensées", capacité de reproduire u
 ==== Abstract
 
 .Speakers : Mete Atamel & Valentin Deleplace & Guillaume Laforge
---
+----
 In this hands-on workshop, you will get to code using Gemini, the new Large Language Model from Google DeepMind. You will first start by familiarizing yourself with the model's capabilities. Then you will use Gemini in different concrete cases, such as extracting data from unstructured text, document classification, but also searching your own documents, or how to supplement the model by integrating the call to external APIs.
 The workshop will be conducted using the Java language and the LangChain4j library. Come equipped with a laptop. We will code together in the cloud, no need for any special installation on your machine.
---
+----
 
 ==== Notes
 AI > Machine Learning > Deep Learning > Generative > Image Gen / LLMs (transformers)
@@ -147,11 +147,11 @@ https://github.com/glaforge/gemini-workshop-for-java-developers/blob/main/app/sr
 ==== Abstract
 
 .Speakers : Patrick Merlin
---
+----
 Retour sur un incident de sécurité incluant vol de téléphone.
 Le téléphone permet de valider toutes les transactions.
 Nous verrons ce qu'il ne faut surtout pas faire pour éviter les pépins !
---
+----
 
 ==== Notes
 
@@ -166,12 +166,12 @@ Les codes MFA de secours, ça dépanne toujours
 ==== Abstract
 
 .Speakers : Marie-Alice Blete
---
+----
 Préparez-vous à voyager dans le domaine de l'interaction homme/machine. Vous connaissez la première révolution : la souris et l'interface graphique ? Nous sommes désormais à l'ère de la deuxième révolution : l'interaction en langage naturel grâce a l'intelligence artificielle.
 Dans cette présentation, nous allons metamorphoser une application standard en une application basée sur un LLM. Dites adieu aux boutons et formulaires car nous nous apprêtons à réécrire les règles de l'interface utilisateur !
 Nous débuterons par les bases, avec un bref rappel des principes de LLM, suivi d'une première solution exploitant l'API OpenAI. Ensuite, nous verrons deux autres solutions plus avancées, dont une comprenant l'utilisation d'agents avec le framework LangChain.
 À la fin de cette présentation, vous disposerez de toutes les connaissances nécessaires pour vous lancer. Vous aurez également une liste d'astuces, de conseils, ainsi qu'une bonne compréhension des écueils pour intégrer des LLM dans vos developpements. Passons du clic à la conversation !
---
+----
 
 ==== Notes
 
@@ -184,10 +184,10 @@ https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-int
 ==== Abstract
 
 .Speakers : Rémi Forax
---
+----
 Java 22 est sorti avec en preview une nouvelle API pour créer soi-même ses propres opérations sur les Streams, un peu comme l'API des collecteurs mais pour les transformations intermédiaires effectuées par un stream.
 Je vous propose d'en profiter pour faire un petit retour sur les concepts derrière un Stream, comment cela fonctionne en interne, comment les opérations (parallel/stateful/short-circuit) sont définies. Puis de sauter dans le grand bain et découvrir la nouvelle méthode gather() et l'API des Gatherers et ce que l'on peut faire avec. Enfin, nous verrons les limitations et les améliorations possibles de cette nouvelle API.
---
+----
 
 ==== Notes
 Stream ?
@@ -226,12 +226,12 @@ API en preview dans java 23
 ==== Abstract
 
 .Speakers : Stephan Janssen
---
+----
 In this talk you'll learn how to set up a RAG (Retrieval-Augmented Generation) system against 30+ different Large Language Models using Java.
 We'll show you step-by-step how to ingest documents, choose the best text splitter strategies, find similar documents, answer questions, and create a chatbot.
 Then, we'll see how to test and compare different AI models, both from open sources and private ones, and whether they are stored on your own computer or accessed online.
 You'll walk away knowing how to setup a well balanced RAG system using Java and the best performing and/or cheapest LLM.
---
+----
 
 ==== Notes
 
@@ -240,6 +240,8 @@ QueryTransformer generate Sub-questions
 Agents (or Tools)  can answer directly with data on DB / websites
 
 ReRanker supported: Cohere (cost) + (free one: https://github.com/stephanj/BM25 (troll ;)) )
+
+image::stephan007.jpg[Querying]
 
 *How do we correctly split text?*
 To split or not to split? That's the question
@@ -277,11 +279,11 @@ https://github.com/stephanj/rag-genie
 ==== Abstract
 
 .Speakers : Mark Rendle
---
+----
 Most of the time when we make mistakes in our code, a message gets displayed wrong or an invoice doesn't get sent. But sometimes when people make mistakes in code, things literally explode, or bankrupt companies, or make web development a living hell for millions of programmers for years to come.
  
 Join Mark on a tour through some of the worst mistakes in the history of programming. Learn what went wrong, why it went wrong, how much it cost, and how things can be pretty funny when they're not happening to you.
---
+----
 
 ==== Notes
 
@@ -310,12 +312,200 @@ Don't trust computer :)
 ==== Abstract
 
 .Speakers : Agnes Crepet & Guillaume Pitron
-----
+------
 Dans cette conférence intitulée "Un monde shooté aux métaux", Guillaume Pitron, expert des enjeux géopolitiques liés aux ressources naturelles, et Agnes Crepet, spécialiste en technologies éco-responsables, s'unissent pour aborder la dépendance croissante de nos sociétés aux métaux rares et ses implications profondes. Ils exploreront comment cette consommation excessive impacte l'environnement, l'économie mondiale et les relations sociales, en dévoilant les chaînes d'approvisionnement complexes qui relient les mines isolées aux technologies quotidiennes. La discussion soulignera les conséquences environnementales de l'extraction des métaux, les défis éthiques et les tensions géopolitiques qu'elle engendre.
-----
+------
 
 ==== Notes
 
+
+
+=== Comprendre l'IA: construisez votre propre ChatGPT d'entreprise avec LangChain4J
+
+==== Abstract
+
+.Speakers : Yohan Lasorsa & Julien Dubois & Sandra Ahlgrimm
+------
+Les technologies d'IA, et particulièrement les grand modèles de langages (LLM) poussent un peu partout comme des champignons ces derniers temps. Comment ces modèles fonctionnent-ils, et comment s'en servir dans vos applications?
+Dans ce workshop, nous allons construire de zéro un chatbot basé sur GPT-4 implémentant le pattern Retrieval Augmented Generation (RAG). En utilisant une base de documents de référence, le modèle sera capable de répondre à des questions en langage naturel, et de générer des réponses complètes et sourcées dans vos documents. Pour cela, nous allons créer un service SpringBoot qui s'appuiera sur le framework open-source LangChain4J, ainsi qu'un site web pour tester notre chatbot. Enfin, nous déploierons le tout sur Azure.
+   
+Au programme:  
+- Introduction aux modèles de langage: fonctionnement et limites
+- Création d'une base de connaissances: embeddings, BDD vectorielle et recherche par similarité  
+- Utilisation de LangChain4J pour implémenter le pattern RAG (Retrieval Augmented Generation)
+- Introduction au prompt engineering pour améliorer les performances
+- Création d'une API SpringBoot pour interagir avec le modèle
+- Création d'un site web pour tester le chatbot
+- Déploiement de l'API dockerisée et du site web sur Azure
+   
+A l'issue du workshop, vous aurez une compréhension plus claire des LLMs ainsi que des idées pour les utiliser. Vous saurez comment créer une base de connaissances et un chatbot fonctionnels, et les déployer dans le cloud.
+------
+
+==== Notes
+
+----> Salle comble :( , donc plan B 
+https://aka.ms/ws/openai-rag-quarkus
+
+
+=== GatewayAPI, 10 ans de maturation pour une nouvelle API Kubernetes
+
+==== Abstract
+
+.Speakers : Kevin Davin
+------
+Exposer une application Kubernetes au monde peut devenir un vrai casse tête 🧐.  
+Nous avons d'un côté les API standards avec Ingress, service de `type=LoadBalancer`, voir même les NodePorts… et de l'autre, les APIs custom proposées par les Ingress Controllers et Service-Meshes très avancées mais non standard 😅
+Après tant d'années de confusion, une nouvelle API, nommée Gateway API, arrive tout juste en v1.0 (🎉) pour contenter à la fois les développeurs et les opérateurs de cluster ou d'infrastructure 🤯!
+Nous découvrirons ensemble cette nouvelle API, ses fonctionnalités avancées et les implémentations qui vous permettrons de les utiliser dans votre cluster ⚡️!
+------
+
+==== Notes
+
+Dans Kube il manque des choses, mais il est possible d'en ajouter
+NodePort 
+>> LoadBalancer 
+>> kind: Ingress (fait disparaitre la notion node) pointe vers le service qui pointe vers les nodes
+http only, configuration par annotations dans le .yaml, niveau certificat il doit connu par le domain, déploiement complexe
+>> Ingress-Controlers (CRD custom): contour
+>> Api gateway (CRD custom): Kong, traefik
+
+>> GatewayAPI project
+Spec, et pas d'implémentation
+4 concepts clés:
+* Role Oriented (Infra, cluster operator, Dev)
+* Portabilité 
+* Extensible (update décorelé du cluster k8s)
+* Expressif (HTTProute, GRPCRoute, UDPRoute)
+
+image::k8s.jpg[Gateway]
+
+GatewayClass (Gérer par les personnes de l'infra)
+
+HTTPRoute (Gérer par les dev)
+
+Routage possible multi namespaces
+Nouvel object: ReferenceGrant 
+ReferenceGrant identifies kinds of resources in other namespaces that are trusted to reference the specified kinds of resources in the same namespace as the policy.
+
+Possible de faire du routing sur du path, des headers HTTP, des query param, RequestMirroring (les appels v2 sont en fire & forget)
+
+Comment on démarre avec la Gateway API
+Gateway API: https://gateway-api.sigs.k8s.io/implementations/
+
+
+=== La recherche à l'ère de l'IA
+
+==== Abstract
+
+.Speakers : David Pilato
+------
+La recherche ne se contente plus de l'approche maintenant traditionnelle basée sur la fréquence des termes (TF/IDF ou BM25) mais plus sur la tendance actuelle du machine learning où les nouveaux modèles ont ouvert une nouvelle dimension pour la recherche.
+Cette conférence donne un aperçu de :
+La recherche "Classique" et ses limitations
+Qu'est qu'un modèle de machine learning et comment vous pouvez l'utiliser
+Comment utiliser la recherche vectorielle ou la recherche hybride dans Elasticsearch
+Comment ChatGPT d'OpenAI ou les "large language models" (LLMs) similaires viennent jouer naturellement avec Elastic
+Cette session couvre l'état de l'art en matière de recherche de nos jours : BM25, recherche vectorielle, embeddings, recherche hybride, Reciprocal Rank Fusion, intégration avec OpenAI... La démo principale montre comment générer des embeddings à partir de musiques puis comment trouver la musique qui s'approche le plus d'une musique que nous fredonnons.
+------
+
+==== Notes
+
+C'est quoi un vecteur?
+Elements représentés dans un espace d'embeddings
+
+image::similar_vectors.jpg[Similar Vectors]
+
+Comment on passe des entrées à des vecteurs?
+Utilisé des modèles sur étagère (reco) sinon créer son modèle mais attention au use-case
+
+Source data -> pytorch -> post des embeddings dans Elastic (mode free)
+Source data -> Elastic ML (inférence faite à l'insertion) -> post des embeddings dans Elastic (mode payant)
+https://ela.st/nlp-supported-models
+
+Query --> même modèle qu'à l'indexation --> génère le query vector
+
+Search - query - KNN
+Index - mapping - dense_vector
+
+1 + cos(theta) / 2 --> méthode par défaut de calcul de distance
+sinon distance euclidienne
+
+HNSW Hierarchical Navigable Small Worlds
+----> améliore les perfs
+
+4096 dimensions supportés par Elastic --> mais ca coute cher en IO disk, mémoire (mais c'est hors heap java)
+Eviter de faire des recherches pendant les indexations (utilisé des aliases)
+Exclure les vecteurs du champs _source (useless pour les users)
+Reduire les dimensions
+Utiliser des octets au lieu des floats
+
+hybride search
+Recherche sur les termes + recherche vectorielle
+Une query avec le match (classique) + la recherche knn avec les vecteurs
+^ dense vector
+
+ELSER 
+sparse_embedding genere des "synonymes" pondéré
+
+RRF (Reciprocal Rank Fusion) - Ranking
+On tient compte du rang dans les résultats (on ajoute 60 + rang), et on somme les rangs obtenus par chaque algo
+
+exclude audio_embedding from _source
+
+
+Demo RAG: Elastic + Cohere
+Données du wiki Elastic indexées
+Possibilité de faire de la sécurité niveau document (Document level security)
+
+Lien vers la présentation: https://speaker.pilato.fr/WlpZdt
+
+=== Debugguez votre salaire ! Mes stratégies gagnantes pour réussir sa négociation salariale
+
+==== Abstract
+
+.Speakers : Shirley ALMOSNI CHICHE
+------
+Décortiquer les mystères du salaire, un terrain miné où se mêlent débats enflammés, préjugés persistants et fantasmes insaisissables…
+
+Parfois, tel un mauvais date, vous avez du mal à aller jusqu'au bout d'une proposition convenable à cause de multiples arguments comme « on n'a pas le budget », « on doit respecter la grille salariale » ou encore « vous n'avez pas été assez convainquant techniquement ». J'exposerai donc les points critiques qui vous font souvent obstacle. 
+
+Évidemment ça vous frustre et vous n'êtes pas Jean Claude Dusse : tout ne se joue pas sur un malentendu. Ainsi je vous donnerai les coulisses de la réflexion salariale et les quelques contre-arguments à formuler pour gagner la partie. Tout cela saupoudré de mon analyse du profil des employeurs/interlocuteurs. Je vous parlerai donc des utilisateurs de vos compétences et de leurs freins réels et psychologiques. C'est mon petit côté agile.
+
+Enfin, telle une vétérante du recrutement, je vous dévoilerai une multitude de conseils pratiques pour maîtriser l'art de la négociation salariale. Pour cela, je mettrai en lumière l'importance cruciale de la préparation et de l'anticipation dans cette jungle du recrutement bien avant que la question du salaire ne soit posée sur la table. 
+
+Fini le mystère, place à la stratégie gagnante ! 😘
+------
+
+==== Notes
+
+Bugs observés
+1. Respect de la grille salariale
+2. Traitement équitable (le nouveau va avoir plus que le Tech Lead qui est là depuis 3 ans)
+3. Désolé les finances sont compliquées
+4. Désolé tu n'as pas le niveau technique
+5. Plaisir de négocier
+6. Discrimination salariale
+
+Correction de bugs
+1. Bien se renseigner sur le package. Rentrer dans le champ lexical de l'interlocuteur
+2. Montrer qu'on est prêt à aller au dela du role décrit. Revalorisation fin période d'essai (à mettre dans le contrat de travail)
+3. BSPCE, coûts du chasseur de tête, polyvalence
+4. Demandé le feedback de l'entretien technique, essayer d'avoir une formation pour arriver au niveau, montrer que l'entretien technique n'a pas mis en valeur mes compétences
+5. Pointer les failles / vices dans le projet visé, poser des limites
+6. go / nogo, pas simple de savoir quoi faire quand on y fait face.
+
+Miroir, empathie tactique
+Fore tranquille: écouter, penser à l'autre
+
+Tips
+* Le choix du poste (zone de confort ou alors on s'éloigne ? Secteur qui paie bien ? Poste courtisé ? Localisation ? Equilibre entre offre et demande)
+* L'observation (annonce de recrutement, le marché, santé financière, staff & background) - chooseyourboss seyos denis germain levels.fyi
+* Face à face RH (apport de la valeur, faits concrets, poser des questions sur le poste)
+* Salaire souhaité (méthode Ackerman, chiffre spécifique, donner la marge de flexibilité)
+* Rencontre technique (attente priorité pour le poste, quel est format de l'évaluation ? Points de souffrance dans leur quotidien, feedback post-entretien, partage des critiques)
+* Equipe (la rencontrer, identifier les personnes influentes)
+* Proposition d'embauche (temps de réflexion +/- 48 heures, rester cohérent, contre-offre argumentée sur des faits + bon timing
+)
 
 
 
@@ -327,8 +517,8 @@ Dans cette conférence intitulée "Un monde shooté aux métaux", Guillaume Pitr
 ==== Abstract
 
 .Speakers : Anatole Chouard
---
+----
 Comment modéliser l'état du monde en 2100 ? Pas la question la plus simple ! Mais en 1972 un groupe de chercheurs du MIT a essayé de répondre à cette question : c'est le fameux et fascinant rapport Meadows. Et ils ont compris bien des choses avant tout le monde. Dans cette conférence interactive, je vous fais un résumé en 20 minutes de la méthode et surtout des résultats du rapport Meadows !
---
+----
 
 ==== Notes
